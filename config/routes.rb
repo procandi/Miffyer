@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  resources :arrivals
   get 'arrival/list' => 'arrivals#list'
   post 'arrival/list' => 'arrivals#list'
   get 'arrival/unitlist' => 'arrivals#unitlist'
@@ -10,11 +9,9 @@ Rails.application.routes.draw do
   post 'arrival/result' => 'arrivals#result'
 
 
-  resources :pt_barcodes
   get 'pt_barcode/search' => 'pt_barcodes#search'
   post 'pt_barcode/search' => 'pt_barcodes#search'
 
-  resources :us_barcodes
   get 'us_barcode/search' => 'us_barcodes#search'
   post 'us_barcode/search' => 'us_barcodes#search'
   get 'us_barcodes/site_current_uid/:id' => 'us_barcodes#site_current_uid', as: 'us_barcodes/site_current_uid'
@@ -36,11 +33,9 @@ Rails.application.routes.draw do
   get 'schedule/updaterole' => 'schedules#updaterole'
   post 'schedule/updaterole' => 'schedules#updaterole'
 
-  resources :wk_barcodes
   get 'wk_barcode/search' => 'wk_barcodes#search'
   post 'wk_barcode/search' => 'wk_barcodes#search'
 
-  resources :rf_barcodes
   get 'rf_barcode/search' => 'rf_barcodes#search'
   post 'rf_barcode/search' => 'rf_barcodes#search'
 
@@ -64,7 +59,6 @@ Rails.application.routes.draw do
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
   resources :users
-  resources :patients
   resources :sites
   resource :session, only: [ :new, :create, :destroy ]
 

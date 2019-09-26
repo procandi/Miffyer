@@ -145,4 +145,4 @@ gem 'mini_racer', '0.2.6'
 #gem 'ruby-odbc', '0.99999'
 
 # use mssql on linux
-gem 'tiny_tds'
+#gem 'tiny_tds'
