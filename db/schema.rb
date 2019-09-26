@@ -11,54 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190908143817) do
+ActiveRecord::Schema.define(version: 20180802063549) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
-
-  create_table "arrivals", force: :cascade do |t|
-    t.string   "site"
-    t.integer  "count"
-    t.string   "list"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
 
   create_table "holidays", force: :cascade do |t|
     t.date     "restdate"
     t.string   "resttype"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-  end
-
-  create_table "patients", force: :cascade do |t|
-    t.string   "pid"
-    t.string   "pname"
-    t.date     "birthday"
-    t.string   "sex"
-    t.string   "telephone"
-    t.string   "address"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "pt_barcodes", force: :cascade do |t|
-    t.string   "pid"
-    t.string   "site"
-    t.date     "scandate"
-    t.time     "scantime"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "rf_barcodes", force: :cascade do |t|
-    t.string   "rid"
-    t.string   "site"
-    t.date     "scandate"
-    t.time     "scantime"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.integer  "flag"
   end
 
   create_table "schedules", force: :cascade do |t|
@@ -79,15 +41,6 @@ ActiveRecord::Schema.define(version: 20190908143817) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "us_barcodes", force: :cascade do |t|
-    t.string   "uid"
-    t.string   "site"
-    t.date     "scandate"
-    t.time     "scantime"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "users", force: :cascade do |t|
     t.string   "uid"
     t.string   "upw"
@@ -101,15 +54,6 @@ ActiveRecord::Schema.define(version: 20190908143817) do
   end
 
   add_index "users", ["session_token"], name: "index_users_on_session_token", unique: true, using: :btree
-
-  create_table "wk_barcodes", force: :cascade do |t|
-    t.string   "wid"
-    t.string   "site"
-    t.date     "scandate"
-    t.time     "scantime"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
 
   create_table "works", force: :cascade do |t|
     t.string   "wid"
