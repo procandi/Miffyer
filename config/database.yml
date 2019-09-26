@@ -14,7 +14,7 @@ default: &pg
   encoding: unicode
   pool: 20
   host: localhost
-  database: everlife
+  database: miffyer
   username: postgres
   password: miffyer168
 
