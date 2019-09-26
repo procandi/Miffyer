@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p style='color:#ffffff;font-size:16px;font-family:PingFang-SC-Medium;'>當前位置: 班表排班系統 > 班表管理</p>
+
+<div style='background:#333333;width:1280px;height:30px;color:#ffffff;font-size:18px;font-family:PingFang-SC-Medium;text-align:center;'>班表管理</div>
+
+<table class="table">
+  <thead>
+    <tr style='background:#f4f4f4;color:#333333;font-size:14px;font-family:MicrosoftJhengHeiRegular;'>
+      <th><%= t(:workdate, :scope=>[:activerecord,:attributes,:schedule]) %></th>
+      <th><%= t(:workpart, :scope=>[:activerecord,:attributes,:schedule]) %></th>
+      <th><%= t(:uid, :scope=>[:activerecord,:attributes,:schedule]) %></th>
+      <th><%= t(:uname, :scope=>[:activerecord,:attributes,:schedule]) %></th>
+      <th><%= t(:site, :scope=>[:activerecord,:attributes,:schedule]) %></th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @schedules.each do |schedule| %>
+      <tr style='background:#f4f4f4;color:#333333;font-size:14px;font-family:MicrosoftJhengHeiRegular;'>
+        <td><%= schedule.workdate %></td>
+        <td><%= schedule.workpart %></td>
+        <td><%= schedule.uid %></td>
+        <td><%= schedule.uname %></td>
+        <td><%= schedule.site %></td>
+        <td><%= link_to '詳細', schedule %></td>
+        <td><%= link_to '修改', edit_schedule_path(schedule) %></td>
+        <td><%= link_to '刪除', schedule, method: :delete, data: { confirm: '確定嗎？' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to '新增班表', new_schedule_path, :class=>"btn btn-large btn-primary"  %>
+
+<br>
+<br>

@@ -1,0 +1,38 @@
+<style>
+	.bg {
+		background-image: url(<%= asset_path 'BG.png' %>);
+		background-repeat:no-repeat;
+		background-size: 100% 100%;
+	}
+	.bg img {
+	  	min-height: 100%;
+	}
+</style>
+
+<div class='bg'>
+	<center>
+		<!-- use for alert message for every page. @xieyinghua -->
+		<% flash.each do |key, value| %>
+			<div class="alert alert-<%= key %>"><%= value %></div>
+		<% end %>
+
+		<br><br>
+
+		<div style='width:100px;'>
+		<h1>登入</h1>
+		<%= form_for :session, :url => session_path do |f| %>
+			<%= f.label t(:uid, :scope=>[:activerecord,:attributes,:user]) %><br>
+			<%= f.text_field :uid %><br>
+
+			<%= f.label t(:upw, :scope=>[:activerecord,:attributes,:user]) %><br>
+			<%= f.password_field :upw %><br>
+
+			<div class="actions">
+				<%= f.submit "Sign-in" %>
+			</div>
+		<% end %>
+		</div>
+		
+		<br><br>
+	</center>
+</div>

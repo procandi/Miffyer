@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p style='color:#ffffff;font-size:16px;font-family:PingFang-SC-Medium;'>當前位置: 管理系統 > 國定假日設定</p>
+
+<div style='background:#333333;width:1280px;height:30px;color:#ffffff;font-size:18px;font-family:PingFang-SC-Medium;text-align:center;'>國定假日設定</div>
+
+<table class="table">
+  <thead>
+    <tr style='background:#f4f4f4;color:#333333;font-size:14px;font-family:MicrosoftJhengHeiRegular;'>
+      <th><%= t(:restdate, :scope=>[:activerecord,:attributes,:holiday]) %></th>
+      <th><%= t(:resttype, :scope=>[:activerecord,:attributes,:holiday]) %></th>
+      <% if(current_user.uid=='9999' || current_user.upower=='管理員') %>
+        <th colspan="3"></th>
+      <% end %>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @holidays.each do |holiday| %>
+      <tr style='background:#f4f4f4;color:#333333;font-size:14px;font-family:MicrosoftJhengHeiRegular;'>
+        <td><%= holiday.restdate %></td>
+        <td><%= holiday.resttype %></td>
+        <% if(current_user.uid=='9999' || current_user.upower=='管理員') %>
+          <td><%= link_to '詳細', holiday %></td>
+          <td><%= link_to '修改', edit_holiday_path(holiday) %></td>
+          <td><%= link_to '刪除', holiday, method: :delete, data: { confirm: '確定嗎？' } %></td>
+        <% end %>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<% if(current_user.uid=='9999' || current_user.upower=='管理員') %>
+  <%= link_to '新增國定假日', new_holiday_path, :class=>"btn btn-large btn-primary" %>
+<% end %>
+<br>
+<br>

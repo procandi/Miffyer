@@ -1,0 +1,42 @@
+<p id="notice"><%= notice %></p>
+
+<p style='color:#ffffff;font-size:16px;font-family:PingFang-SC-Medium;'>當前位置: 管理相關系統 > 病患清單</p>
+
+<div style='background:#333333;width:1280px;height:30px;color:#ffffff;font-size:18px;font-family:PingFang-SC-Medium;text-align:center;'>病患清單</div>
+
+<table class="table">
+  <thead>
+    <tr style='background:#f4f4f4;color:#333333;font-size:14px;font-family:MicrosoftJhengHeiRegular;'>
+      <th><%= t(:pid, :scope=>[:activerecord,:attributes,:patient]) %></th>
+      <th><%= t(:pname, :scope=>[:activerecord,:attributes,:patient]) %></th>
+      <th><%= t(:birthday, :scope=>[:activerecord,:attributes,:patient]) %></th>
+      <th><%= t(:sex, :scope=>[:activerecord,:attributes,:patient]) %></th>
+      <th><%= t(:telephone, :scope=>[:activerecord,:attributes,:patient]) %></th>
+      <th><%= t(:address, :scope=>[:activerecord,:attributes,:patient]) %></th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @patients.each do |patient| %>
+      <tr style='background:#f4f4f4;color:#333333;font-size:14px;font-family:MicrosoftJhengHeiRegular;'>
+        <td><%= patient.pid %></td>
+        <td><%= patient.pname %></td>
+        <td><%= patient.birthday %></td>
+        <td><%= patient.sex %></td>
+        <td><%= patient.telephone %></td>
+        <td><%= patient.address %></td>
+        <td><%= link_to '詳細', patient %></td>
+        <td><%= link_to '修改', edit_patient_path(patient) %></td>
+        <td><%= link_to '刪除', patient, method: :delete, data: { confirm: '確定嗎？' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to '新增病患', new_patient_path, :class=>"btn btn-large btn-primary" %>
+
+<br>
+<br>

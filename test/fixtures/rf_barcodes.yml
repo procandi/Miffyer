@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  rid: MyString
+  site: MyString
+  scandate: 2017-03-24
+  scantime: 2017-03-24 17:02:53
+
+two:
+  rid: MyString
+  site: MyString
+  scandate: 2017-03-24
+  scantime: 2017-03-24 17:02:53

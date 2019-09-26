@@ -1,0 +1,57 @@
+<p id="notice"><%= notice %></p>
+
+<p style='color:#ffffff;font-size:16px;font-family:PingFang-SC-Medium;'>當前位置: 管理系統 > 病歷號掃碼記錄</p>
+
+<div style='display:table;'>
+  <div style='display:table-row;'>
+    <div style='display:table-cell;background:#333333;width:1280px;height:30px;color:#ffffff;font-size:18px;font-family:PingFang-SC-Medium;text-align:center;'>病歷號掃碼記錄</div>
+  </div>
+  <div style='display:table-row;'>
+    <div style='display:table-cell;background:#ffffff;padding-left:5%;'>
+      
+
+
+<%= form_for(@pt_barcode) do |f| %>
+  <% if @pt_barcode.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@pt_barcode.errors.count, "error") %> prohibited this pt_barcode from being saved:</h2>
+
+      <ul>
+      <% @pt_barcode.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :pid %><br>
+    <%= f.text_field :pid %>
+  </div>
+  <div class="field">
+    <%= f.label :site %><br>
+    <%= f.text_field :site %>
+  </div>
+  <div class="field">
+    <%= f.label :scandate %><br>
+    <%= f.text_field :scandate %>
+  </div>
+  <div class="field">
+    <%= f.label :scantime %><br>
+    <%= f.text_field :scantime %>
+  </div>
+  <%= hidden_field_tag :query,'yes' %>
+  <div class="actions">
+    <%= f.submit '新增病歷號掃碼記錄', :class=>"btn btn-large btn-primary", :style=>'background:#3376b2;width:180px;height:40px;margin-left:5%;' %>
+    <%= link_to '返回', pt_barcode_search_path , :class=>"btn btn-large btn-primary", :style=>'background:#f8b551;width:140px;height:40px;margin-left:5%;'%>
+  </div>
+<% end %>
+
+
+
+      
+    </div>
+  </div>
+</div>
+
+

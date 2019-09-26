@@ -1,0 +1,38 @@
+# SQLite version 3.x
+#   gem 'activerecord-jdbcsqlite3-adapter'
+#
+# Configure Using Gemfile
+# gem 'activerecord-jdbcsqlite3-adapter'
+#
+default: &default
+  adapter: jdbcsqlite3
+
+default: &pg
+  adapter: jdbcpostgresql
+  encoding: unicode
+  pool: 20
+  host: localhost
+  database: qcendo
+  username: postgres
+  password: miffyer168
+
+development:
+  <<: *pg
+  #database: postgres
+  #<<: *default
+  #database: db/development.sqlite3
+
+# Warning: The database defined as "test" will be erased and
+# re-generated from your development database when you run "rake".
+# Do not set this db to the same as development or production.
+test:
+  <<: *pg
+  #database: postgres
+  #<<: *default
+  #database: db/test.sqlite3
+
+production:
+  <<: *pg
+  #database: postgres
+  #<<: *default
+  #database: db/production.sqlite3

@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<p style='color:#ffffff;font-size:16px;font-family:PingFang-SC-Medium;'>當前位置: 管理系統 > 排班類別</p>
+
+<div style='background:#333333;width:1280px;height:30px;color:#ffffff;font-size:18px;font-family:PingFang-SC-Medium;text-align:center;'>排班類別</div>
+
+<table class="table">
+  <thead>
+    <tr style='background:#f4f4f4;color:#333333;font-size:14px;font-family:MicrosoftJhengHeiRegular;'>
+      <th><%= t(:wid, :scope=>[:activerecord,:attributes,:work]) %></th>
+      <th><%= t(:wname, :scope=>[:activerecord,:attributes,:work]) %></th>
+      <th><%= t(:wsort, :scope=>[:activerecord,:attributes,:work]) %></th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @works.each do |work| %>
+      <tr style='background:#f4f4f4;color:#333333;font-size:14px;font-family:MicrosoftJhengHeiRegular;'>
+        <td><%= work.wid %></td>
+        <td><%= work.wname %></td>
+        <td><%= work.wsort %></td>
+        <td><%= link_to '詳細', work %></td>
+        <td><%= link_to '修改', edit_work_path(work) %></td>
+        <td><%= link_to '刪除', work, method: :delete, data: { confirm: '確定嗎？' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to '新增排班類別', new_work_path, :class=>"btn btn-large btn-primary" %>
+<%= link_to '下載Excel', @rlink, :class=>"btn btn-large btn-primary" %>
+
+<br>
+<br>

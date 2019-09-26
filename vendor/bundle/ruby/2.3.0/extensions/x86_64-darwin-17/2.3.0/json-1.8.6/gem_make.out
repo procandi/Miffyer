@@ -1,0 +1,13 @@
+current directory: /Users/xieyinghua/workspace/cch_hissyncwebservice/vendor/bundle/ruby/2.3.0/gems/json-1.8.6/ext/json
+/Users/xieyinghua/.rvm/rubies/ruby-2.3.3/bin/ruby -r ./siteconf20190602-20169-lxgxsl.rb extconf.rb
+creating Makefile
+
+current directory: /Users/xieyinghua/workspace/cch_hissyncwebservice/vendor/bundle/ruby/2.3.0/gems/json-1.8.6/ext/json
+make "DESTDIR=" clean
+
+current directory: /Users/xieyinghua/workspace/cch_hissyncwebservice/vendor/bundle/ruby/2.3.0/gems/json-1.8.6/ext/json
+make "DESTDIR="
+make: Nothing to be done for `all'.
+
+current directory: /Users/xieyinghua/workspace/cch_hissyncwebservice/vendor/bundle/ruby/2.3.0/gems/json-1.8.6/ext/json
+make "DESTDIR=" install

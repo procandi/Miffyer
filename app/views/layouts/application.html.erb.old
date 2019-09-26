@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>QC Endo Cloud System</title>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+
+  <!-- 載入日歷的function -->
+  <script type="text/javascript" src="JSCal2-1.8/src/js/jscal2.js"></script>
+  <script type="text/javascript" src="JSCal2-1.8/src/js/lang/cn.js"></script>
+  <link rel="stylesheet" type="text/css" href="JSCal2-1.8/src/css/jscal2.css" />
+  <link rel="stylesheet" type="text/css" href="JSCal2-1.8/src/css/border-radius.css" />
+  <link rel="stylesheet" type="text/css" href="JSCal2-1.8/src/css/steel/steel.css" />
+  <style type="text/css">
+    .highlight { color: #f00 !important; }
+    .highlight2 { color: #0f0 !important; font-weight: bold; }
+      #BT_Clear
+      {
+          width: 75px;
+      }
+  </style>
+</head>
+<body>
+
+<div class="container-fluid">
+  <%= render "common/navbar" %>	<!-- header. @xieyinghua -->
+  <%= yield %>	<!-- body. @xieyinghua -->
+</div>
+<%= render "common/footer" %>	<!-- footer. @xieyinghua -->
+
+<!-- Debugging footer. @xieyinghua -->
+<%= content_tag :div, debug(params) if Rails.env.development? %>
+
+
+
+</body>
+</html>

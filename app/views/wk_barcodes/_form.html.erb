@@ -1,0 +1,57 @@
+<p id="notice"><%= notice %></p>
+
+<p style='color:#ffffff;font-size:16px;font-family:PingFang-SC-Medium;'>當前位置: 管理系統 > 工作清單掃碼記錄</p>
+
+<div style='display:table;'>
+  <div style='display:table-row;'>
+    <div style='display:table-cell;background:#333333;width:1280px;height:30px;color:#ffffff;font-size:18px;font-family:PingFang-SC-Medium;text-align:center;'>工作清單掃碼記錄</div>
+  </div>
+  <div style='display:table-row;'>
+    <div style='display:table-cell;background:#ffffff;padding-left:5%;'>
+      
+
+
+<%= form_for(@wk_barcode) do |f| %>
+  <% if @wk_barcode.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@wk_barcode.errors.count, "error") %> prohibited this wk_barcode from being saved:</h2>
+
+      <ul>
+      <% @wk_barcode.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :wid %><br>
+    <%= f.text_field :wid %>
+  </div>
+  <div class="field">
+    <%= f.label :site %><br>
+    <% sites_array = Site.all.map{|site| [site.sname] if site.sname.match('Room') || site.sname=='ERCP' || site.sname=='外做' }.uniq %>
+    <%= select_tag :site_text, options_for_select(sites_array, params[:site_text]), :style=>'width:220px; height:40px;' %>
+  </div>
+  <div class="field">
+    <%= f.label :scandate %><br>
+    <%= f.date_select :scandate %>
+  </div>
+  <div class="field">
+    <%= f.label :scantime %><br>
+    <%= f.time_select :scantime, :include_seconds => true %>
+  </div>
+  <div class="actions">
+    <%= f.submit '新增工單掃碼記錄', :class=>"btn btn-large btn-primary", :style=>'background:#3376b2;width:180px;height:40px;margin-left:5%;' %>
+    <%= link_to '返回', wk_barcode_search_path , :class=>"btn btn-large btn-primary", :style=>'background:#f8b551;width:140px;height:40px;margin-left:5%;'%>
+  </div>
+<% end %>
+
+
+
+      
+    </div>
+  </div>
+</div>
+
+

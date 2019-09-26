@@ -1,0 +1,200 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+en:
+  global:
+    download: "Download"
+  activerecord:
+    attributes:
+      user:
+        uid: "ID"
+        upw: "Password"
+        uname: "Name"
+        utitle: "Title"
+        upower: "Power"
+        usort: "Sort"
+      scopy:
+        sortid: "Sort ID"
+        rid: "RFID Tag"
+        pid: "Property ID"
+        cid: "Manufacturing ID"
+        mid: "Model ID"
+        sid: "Scopy ID"
+        slabel: "Scopy Label"
+        sname: "Scopy Name"
+        sclass: "Scopy Class"
+        status: "status"
+        orid: "Old RFID Tag"
+        nrid: "New RFID Tag"
+        usagefrequency: "Usage Frequency"
+        usage: "Usage"
+        tag: "Tag"
+        lasttime: "Last Time"
+      worksense:
+        sortid: "Sort ID"
+        begindate: "Begin Date"
+        begintime: "Begin Time"
+        enddate: "End Date"
+        endtime: "End Time"
+        examrole: "Exam Role"
+        washrole: "Wash Role"
+        disinfectionrole: "Disinfection Role"
+        siteid: "Exam Site"
+        washid: "Wash Table ID"
+        disinfectionid: "Machine ID"
+        stagedate: "Use Date"
+        stage1time: "Stage 1"
+        stage1endtime: "Stage 1 End"
+        stage2time: "Stage 2"
+        stage3time: "Stage 3"
+        stage4time: "Stage 4"
+        paytime: "Pay Time"
+        savetime: "Save Time"
+        studydr: "Study Dr"
+        examtypeid: "Exam Type ID"
+      site:
+        sname: "Site Name"
+      patient:
+        pid: "Patient ID"
+        pname: "Patient Name"
+        birthday: "Birthday"
+        sex: "Sex"
+        telephone: "Telephone"
+        address: "Address"
+      examine:
+        seq: "Sequence"
+        eseq: "ESequence"
+        typeid: "Type"
+        typename: "Type Name"
+        source: "Patient Source"
+        stat: "status Code"
+        statname: "Status Name"
+        chargdate: "Charg Date"
+        chargtime: "Charg Time"
+        logindate: "Login Date"
+        logintime: "Login Time"
+        orderdr: "Order Dr ID"
+        orderdrname: "Order Dr Name"
+        studydr: "Study Dr ID"
+        studydrname: "Study Dr Name"
+        enterdr: "Enter Dr ID"
+        enterdrname: "Enter Dr Name"
+        orderdate: "Order Date"
+        ordertime: "Order Time"
+        completedate: "Complete Date"
+        completetime: "Complete Time"
+        enterdate: "Enter Date"
+        entertime: "Enter Time"
+        report: "Report"
+        pacsno: "PACS Number"
+        wid: "Work ID"
+      barcode:
+        pid: "Patient ID"
+        sname: "Site Name"
+      carbinet:
+        number: "Carbinet Number"
+        savedate: "Record Date"
+        savetime: "Record Time"
+        temperature: "Temperature"
+        humidity: "Humidity"
+        t1: "Machine 1 Temperature"
+        h1: "Machine 1 Humidity"
+        t2: "Machine 2 Temperature"
+        h2: "Machine 2 Humidity"
+        t3: "Machine 3 Temperature"
+        h3: "Machine 3 Humidity"
+        t4: "Machine 4 Temperature"
+        h4: "Machine 4 Humidity"
+        t5: "Machine 5 Temperature"
+        h5: "Machine 5 Humidity"
+        t6: "Machine 6 Temperature"
+        h6: "Machine 6 Humidity"
+        t7: "Machine 7 Temperature"
+        h7: "Machine 7 Humidity"
+        t8: "Machine 8 Temperature"
+        h8: "Machine 8 Humidity"
+      rf_barcode:
+        rid: "Barcode ID"
+        site: "Scan Site"
+        scandate: "Scan Date"
+        scantime: "Scan Time"
+      wk_barcode:
+        wid: "Work ID"
+        site: "Scan Site"
+        scandate: "Scan Date"
+        scantime: "Scan Time"
+      schedule:
+        workdate: "Work Date"
+        workpart: "Work Part"
+        uid: "Role ID"
+        uname: "Role Name"
+        site: "Site"
+      work:
+        wname: "Work Site ID"
+        wname: "Work Site Name"
+        wsort: "Sort"
+      disinfection:
+        sid: "Syrup ID"
+        pid: "Test Paper ID"
+        mid: "Machine ID"
+        mname: "Machine Name"
+        uid: "User ID"
+        problem: "Problem"
+      syrup:
+        sid: "Syrup ID"
+        deadlinedate: "Deadline Date"
+        begindate: "Begin Use Date"
+        begintime: "Begin Use Time"
+        lastdate: "Last Use Date"
+        lasttime: "Last Use Time"
+        times: "Times"
+        dayscount: "Days Count"
+        concentration: "Concentration"
+        piping: "Piping"
+      syrupperuse:
+        sid: "Syrup ID"
+        perusedate: "Peruse Date"
+        perusetime: "Peruse Time"
+      testpaper:
+        pid: "Test Paper ID"
+        paperscount: "Test Paper Count"
+        opendate: "Open Date"
+        deadlinedate: "Deadline Date"
+        qcdata: "QC Data"
+      testpaperperuse:
+        pid: "Test Paper ID"
+        perusedate: "Peruse Date"
+        perusetime: "Peruse Time"
+      sinkairkernel:
+        mid: "Machine ID"
+        mname: "Machine Name"
+        modifydate: "Modify Date"
+        modifytime: "Modify Time"
+        status: "Status"
+      sinkwaterkernel:
+        mid: "Machine ID"
+        mname: "Machine Name"
+        modifydate: "Modify Date"
+        modifytime: "Modify Time"
+        status: "Status"
+      holiday:
+        restdate: "Rest Date"
+        resttype: "Rest Type"

@@ -1,0 +1,43 @@
+<style>
+  .bg {
+    background-image: url(<%= asset_path 'BG.png' %>);
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+  }
+  .bg img {
+  	min-height: 100%;
+  }
+</style>
+
+
+<body>
+	<center>
+	  	<div class='bg'>
+			
+			    <br><br>
+
+			    <p style="font-size:90px; font-weight:bold; font-family:標楷體;">
+			      <%= image_tag("67790857.jpg", :style=>'weight:150px;height:150px;') %>
+			    </p>
+
+			    <br>
+			    <br>
+
+			    
+			    <%= link_to '排隊狀況', arrival_list_path, :class=>"btn btn-large btn-primary", :style=>'background:#3376b2;width:290px;height:100px;font-size:50pt;'  %>
+			    <br>
+			    <br>
+
+			    <%= link_to '各站人數', arrival_unitlist_path, :class=>"btn btn-large btn-primary", :style=>'background:#3376b2;width:290px;height:100px;font-size:50pt;'  %>
+			    <br>
+			    <br>
+
+
+			    <%= link_to '客戶位置', arrival_query_path, :class=>"btn btn-large btn-primary", :style=>'background:#80c269;width:290px;height:100px;font-size:50pt;'  %>
+			    <br>
+			    <br>
+
+			
+	 	</div>
+	</center>
+</body>

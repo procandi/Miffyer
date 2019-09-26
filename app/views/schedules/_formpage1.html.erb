@@ -1,0 +1,119 @@
+<p style='color:#ffffff;font-size:16px;font-family:PingFang-SC-Medium;'>當前位置: 班表排班系統 > 今日-場地排班</p>
+
+<div style='display:table;'>
+  <div style='display:table-row;'>
+    <div style='display:table-cell;background:#333333;width:1280px;height:30px;color:#ffffff;font-size:18px;font-family:PingFang-SC-Medium;text-align:center;'>今日-場地排班</div>
+  </div>
+  <div style='display:table-row;'>
+    <div style='display:table-cell;background:#ffffff;'>
+      
+
+      <%= form_tag :action => 'updatepage' do %>
+        <br><br>
+        <!-- map all scopy data to array variant, and show it to options_for_select. @xieyinghua -->
+        <% user_array = User.all.map{|user| [user.uname,user.uid] if user.utitle=='護理師'}.uniq %>
+
+
+        <p style='display:inline-block;color:#333333;font-size:16px;font-family:PingFang-SC-Medium;margin-left:5%;width:300px;'>
+          <%= t(:workdate, :scope=>[:activerecord,:attributes,:schedule]) %>：<%= text_field_tag :p1workdate_text, @d_now, :disabled=>true %>
+        </p>
+        <p style='display:inline-block;color:#333333;font-size:16px;font-family:PingFang-SC-Medium;margin-left:5%;width:300px;'>
+          <%= t(:workpart, :scope=>[:activerecord,:attributes,:schedule]) %>：<%= text_field_tag :p1workpart_text, '上午', :disabled=>true %>
+        </p>
+        <br>
+
+        <p style='display:inline-block;color:#333333;font-size:16px;font-family:PingFang-SC-Medium;margin-left:5%;width:100px;'>
+          Room1：<%= select_tag :p1room1_text, options_for_select(user_array, @results[:p1room1_text]) %>
+        </p>
+        <p style='display:inline-block;color:#333333;font-size:16px;font-family:PingFang-SC-Medium;margin-left:5%;width:100px;'>
+          Room2：<%= select_tag :p1room2_text, options_for_select(user_array, @results[:p1room2_text]) %>
+        </p>
+        <p style='display:inline-block;color:#333333;font-size:16px;font-family:PingFang-SC-Medium;margin-left:5%;width:100px;'>
+          Room3：<%= select_tag :p1room3_text, options_for_select(user_array, @results[:p1room3_text]) %>
+        </p>
+        <p style='display:inline-block;color:#333333;font-size:16px;font-family:PingFang-SC-Medium;margin-left:5%;width:100px;'>
+          Room4：<%= select_tag :p1room4_text, options_for_select(user_array, @results[:p1room4_text]) %>
+        </p>
+        <p style='display:inline-block;color:#333333;font-size:16px;font-family:PingFang-SC-Medium;margin-left:5%;width:100px;'>
+          Room5：<%= select_tag :p1room5_text, options_for_select(user_array, @results[:p1room5_text]) %>
+        </p>
+        <br>
+        <br>
+        <p style='display:inline-block;color:#333333;font-size:16px;font-family:PingFang-SC-Medium;margin-left:5%;width:100px;'>
+          ERCP：<%= select_tag :p1ercp_text, options_for_select(user_array, @results[:p1ercp_text]) %>
+        </p>
+        <p style='display:inline-block;color:#333333;font-size:16px;font-family:PingFang-SC-Medium;margin-left:5%;width:100px;'>
+          外做：<%= select_tag :p1out_text, options_for_select(user_array, @results[:p1out_text]) %>
+        </p>
+        <p style='display:inline-block;color:#333333;font-size:16px;font-family:PingFang-SC-Medium;margin-left:5%;width:100px;'>
+          洗淨室：<%= select_tag :p1wash1_text, options_for_select(user_array, @results[:p1wash1_text]) %>
+        </p>
+        <p style='display:inline-block;color:#333333;font-size:16px;font-family:PingFang-SC-Medium;margin-left:5%;width:100px;'>
+          洗淨室：<%= select_tag :p1wash2_text, options_for_select(user_array, @results[:p1wash2_text]) %>
+        </p>
+        <p style='display:inline-block;color:#333333;font-size:16px;font-family:PingFang-SC-Medium;margin-left:5%;width:100px;'>
+          消毒室：<%= select_tag :p1syrup_text, options_for_select(user_array, @results[:p1syrup_text]) %>
+        </p>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <p style='display:inline-block;color:#333333;font-size:16px;font-family:PingFang-SC-Medium;margin-left:5%;width:300px;'>
+          <%= t(:workdate, :scope=>[:activerecord,:attributes,:schedule]) %>：<%= text_field_tag :p2workdate_text, @d_now, :disabled=>true %>
+        </p>
+        <p style='display:inline-block;color:#333333;font-size:16px;font-family:PingFang-SC-Medium;margin-left:5%;width:300px;'>
+          <%= t(:workpart, :scope=>[:activerecord,:attributes,:schedule]) %>：<%= text_field_tag :p2workpart_text, '下午', :disabled=>true %>
+        </p>
+        <br>
+
+        <p style='display:inline-block;color:#333333;font-size:16px;font-family:PingFang-SC-Medium;margin-left:5%;width:100px;'>
+          Room1：<%= select_tag :p2room1_text, options_for_select(user_array, @results[:p2room1_text]) %>
+        </p>
+        <p style='display:inline-block;color:#333333;font-size:16px;font-family:PingFang-SC-Medium;margin-left:5%;width:100px;'>
+          Room2：<%= select_tag :p2room2_text, options_for_select(user_array, @results[:p2room2_text]) %>
+        </p>
+          <p style='display:inline-block;color:#333333;font-size:16px;font-family:PingFang-SC-Medium;margin-left:5%;width:100px;'>
+          Room3：<%= select_tag :p2room3_text, options_for_select(user_array, @results[:p2room3_text]) %>
+        </p>
+        <p style='display:inline-block;color:#333333;font-size:16px;font-family:PingFang-SC-Medium;margin-left:5%;width:100px;'>
+          Room4：<%= select_tag :p2room4_text, options_for_select(user_array, @results[:p2room4_text]) %>
+        </p>
+        <p style='display:inline-block;color:#333333;font-size:16px;font-family:PingFang-SC-Medium;margin-left:5%;width:100px;'>
+          Room5：<%= select_tag :p2room5_text, options_for_select(user_array, @results[:p2room5_text]) %>
+        </p>
+        <br>
+        <br>
+        <p style='display:inline-block;color:#333333;font-size:16px;font-family:PingFang-SC-Medium;margin-left:5%;width:100px;'>
+          ERCP：<%= select_tag :p2ercp_text, options_for_select(user_array, @results[:p2ercp_text]) %>
+        </p>
+        <p style='display:inline-block;color:#333333;font-size:16px;font-family:PingFang-SC-Medium;margin-left:5%;width:100px;'>
+          外做：<%= select_tag :p2out_text, options_for_select(user_array, @results[:p2out_text]) %>
+        </p>
+        <p style='display:inline-block;color:#333333;font-size:16px;font-family:PingFang-SC-Medium;margin-left:5%;width:100px;'>
+          洗淨室：<%= select_tag :p2wash1_text, options_for_select(user_array, @results[:p2wash1_text]) %>
+        </p>
+        <p style='display:inline-block;color:#333333;font-size:16px;font-family:PingFang-SC-Medium;margin-left:5%;width:100px;'>
+          洗淨室：<%= select_tag :p2wash2_text, options_for_select(user_array, @results[:p2wash2_text]) %>
+        </p>
+        <p style='display:inline-block;color:#333333;font-size:16px;font-family:PingFang-SC-Medium;margin-left:5%;width:100px;'>
+          消毒室：<%= select_tag :p2syrup_text, options_for_select(user_array, @results[:p2syrup_text]) %>
+        </p>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <br>
+        <br>
+
+        <center><%= submit_tag '更新', :class=>"btn btn-large btn-primary" %></center>
+
+        <br>
+        <br>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+

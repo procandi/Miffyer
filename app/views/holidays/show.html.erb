@@ -1,0 +1,33 @@
+<p style='color:#ffffff;font-size:16px;font-family:PingFang-SC-Medium;'>當前位置: 班表排班系統 > 國定假日設定</p>
+
+<div style='display:table;'>
+  <div style='display:table-row;'>
+    <div style='display:table-cell;background:#333333;width:1280px;height:30px;color:#ffffff;font-size:18px;font-family:PingFang-SC-Medium;text-align:center;'>國定假日設定</div>
+  </div>
+  <div style='display:table-row;'>
+    <div style='display:table-cell;background:#ffffff;padding-left:5%;'>
+
+
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong><%= t(:restdate, :scope=>[:activerecord,:attributes,:holiday]) %>:</strong>
+  <%= @holiday.restdate %>
+</p>
+
+<p>
+  <strong><%= t(:resttype, :scope=>[:activerecord,:attributes,:holiday]) %>:</strong>
+  <%= @holiday.resttype %>
+</p>
+
+<%= link_to '修改', edit_holiday_path(@holiday) %> |
+<%= link_to '返回', holidays_path %>
+
+
+
+
+    </div>
+  </div>
+</div>
+

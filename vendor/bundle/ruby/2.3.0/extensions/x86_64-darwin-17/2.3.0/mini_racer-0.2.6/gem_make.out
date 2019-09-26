@@ -1,0 +1,28 @@
+current directory: /Users/xieyinghua/workspace/arrivalsort/vendor/bundle/ruby/2.3.0/gems/mini_racer-0.2.6/ext/mini_racer_extension
+/Users/xieyinghua/.rvm/rubies/ruby-2.3.1/bin/ruby -r ./siteconf20190909-5827-1os376.rb extconf.rb
+checking for main() in -lpthread... yes
+checking for main() in -lobjc... yes
+creating Makefile
+
+current directory: /Users/xieyinghua/workspace/arrivalsort/vendor/bundle/ruby/2.3.0/gems/mini_racer-0.2.6/ext/mini_racer_extension
+make "DESTDIR=" clean
+
+current directory: /Users/xieyinghua/workspace/arrivalsort/vendor/bundle/ruby/2.3.0/gems/mini_racer-0.2.6/ext/mini_racer_extension
+make "DESTDIR="
+compiling mini_racer_extension.cc
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+In file included from mini_racer_extension.cc:2:
+In file included from /Users/xieyinghua/.rvm/rubies/ruby-2.3.1/include/ruby-2.3.0/ruby.h:33:
+In file included from /Users/xieyinghua/.rvm/rubies/ruby-2.3.1/include/ruby-2.3.0/ruby/ruby.h:1988:
+/Users/xieyinghua/.rvm/rubies/ruby-2.3.1/include/ruby-2.3.0/ruby/intern.h:47:19: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+void rb_mem_clear(register VALUE*, register long);
+                  ^~~~~~~~~
+/Users/xieyinghua/.rvm/rubies/ruby-2.3.1/include/ruby-2.3.0/ruby/intern.h:47:36: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+void rb_mem_clear(register VALUE*, register long);
+                                   ^~~~~~~~~
+2 warnings generated.
+linking shared-object mini_racer_extension.bundle
+
+current directory: /Users/xieyinghua/workspace/arrivalsort/vendor/bundle/ruby/2.3.0/gems/mini_racer-0.2.6/ext/mini_racer_extension
+make "DESTDIR=" install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 mini_racer_extension.bundle ./.gem.20190909-5827-15xhqo

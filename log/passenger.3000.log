@@ -1,0 +1,557 @@
+[ N 2019-07-12 12:08:35.0370 2402/T1 age/Wat/WatchdogMain.cpp:1366 ]: Starting Passenger watchdog...
+[ N 2019-07-12 12:08:35.0874 2404/T1 age/Cor/CoreMain.cpp:1339 ]: Starting Passenger core...
+[ N 2019-07-12 12:08:35.0944 2404/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2019-07-12 12:08:35.1696 2404/T1 age/Cor/CoreMain.cpp:1014 ]: Passenger core online, PID 2404
+[ N 2019-07-12 12:08:38.9756 2404/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+App 2419 output: /Users/xieyinghua/workspace/cch_hissyncwebservice/app/controllers/us_barcodes_controller.rb:26: warning: found = in conditional, should be ==
+App 2419 output: /Users/xieyinghua/workspace/cch_hissyncwebservice/app/controllers/us_barcodes_controller.rb:24: warning: found = in conditional, should be ==
+App 2419 output: /Users/xieyinghua/workspace/cch_hissyncwebservice/app/controllers/us_barcodes_controller.rb:22: warning: found = in conditional, should be ==
+App 2419 output: /Users/xieyinghua/workspace/cch_hissyncwebservice/app/controllers/us_barcodes_controller.rb:20: warning: found = in conditional, should be ==
+App 2419 output: /Users/xieyinghua/workspace/cch_hissyncwebservice/app/controllers/us_barcodes_controller.rb:18: warning: found = in conditional, should be ==
+App 2419 output: /Users/xieyinghua/workspace/cch_hissyncwebservice/app/controllers/us_barcodes_controller.rb:16: warning: found = in conditional, should be ==
+App 2419 output: /Users/xieyinghua/workspace/cch_hissyncwebservice/app/controllers/us_barcodes_controller.rb:14: warning: found = in conditional, should be ==
+App 2419 output: /Users/xieyinghua/workspace/cch_hissyncwebservice/app/controllers/us_barcodes_controller.rb:12: warning: found = in conditional, should be ==
+App 2419 output: /Users/xieyinghua/workspace/cch_hissyncwebservice/app/controllers/us_barcodes_controller.rb:10: warning: found = in conditional, should be ==
+App 2419 output: [Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+App 2447 output: Started HEAD "/" for 127.0.0.1 at 2019-07-12 12:08:41 +0800
+App 2447 output: Processing by RootController#home as HTML
+App 2447 output:   Rendered root/home.html.erb within layouts/application (2.5ms)
+App 2447 output:   [1m[36mUser Load (2.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1[0m
+App 2447 output:   [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1
+App 2447 output:   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1[0m
+App 2447 output:   Rendered common/_navbar.html.erb (16.6ms)
+App 2447 output:   [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1
+App 2447 output:   Rendered common/_footer.html.erb (0.6ms)
+App 2447 output: Completed 200 OK in 55ms (Views: 39.8ms | ActiveRecord: 8.5ms)
+App 2447 output: Started GET "/" for 127.0.0.1 at 2019-07-12 12:08:54 +0800
+App 2447 output: Processing by RootController#home as HTML
+App 2447 output:   Rendered root/home.html.erb within layouts/application (0.4ms)
+App 2447 output:   [1m[36mUser Load (7.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1[0m
+App 2447 output:   [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1
+App 2447 output:   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1[0m
+App 2447 output:   Rendered common/_navbar.html.erb (10.2ms)
+App 2447 output:   [1m[35mCACHE (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1
+App 2447 output:   Rendered common/_footer.html.erb (0.2ms)
+App 2447 output: Completed 200 OK in 15ms (Views: 5.7ms | ActiveRecord: 7.7ms)
+App 2447 output: Started GET "/session/new" for 127.0.0.1 at 2019-07-12 12:08:56 +0800
+App 2447 output: Processing by SessionsController#new as HTML
+App 2447 output:   Rendered sessions/new.html.erb within layouts/application (397.1ms)
+App 2447 output:   [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1[0m
+App 2447 output:   [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1
+App 2447 output:   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1[0m
+App 2447 output:   Rendered common/_navbar.html.erb (1.9ms)
+App 2447 output:   [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1
+App 2447 output:   Rendered common/_footer.html.erb (0.1ms)
+App 2447 output: Completed 200 OK in 417ms (Views: 413.8ms | ActiveRecord: 0.4ms)
+App 2447 output: Started POST "/session" for 127.0.0.1 at 2019-07-12 12:08:58 +0800
+App 2447 output: Processing by SessionsController#create as HTML
+App 2447 output:   Parameters: {"utf8"=>"✓", "authenticity_token"=>"2Jx+j+9xtOqPpHr71vbu/kdpCFWIceNt/HLD57u/5vlxd/dRFwO9DRMDc/6ZIm4cuj46oGNCmpgfWoNd/P0zpQ==", "session"=>{"uid"=>"9999", "upw"=>"1111"}, "commit"=>"Sign-in"}
+App 2447 output:   [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."uid" = $1 LIMIT 1[0m  [["uid", "9999"]]
+App 2447 output: Redirected to http://localhost:3000/users/50
+App 2447 output: Completed 302 Found in 30ms (ActiveRecord: 12.8ms)
+App 2447 output: Started GET "/users/50" for 127.0.0.1 at 2019-07-12 12:08:58 +0800
+App 2447 output: Processing by UsersController#show as HTML
+App 2447 output:   Parameters: {"id"=>"50"}
+App 2447 output:   [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 50]]
+App 2447 output:   Rendered users/show.html.erb within layouts/application (2.0ms)
+App 2447 output:   [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "6c0340a9426856bd6249e96bfab5fb73ea29ac84"]]
+App 2447 output:   Rendered common/_navbar.html.erb (2.6ms)
+App 2447 output:   Rendered common/_footer.html.erb (0.1ms)
+App 2447 output: Completed 200 OK in 18ms (Views: 15.2ms | ActiveRecord: 0.5ms)
+App 2447 output: Started GET "/carbinet/indexline" for 127.0.0.1 at 2019-07-12 12:10:12 +0800
+App 2447 output: Processing by CarbinetsController#indexline as HTML
+App 2447 output:   Rendered carbinets/_formsearch.html.erb (1.6ms)
+App 2447 output:   Rendered carbinets/indexline.html.erb within layouts/application (8.1ms)
+App 2447 output:   [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "6c0340a9426856bd6249e96bfab5fb73ea29ac84"]]
+App 2447 output:   Rendered common/_navbar.html.erb (1.9ms)
+App 2447 output:   Rendered common/_footer.html.erb (0.1ms)
+App 2447 output: Completed 200 OK in 22ms (Views: 20.5ms | ActiveRecord: 0.3ms)
+App 2447 output: Started GET "/assets/steel.jpg" for 127.0.0.1 at 2019-07-12 12:10:14 +0800
+App 2447 output: 
+App 2447 output: ActionController::RoutingError (No route matches [GET] "/assets/steel.jpg"):
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/rack/logger.rb:38:in `call_app'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/rack/logger.rb:20:in `block in call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.6/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.6/lib/active_support/tagged_logging.rb:26:in `tagged'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.6/lib/active_support/tagged_logging.rb:68:in `tagged'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/rack/logger.rb:20:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/rack-1.6.8/lib/rack/methodoverride.rb:22:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/rack-1.6.8/lib/rack/runtime.rb:18:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.6/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/static.rb:120:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/rack-1.6.8/lib/rack/sendfile.rb:113:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/rack-cors-1.0.2/lib/rack/cors.rb:97:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/engine.rb:518:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/application.rb:165:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/passenger-6.0.2/src/ruby_supportlib/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/passenger-6.0.2/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/passenger-6.0.2/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/passenger-6.0.2/src/ruby_supportlib/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/passenger-6.0.2/src/ruby_supportlib/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+App 2447 output: 
+App 2447 output: 
+App 2447 output: Started GET "/assets/brushed-steel.jpg" for 127.0.0.1 at 2019-07-12 12:10:14 +0800
+App 2447 output: 
+App 2447 output: ActionController::RoutingError (No route matches [GET] "/assets/brushed-steel.jpg"):
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/rack/logger.rb:38:in `call_app'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/rack/logger.rb:20:in `block in call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.6/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.6/lib/active_support/tagged_logging.rb:26:in `tagged'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.6/lib/active_support/tagged_logging.rb:68:in `tagged'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/rack/logger.rb:20:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/rack-1.6.8/lib/rack/methodoverride.rb:22:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/rack-1.6.8/lib/rack/runtime.rb:18:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.6/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/static.rb:120:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/rack-1.6.8/lib/rack/sendfile.rb:113:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/rack-cors-1.0.2/lib/rack/cors.rb:97:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/engine.rb:518:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/application.rb:165:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/passenger-6.0.2/src/ruby_supportlib/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/passenger-6.0.2/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/passenger-6.0.2/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/passenger-6.0.2/src/ruby_supportlib/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/passenger-6.0.2/src/ruby_supportlib/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+App 2447 output: 
+App 2447 output: 
+App 2447 output: Started GET "/assets/img/nav-left-x2.gif" for 127.0.0.1 at 2019-07-12 12:10:14 +0800
+App 2447 output: 
+App 2447 output: ActionController::RoutingError (No route matches [GET] "/assets/img/nav-left-x2.gif"):
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/rack/logger.rb:38:in `call_app'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/rack/logger.rb:20:in `block in call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.6/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.6/lib/active_support/tagged_logging.rb:26:in `tagged'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.6/lib/active_support/tagged_logging.rb:68:in `tagged'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/rack/logger.rb:20:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/rack-1.6.8/lib/rack/methodoverride.rb:22:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/rack-1.6.8/lib/rack/runtime.rb:18:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.6/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/static.rb:120:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/rack-1.6.8/lib/rack/sendfile.rb:113:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/rack-cors-1.0.2/lib/rack/cors.rb:97:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/engine.rb:518:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/application.rb:165:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/passenger-6.0.2/src/ruby_supportlib/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/passenger-6.0.2/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/passenger-6.0.2/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/passenger-6.0.2/src/ruby_supportlib/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/passenger-6.0.2/src/ruby_supportlib/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+App 2447 output: 
+App 2447 output: 
+App 2447 output: Started GET "/assets/img/nav-right-x2.gif" for 127.0.0.1 at 2019-07-12 12:10:14 +0800
+App 2447 output: 
+App 2447 output: ActionController::RoutingError (No route matches [GET] "/assets/img/nav-right-x2.gif"):
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/rack/logger.rb:38:in `call_app'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/rack/logger.rb:20:in `block in call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.6/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.6/lib/active_support/tagged_logging.rb:26:in `tagged'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.6/lib/active_support/tagged_logging.rb:68:in `tagged'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/rack/logger.rb:20:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/rack-1.6.8/lib/rack/methodoverride.rb:22:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/rack-1.6.8/lib/rack/runtime.rb:18:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.6/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/static.rb:120:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/rack-1.6.8/lib/rack/sendfile.rb:113:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/rack-cors-1.0.2/lib/rack/cors.rb:97:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/engine.rb:518:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/application.rb:165:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/passenger-6.0.2/src/ruby_supportlib/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/passenger-6.0.2/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/passenger-6.0.2/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/passenger-6.0.2/src/ruby_supportlib/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/passenger-6.0.2/src/ruby_supportlib/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+App 2447 output: 
+App 2447 output: 
+App 2447 output: Started GET "/assets/img/nav-left.gif" for 127.0.0.1 at 2019-07-12 12:10:14 +0800
+App 2447 output: 
+App 2447 output: ActionController::RoutingError (No route matches [GET] "/assets/img/nav-left.gif"):
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/rack/logger.rb:38:in `call_app'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/rack/logger.rb:20:in `block in call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.6/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.6/lib/active_support/tagged_logging.rb:26:in `tagged'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.6/lib/active_support/tagged_logging.rb:68:in `tagged'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/rack/logger.rb:20:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/rack-1.6.8/lib/rack/methodoverride.rb:22:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/rack-1.6.8/lib/rack/runtime.rb:18:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.6/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/static.rb:120:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/rack-1.6.8/lib/rack/sendfile.rb:113:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/rack-cors-1.0.2/lib/rack/cors.rb:97:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/engine.rb:518:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/application.rb:165:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/passenger-6.0.2/src/ruby_supportlib/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/passenger-6.0.2/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/passenger-6.0.2/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/passenger-6.0.2/src/ruby_supportlib/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/passenger-6.0.2/src/ruby_supportlib/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+App 2447 output: 
+App 2447 output: 
+App 2447 output: Started GET "/assets/img/nav-right.gif" for 127.0.0.1 at 2019-07-12 12:10:14 +0800
+App 2447 output: 
+App 2447 output: ActionController::RoutingError (No route matches [GET] "/assets/img/nav-right.gif"):
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/rack/logger.rb:38:in `call_app'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/rack/logger.rb:20:in `block in call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.6/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.6/lib/active_support/tagged_logging.rb:26:in `tagged'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.6/lib/active_support/tagged_logging.rb:68:in `tagged'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/rack/logger.rb:20:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/rack-1.6.8/lib/rack/methodoverride.rb:22:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/rack-1.6.8/lib/rack/runtime.rb:18:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.6/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/static.rb:120:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/rack-1.6.8/lib/rack/sendfile.rb:113:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/rack-cors-1.0.2/lib/rack/cors.rb:97:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/engine.rb:518:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/application.rb:165:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/passenger-6.0.2/src/ruby_supportlib/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/passenger-6.0.2/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/passenger-6.0.2/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/passenger-6.0.2/src/ruby_supportlib/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/passenger-6.0.2/src/ruby_supportlib/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+App 2447 output: 
+App 2447 output: 
+App 2447 output: Started GET "/assets/img/time-up.png" for 127.0.0.1 at 2019-07-12 12:10:14 +0800
+App 2447 output: 
+App 2447 output: ActionController::RoutingError (No route matches [GET] "/assets/img/time-up.png"):
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/rack/logger.rb:38:in `call_app'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/rack/logger.rb:20:in `block in call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.6/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.6/lib/active_support/tagged_logging.rb:26:in `tagged'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.6/lib/active_support/tagged_logging.rb:68:in `tagged'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/rack/logger.rb:20:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/rack-1.6.8/lib/rack/methodoverride.rb:22:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/rack-1.6.8/lib/rack/runtime.rb:18:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.6/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/static.rb:120:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/rack-1.6.8/lib/rack/sendfile.rb:113:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/rack-cors-1.0.2/lib/rack/cors.rb:97:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/engine.rb:518:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/application.rb:165:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/passenger-6.0.2/src/ruby_supportlib/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/passenger-6.0.2/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/passenger-6.0.2/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/passenger-6.0.2/src/ruby_supportlib/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/passenger-6.0.2/src/ruby_supportlib/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+App 2447 output: 
+App 2447 output: 
+App 2447 output: Started GET "/assets/img/time-down.png" for 127.0.0.1 at 2019-07-12 12:10:14 +0800
+App 2447 output: 
+App 2447 output: ActionController::RoutingError (No route matches [GET] "/assets/img/time-down.png"):
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/rack/logger.rb:38:in `call_app'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/rack/logger.rb:20:in `block in call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.6/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.6/lib/active_support/tagged_logging.rb:26:in `tagged'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.6/lib/active_support/tagged_logging.rb:68:in `tagged'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/rack/logger.rb:20:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/rack-1.6.8/lib/rack/methodoverride.rb:22:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/rack-1.6.8/lib/rack/runtime.rb:18:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.6/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/static.rb:120:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/rack-1.6.8/lib/rack/sendfile.rb:113:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/rack-cors-1.0.2/lib/rack/cors.rb:97:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/engine.rb:518:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/application.rb:165:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/passenger-6.0.2/src/ruby_supportlib/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/passenger-6.0.2/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/passenger-6.0.2/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/passenger-6.0.2/src/ruby_supportlib/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/passenger-6.0.2/src/ruby_supportlib/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+App 2447 output: 
+App 2447 output: 
+App 2447 output: Started GET "/shadow-b.png" for 127.0.0.1 at 2019-07-12 12:10:14 +0800
+App 2447 output: 
+App 2447 output: ActionController::RoutingError (No route matches [GET] "/shadow-b.png"):
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/rack/logger.rb:38:in `call_app'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/rack/logger.rb:20:in `block in call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.6/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.6/lib/active_support/tagged_logging.rb:26:in `tagged'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.6/lib/active_support/tagged_logging.rb:68:in `tagged'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/rack/logger.rb:20:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/rack-1.6.8/lib/rack/methodoverride.rb:22:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/rack-1.6.8/lib/rack/runtime.rb:18:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.6/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/static.rb:120:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/rack-1.6.8/lib/rack/sendfile.rb:113:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/rack-cors-1.0.2/lib/rack/cors.rb:97:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/engine.rb:518:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/application.rb:165:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/passenger-6.0.2/src/ruby_supportlib/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/passenger-6.0.2/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/passenger-6.0.2/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/passenger-6.0.2/src/ruby_supportlib/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/passenger-6.0.2/src/ruby_supportlib/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+App 2447 output: 
+App 2447 output: 
+App 2447 output: Started GET "/assets/coolbg.png" for 127.0.0.1 at 2019-07-12 12:10:14 +0800
+App 2447 output: 
+App 2447 output: ActionController::RoutingError (No route matches [GET] "/assets/coolbg.png"):
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/rack/logger.rb:38:in `call_app'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/rack/logger.rb:20:in `block in call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.6/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.6/lib/active_support/tagged_logging.rb:26:in `tagged'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.6/lib/active_support/tagged_logging.rb:68:in `tagged'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/rack/logger.rb:20:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/rack-1.6.8/lib/rack/methodoverride.rb:22:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/rack-1.6.8/lib/rack/runtime.rb:18:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.6/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/static.rb:120:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/rack-1.6.8/lib/rack/sendfile.rb:113:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/rack-cors-1.0.2/lib/rack/cors.rb:97:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/engine.rb:518:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/application.rb:165:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/passenger-6.0.2/src/ruby_supportlib/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/passenger-6.0.2/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/passenger-6.0.2/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/passenger-6.0.2/src/ruby_supportlib/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/passenger-6.0.2/src/ruby_supportlib/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+App 2447 output: 
+App 2447 output: 
+App 2447 output: Started GET "/assets/coolbg.png" for 127.0.0.1 at 2019-07-12 12:10:14 +0800
+App 2447 output: 
+App 2447 output: ActionController::RoutingError (No route matches [GET] "/assets/coolbg.png"):
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/rack/logger.rb:38:in `call_app'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/rack/logger.rb:20:in `block in call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.6/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.6/lib/active_support/tagged_logging.rb:26:in `tagged'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.6/lib/active_support/tagged_logging.rb:68:in `tagged'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/rack/logger.rb:20:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/rack-1.6.8/lib/rack/methodoverride.rb:22:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/rack-1.6.8/lib/rack/runtime.rb:18:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.6/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/static.rb:120:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/rack-1.6.8/lib/rack/sendfile.rb:113:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/rack-cors-1.0.2/lib/rack/cors.rb:97:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/engine.rb:518:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/application.rb:165:in `call'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/passenger-6.0.2/src/ruby_supportlib/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/passenger-6.0.2/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/passenger-6.0.2/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/passenger-6.0.2/src/ruby_supportlib/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+App 2447 output:   vendor/bundle/ruby/2.3.0/gems/passenger-6.0.2/src/ruby_supportlib/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+App 2447 output: 
+App 2447 output: 
+
+[ N 2019-07-12 12:10:24.5015 2404/T8 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2019-07-12 12:10:24.5015 2404/T1 age/Cor/CoreMain.cpp:1245 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2019-07-12 12:10:24.5016 2404/T1 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 2447, application /Users/xieyinghua/workspace/cch_hissyncwebservice (production)
+[ N 2019-07-12 12:10:24.5017 2404/T1 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 2513, application /Users/xieyinghua/workspace/cch_hissyncwebservice (production)
+[ N 2019-07-12 12:10:24.5021 2404/T8 Ser/Server.h:901 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2019-07-12 12:10:24.5022 2404/Te Ser/Server.h:901 ]: [ServerThr.4] Freed 0 spare client objects
+[ N 2019-07-12 12:10:24.5022 2404/Tc Ser/Server.h:901 ]: [ServerThr.3] Freed 0 spare client objects
+[ N 2019-07-12 12:10:24.5021 2404/Ta Ser/Server.h:901 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2019-07-12 12:10:24.5025 2404/T8 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2019-07-12 12:10:24.5026 2404/Te Ser/Server.h:558 ]: [ServerThr.4] Shutdown finished
+[ N 2019-07-12 12:10:24.5026 2404/Tc Ser/Server.h:558 ]: [ServerThr.3] Shutdown finished
+[ N 2019-07-12 12:10:24.5026 2404/Ta Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2019-07-12 12:10:24.5093 2404/Tg Ser/Server.h:901 ]: [ApiServer] Freed 0 spare client objects
+[ N 2019-07-12 12:10:24.5100 2404/Tg Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2019-07-12 12:10:24.5121 2404/T1 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 2447, application /Users/xieyinghua/workspace/cch_hissyncwebservice (production)
+[ N 2019-07-12 12:10:24.5123 2404/T1 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 2513, application /Users/xieyinghua/workspace/cch_hissyncwebservice (production)
+[ N 2019-07-12 12:10:26.3561 2404/T1 age/Cor/CoreMain.cpp:1324 ]: Passenger core shutdown finished
+2019/09/24 12:22:05 [emerg] 7811#0: bind() to 0.0.0.0:3000 failed (48: Address already in use)
+2019/09/24 12:22:05 [emerg] 7811#0: bind() to 0.0.0.0:3000 failed (48: Address already in use)
+2019/09/24 12:22:05 [emerg] 7811#0: bind() to 0.0.0.0:3000 failed (48: Address already in use)
+2019/09/24 12:22:05 [emerg] 7811#0: bind() to 0.0.0.0:3000 failed (48: Address already in use)
+2019/09/24 12:22:05 [emerg] 7811#0: bind() to 0.0.0.0:3000 failed (48: Address already in use)
+2019/09/24 12:22:05 [emerg] 7811#0: still could not bind()
+[ N 2019-09-24 12:29:02.4290 1181/T1 age/Wat/WatchdogMain.cpp:1366 ]: Starting Passenger watchdog...
+[ N 2019-09-24 12:29:02.4865 1183/T1 age/Cor/CoreMain.cpp:1339 ]: Starting Passenger core...
+[ N 2019-09-24 12:29:02.4875 1183/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2019-09-24 12:29:02.5555 1183/T1 age/Cor/CoreMain.cpp:1014 ]: Passenger core online, PID 1183
+[ N 2019-09-24 12:29:06.2843 1183/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+App 1202 output: /Users/xieyinghua/workspace/arrivalsort/app/controllers/us_barcodes_controller.rb:26: warning: found = in conditional, should be ==
+App 1202 output: /Users/xieyinghua/workspace/arrivalsort/app/controllers/us_barcodes_controller.rb:24: warning: found = in conditional, should be ==
+App 1202 output: /Users/xieyinghua/workspace/arrivalsort/app/controllers/us_barcodes_controller.rb:22: warning: found = in conditional, should be ==
+App 1202 output: /Users/xieyinghua/workspace/arrivalsort/app/controllers/us_barcodes_controller.rb:20: warning: found = in conditional, should be ==
+App 1202 output: /Users/xieyinghua/workspace/arrivalsort/app/controllers/us_barcodes_controller.rb:18: warning: found = in conditional, should be ==
+App 1202 output: /Users/xieyinghua/workspace/arrivalsort/app/controllers/us_barcodes_controller.rb:16: warning: found = in conditional, should be ==
+App 1202 output: /Users/xieyinghua/workspace/arrivalsort/app/controllers/us_barcodes_controller.rb:14: warning: found = in conditional, should be ==
+App 1202 output: /Users/xieyinghua/workspace/arrivalsort/app/controllers/us_barcodes_controller.rb:12: warning: found = in conditional, should be ==
+App 1202 output: /Users/xieyinghua/workspace/arrivalsort/app/controllers/us_barcodes_controller.rb:10: warning: found = in conditional, should be ==
+App 1236 output: Started HEAD "/" for 127.0.0.1 at 2019-09-24 12:29:08 +0800
+App 1236 output: 
+App 1236 output: PG::ConnectionBad (could not connect to server: Connection refused
+App 1236 output: 	Is the server running on host "localhost" (::1) and accepting
+App 1236 output: 	TCP/IP connections on port 5432?
+App 1236 output: could not connect to server: Connection refused
+App 1236 output: 	Is the server running on host "localhost" (127.0.0.1) and accepting
+App 1236 output: 	TCP/IP connections on port 5432?
+App 1236 output: ):
+App 1236 output:   activerecord (4.2.6) lib/active_record/connection_adapters/postgresql_adapter.rb:651:in `initialize'
+App 1236 output:   activerecord (4.2.6) lib/active_record/connection_adapters/postgresql_adapter.rb:651:in `new'
+App 1236 output:   activerecord (4.2.6) lib/active_record/connection_adapters/postgresql_adapter.rb:651:in `connect'
+App 1236 output:   activerecord (4.2.6) lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+App 1236 output:   activerecord (4.2.6) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `new'
+App 1236 output:   activerecord (4.2.6) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+App 1236 output:   activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+App 1236 output:   activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+App 1236 output:   activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+App 1236 output:   activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+App 1236 output:   /Users/xieyinghua/.rvm/rubies/ruby-2.3.4/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+App 1236 output:   activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+App 1236 output:   activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+App 1236 output:   /Users/xieyinghua/.rvm/rubies/ruby-2.3.4/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+App 1236 output:   activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+App 1236 output:   activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:571:in `retrieve_connection'
+App 1236 output:   activerecord (4.2.6) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+App 1236 output:   activerecord (4.2.6) lib/active_record/connection_handling.rb:87:in `connection'
+App 1236 output:   activerecord (4.2.6) lib/active_record/query_cache.rb:51:in `restore_query_cache_settings'
+App 1236 output:   activerecord (4.2.6) lib/active_record/query_cache.rb:43:in `rescue in call'
+App 1236 output:   activerecord (4.2.6) lib/active_record/query_cache.rb:31:in `call'
+App 1236 output:   activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+App 1236 output:   actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+App 1236 output:   activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+App 1236 output:   activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+App 1236 output:   activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+App 1236 output:   actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+App 1236 output:   actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+App 1236 output:   actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+App 1236 output:   actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+App 1236 output:   railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+App 1236 output:   railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+App 1236 output:   activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+App 1236 output:   activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+App 1236 output:   activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+App 1236 output:   railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+App 1236 output:   actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+App 1236 output:   rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+App 1236 output:   rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+App 1236 output:   activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+App 1236 output:   actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+App 1236 output:   rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+App 1236 output:   rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+App 1236 output:   railties (4.2.6) lib/rails/engine.rb:518:in `call'
+App 1236 output:   railties (4.2.6) lib/rails/application.rb:165:in `call'
+App 1236 output:   passenger (6.0.2) src/ruby_supportlib/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+App 1236 output:   passenger (6.0.2) src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:157:in `accept_and_process_next_request'
+App 1236 output:   passenger (6.0.2) src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+App 1236 output:   passenger (6.0.2) src/ruby_supportlib/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+App 1236 output:   passenger (6.0.2) src/ruby_supportlib/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+App 1236 output: 
+App 1236 output: 
+
+[ N 2019-09-24 12:30:20.2623 1183/T8 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2019-09-24 12:30:20.2623 1183/T1 age/Cor/CoreMain.cpp:1245 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2019-09-24 12:30:20.2624 1183/T1 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 1236, application /Users/xieyinghua/workspace/arrivalsort (production)
+[ N 2019-09-24 12:30:20.2624 1183/Ta Ser/Server.h:901 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2019-09-24 12:30:20.2624 1183/Tc Ser/Server.h:901 ]: [ServerThr.3] Freed 0 spare client objects
+[ N 2019-09-24 12:30:20.2625 1183/Te Ser/Server.h:901 ]: [ServerThr.4] Freed 0 spare client objects
+[ N 2019-09-24 12:30:20.2625 1183/Tc Ser/Server.h:558 ]: [ServerThr.3] Shutdown finished
+[ N 2019-09-24 12:30:20.2625 1183/T8 Ser/Server.h:901 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2019-09-24 12:30:20.2625 1183/Te Ser/Server.h:558 ]: [ServerThr.4] Shutdown finished
+[ N 2019-09-24 12:30:20.2625 1183/Ta Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2019-09-24 12:30:20.2625 1183/T8 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2019-09-24 12:30:20.2626 1183/Tg Ser/Server.h:901 ]: [ApiServer] Freed 0 spare client objects
+[ N 2019-09-24 12:30:20.2626 1183/Tg Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2019-09-24 12:30:20.2632 1183/T1 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 1236, application /Users/xieyinghua/workspace/arrivalsort (production)
+[ N 2019-09-24 12:30:22.2229 1183/T1 age/Cor/CoreMain.cpp:1324 ]: Passenger core shutdown finished
+[ N 2019-09-24 12:31:22.7751 1436/T1 age/Wat/WatchdogMain.cpp:1366 ]: Starting Passenger watchdog...
+[ N 2019-09-24 12:31:22.8086 1438/T1 age/Cor/CoreMain.cpp:1339 ]: Starting Passenger core...
+[ N 2019-09-24 12:31:22.8088 1438/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2019-09-24 12:31:22.8242 1438/T1 age/Cor/CoreMain.cpp:1014 ]: Passenger core online, PID 1438
+[ N 2019-09-24 12:31:26.4704 1438/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+App 1452 output: /Users/xieyinghua/workspace/arrivalsort/app/controllers/us_barcodes_controller.rb:26: warning: found = in conditional, should be ==
+App 1452 output: /Users/xieyinghua/workspace/arrivalsort/app/controllers/us_barcodes_controller.rb:24: warning: found = in conditional, should be ==
+App 1452 output: /Users/xieyinghua/workspace/arrivalsort/app/controllers/us_barcodes_controller.rb:22: warning: found = in conditional, should be ==
+App 1452 output: /Users/xieyinghua/workspace/arrivalsort/app/controllers/us_barcodes_controller.rb:20: warning: found = in conditional, should be ==
+App 1452 output: /Users/xieyinghua/workspace/arrivalsort/app/controllers/us_barcodes_controller.rb:18: warning: found = in conditional, should be ==
+App 1452 output: /Users/xieyinghua/workspace/arrivalsort/app/controllers/us_barcodes_controller.rb:16: warning: found = in conditional, should be ==
+App 1452 output: /Users/xieyinghua/workspace/arrivalsort/app/controllers/us_barcodes_controller.rb:14: warning: found = in conditional, should be ==
+App 1452 output: /Users/xieyinghua/workspace/arrivalsort/app/controllers/us_barcodes_controller.rb:12: warning: found = in conditional, should be ==
+App 1452 output: /Users/xieyinghua/workspace/arrivalsort/app/controllers/us_barcodes_controller.rb:10: warning: found = in conditional, should be ==
+App 1479 output: Started HEAD "/" for 127.0.0.1 at 2019-09-24 12:31:27 +0800
+App 1479 output: Processing by RootController#home as HTML
+App 1479 output:   Rendered root/home.html.erb within layouts/application (2.1ms)
+App 1479 output:   [1m[36mUser Load (3.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1[0m
+App 1479 output:   [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1
+App 1479 output:   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1[0m
+App 1479 output:   [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1
+App 1479 output:   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1[0m
+App 1479 output:   [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1
+App 1479 output:   Rendered common/_navbar.html.erb (28.0ms)
+App 1479 output:   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1[0m
+App 1479 output:   Rendered common/_footer.html.erb (0.7ms)
+App 1479 output: Completed 200 OK in 65ms (Views: 45.4ms | ActiveRecord: 13.3ms)
+
+[ N 2019-09-24 12:31:40.5783 1438/T8 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2019-09-24 12:31:40.5784 1438/T1 age/Cor/CoreMain.cpp:1245 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2019-09-24 12:31:40.5784 1438/T1 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 1479, application /Users/xieyinghua/workspace/arrivalsort (production)
+[ N 2019-09-24 12:31:40.5786 1438/Tc Ser/Server.h:901 ]: [ServerThr.3] Freed 0 spare client objects
+[ N 2019-09-24 12:31:40.5786 1438/T8 Ser/Server.h:901 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2019-09-24 12:31:40.5786 1438/Ta Ser/Server.h:901 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2019-09-24 12:31:40.5786 1438/Ta Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2019-09-24 12:31:40.5786 1438/Tc Ser/Server.h:558 ]: [ServerThr.3] Shutdown finished
+[ N 2019-09-24 12:31:40.5786 1438/Te Ser/Server.h:901 ]: [ServerThr.4] Freed 0 spare client objects
+[ N 2019-09-24 12:31:40.5787 1438/Te Ser/Server.h:558 ]: [ServerThr.4] Shutdown finished
+[ N 2019-09-24 12:31:40.5787 1438/T8 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2019-09-24 12:31:40.5788 1438/Tg Ser/Server.h:901 ]: [ApiServer] Freed 0 spare client objects
+[ N 2019-09-24 12:31:40.5789 1438/Tg Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2019-09-24 12:31:40.5791 1438/T1 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 1479, application /Users/xieyinghua/workspace/arrivalsort (production)
+[ N 2019-09-24 12:31:42.5093 1438/T1 age/Cor/CoreMain.cpp:1324 ]: Passenger core shutdown finished
+[ N 2019-09-24 12:32:10.6152 1753/T1 age/Wat/WatchdogMain.cpp:1366 ]: Starting Passenger watchdog...
+[ N 2019-09-24 12:32:10.6482 1755/T1 age/Cor/CoreMain.cpp:1339 ]: Starting Passenger core...
+[ N 2019-09-24 12:32:10.6487 1755/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2019-09-24 12:32:10.6642 1755/T1 age/Cor/CoreMain.cpp:1014 ]: Passenger core online, PID 1755
+[ N 2019-09-24 12:32:14.2903 1755/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+App 1796 output: Started HEAD "/" for 127.0.0.1 at 2019-09-24 12:32:14 +0800
+App 1796 output: Processing by RootController#home as HTML
+App 1796 output:   Rendered root/home.html.erb within layouts/application (1.7ms)
+App 1796 output:   [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1[0m
+App 1796 output:   [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1
+App 1796 output:   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1[0m
+App 1796 output:   [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1
+App 1796 output:   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1[0m
+App 1796 output:   [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1
+App 1796 output:   Rendered common/_navbar.html.erb (13.9ms)
+App 1796 output:   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1[0m
+App 1796 output:   Rendered common/_footer.html.erb (0.4ms)
+App 1796 output: Completed 200 OK in 40ms (Views: 31.6ms | ActiveRecord: 2.1ms)
+
+[ N 2019-09-24 12:32:40.2385 1755/T8 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2019-09-24 12:32:40.2385 1755/T1 age/Cor/CoreMain.cpp:1245 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2019-09-24 12:32:40.2386 1755/T1 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 1796, application /Users/xieyinghua/workspace/arrivalsort (production)
+[ N 2019-09-24 12:32:40.2387 1755/T8 Ser/Server.h:901 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2019-09-24 12:32:40.2387 1755/Ta Ser/Server.h:901 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2019-09-24 12:32:40.2387 1755/T8 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2019-09-24 12:32:40.2387 1755/Ta Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2019-09-24 12:32:40.2387 1755/Tc Ser/Server.h:901 ]: [ServerThr.3] Freed 0 spare client objects
+[ N 2019-09-24 12:32:40.2388 1755/Te Ser/Server.h:901 ]: [ServerThr.4] Freed 0 spare client objects
+[ N 2019-09-24 12:32:40.2388 1755/Te Ser/Server.h:558 ]: [ServerThr.4] Shutdown finished
+[ N 2019-09-24 12:32:40.2388 1755/Tc Ser/Server.h:558 ]: [ServerThr.3] Shutdown finished
+[ N 2019-09-24 12:32:40.2389 1755/Tg Ser/Server.h:901 ]: [ApiServer] Freed 0 spare client objects
+[ N 2019-09-24 12:32:40.2389 1755/Tg Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2019-09-24 12:32:40.2391 1755/T1 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 1796, application /Users/xieyinghua/workspace/arrivalsort (production)
+[ N 2019-09-24 12:32:42.1015 1755/T1 age/Cor/CoreMain.cpp:1324 ]: Passenger core shutdown finished

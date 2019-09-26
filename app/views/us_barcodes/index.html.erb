@@ -1,0 +1,38 @@
+<p id="notice"><%= notice %></p>
+
+<p style='color:#ffffff;font-size:16px;font-family:PingFang-SC-Medium;'>當前位置: 管理系統 > 帳號掃碼記錄</p>
+
+<div style='background:#333333;width:1280px;height:30px;color:#ffffff;font-size:18px;font-family:PingFang-SC-Medium;text-align:center;'>帳號掃碼記錄</div>
+
+<table class="table">
+  <thead>
+    <tr style='background:#f4f4f4;color:#333333;font-size:14px;font-family:MicrosoftJhengHeiRegular;'>
+      <th><%= t(:uid, :scope=>[:activerecord,:attributes,:us_barcode]) %></th>
+      <th><%= t(:site, :scope=>[:activerecord,:attributes,:us_barcode]) %></th>
+      <th><%= t(:scandate, :scope=>[:activerecord,:attributes,:us_barcode]) %></th>
+      <th><%= t(:scantime, :scope=>[:activerecord,:attributes,:us_barcode]) %></th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @us_barcodes.each do |us_barcode| %>
+      <tr style='background:#f4f4f4;color:#333333;font-size:14px;font-family:MicrosoftJhengHeiRegular;'>
+        <td><%= us_barcode.uid %></td>
+        <td><%= us_barcode.site %></td>
+        <td><%= us_barcode.scandate %></td>
+        <td><%= us_barcode.scantime %></td>
+        <td><%= link_to '詳細', us_barcode %></td>
+        <td><%= link_to '修改', edit_us_barcode_path(us_barcode) %></td>
+        <td><%= link_to '刪除', us_barcode, method: :delete, data: { confirm: '確定嗎?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to '新增帳號掃碼記錄', new_us_barcode_path, :class=>"btn btn-large btn-primary"  %>
+
+<br>
+<br>

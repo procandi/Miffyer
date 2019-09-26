@@ -1,0 +1,43 @@
+<p style='color:#ffffff;font-size:16px;font-family:PingFang-SC-Medium;'>當前位置: 管理系統 > 病歷號掃碼記錄</p>
+
+<div style='display:table;'>
+  <div style='display:table-row;'>
+    <div style='display:table-cell;background:#333333;width:1280px;height:30px;color:#ffffff;font-size:18px;font-family:PingFang-SC-Medium;text-align:center;'>病歷號掃碼記錄</div>
+  </div>
+  <div style='display:table-row;'>
+    <div style='display:table-cell;background:#ffffff;padding-left:5%;'>
+
+
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong><%= t(:pid, :scope=>[:activerecord,:attributes,:pt_barcode]) %>:</strong>
+  <%= @pt_barcode.pid %>
+</p>
+
+<p>
+  <strong><%= t(:site, :scope=>[:activerecord,:attributes,:pt_barcode]) %>:</strong>
+  <%= @pt_barcode.site %>
+</p>
+
+<p>
+  <strong><%= t(:scandate, :scope=>[:activerecord,:attributes,:pt_barcode]) %>:</strong>
+  <%= @pt_barcode.scandate %>
+</p>
+
+<p>
+  <strong><%= t(:scantime, :scope=>[:activerecord,:attributes,:pt_barcode]) %>:</strong>
+  <%= @pt_barcode.scantime %>
+</p>
+
+<%= link_to '修改', edit_pt_barcode_path(@pt_barcode) %> |
+<%= link_to '返回', pt_barcodes_path %>
+
+
+
+
+    </div>
+  </div>
+</div>
+

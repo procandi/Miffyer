@@ -1,0 +1,91 @@
+<p style='color:#ffffff;font-size:16px;font-family:PingFang-SC-Medium;'>當前位置: 班表排班系統 > 本月-班表草稿</p>
+
+<div style='display:table;width:2560px;'>
+  <div style='display:table-row;'>
+    <div style='display:table-cell;background:#333333;height:30px;color:#ffffff;font-size:18px;font-family:PingFang-SC-Medium;text-align:center;'>本月-班表草稿</div>
+  </div>
+  <div style='display:table-row;'>
+    <div style='display:table-cell;background:#ffffff;'>
+      
+
+      <%= form_tag :action => 'updaterole' do %>
+        <br><br>
+        <!-- map all scopy data to array variant, and show it to options_for_select. @xieyinghua -->
+        <% work_array = Work.all.map{|work| [work.wname] }.uniq %>
+
+
+        <p style='font-size:48px;font-family:PingFang-SC-Medium;'><%= @ym_now %>上午班表</p>
+        <table>
+
+          <tr style="width:2560px; height:38px; background:#222222">
+            <td style='border:3px #cccccc solid;color:white;'>
+                日 期 ：
+            </td>
+            <% @dayscount.times(){|day| %>
+              <td style='border:3px #cccccc solid;color:white;'>
+                <center><%= day+1 %>號</center>
+              </td>
+            <% } %>
+          </tr>
+
+          
+          <% @users.each(){|user| %>
+            <tr style="width:2560px; height:50px; background:#ceebe9">
+              <td style='border:3px #cccccc solid;'>
+                <%= user.uname %>：
+              </td>
+              <% @dayscount.times(){|day| %>
+                <td style='border:3px #cccccc solid;'>
+                  <%= select_tag :"p1_#{user.uid}_#{day}", options_for_select(work_array, @results[:"p1_#{user.uid}_#{day}"]) %>
+                </td>
+              <% } %>
+            </tr>
+          <% } %>
+        </table>
+
+        <br>
+        <br>
+
+        <p style='font-size:48px;font-family:PingFang-SC-Medium;'><%= @ym_now %>下午班表</p>
+        <table>
+
+          <tr style="width:2560px; height:38px; background:#222222">
+            <td style='border:3px #cccccc solid;color:white;'>
+                日 期 ：
+            </td>
+            <% @dayscount.times(){|day| %>
+              <td style='border:3px #cccccc solid;color:white;'>
+                <center><%= day+1 %>號</center>
+              </td>
+            <% } %>
+          </tr>
+
+          
+          <% @users.each(){|user| %>
+            <tr style="width:2560px; height:50px; background:#f3e4dd">
+              <td style='border:3px #cccccc solid;'>
+                <%= user.uname %>：
+              </td>
+              <% @dayscount.times(){|day| %>
+                <td style='border:3px #cccccc solid;'>
+                  <%= select_tag :"p2_#{user.uid}_#{day}", options_for_select(work_array, @results[:"p2_#{user.uid}_#{day}"]) %>
+                </td>
+              <% } %>
+            </tr>
+          <% } %>
+        
+        </table>
+
+        <br>
+        <br>
+
+        <center><%= submit_tag '更新', :class=>"btn btn-large btn-primary" %></center>
+
+        <br>
+        <br>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+

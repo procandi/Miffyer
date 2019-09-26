@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>QC Endo Cloud System</title>
+    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div id="wrapper">
+    <%= render "common/navbar" %> <!-- header. @xieyinghua -->
+    
+    <% if signed_in? %>
+        <% if request.env['PATH_INFO']=='/statistic_endo_withreport' || request.env['PATH_INFO']=='/examines' %>
+            <div id="page-wrapper-big">
+                <div class="container-fluid">
+                    <%= yield %>  <!-- body. @xieyinghua -->
+                </div>
+                <!-- /.container-fluid -->
+            </div>
+            <!-- /#page-wrapper -->
+            
+            <div id="footer-wrapper-big">
+                <div class="container-fluid">
+                    <%= render "common/footer" %>   <!-- footer. @xieyinghua -->
+
+                    <!-- Debugging footer. @xieyinghua -->
+                    <%#= content_tag :div, debug(params) if Rails.env.development? %>
+                </div>
+                <!-- /.container-fluid -->
+            </div>
+            <!-- /#page-wrapper -->
+
+        <% else %>
+            <div id="page-wrapper">
+                <div class="container-fluid">
+                    <%= yield %>  <!-- body. @xieyinghua -->
+                </div>
+                <!-- /.container-fluid -->
+            </div>
+            <!-- /#page-wrapper -->
+            
+            <div id="footer-wrapper">
+                <div class="container-fluid">
+                    <%= render "common/footer" %>   <!-- footer. @xieyinghua -->
+
+                    <!-- Debugging footer. @xieyinghua -->
+                    <%#= content_tag :div, debug(params) if Rails.env.development? %>
+                </div>
+                <!-- /.container-fluid -->
+            </div>
+            <!-- /#page-wrapper -->
+        <% end%>
+
+    <% else %>
+        <div id="page-wrapper-zero">
+            <div class="container-fluid">
+                <%= yield %>  <!-- body. @xieyinghua -->
+            </div>
+            <!-- /.container-fluid -->
+        </div>
+        <!-- /#page-wrapper -->
+
+        <div id="footer-wrapper-zero">
+            <div class="container-fluid">
+                <%= render "common/footer" %>   <!-- footer. @xieyinghua -->
+
+                <!-- Debugging footer. @xieyinghua -->
+                <%#= content_tag :div, debug(params) if Rails.env.development? %>
+            </div>
+            <!-- /.container-fluid -->
+        </div>
+        <!-- /#page-wrapper -->
+
+    <% end %>
+
+    
+</div>
+<!-- /#wrapper -->
+</body>
+</html>

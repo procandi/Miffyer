@@ -1,0 +1,83 @@
+<p style='color:#ffffff;font-size:16px;font-family:PingFang-SC-Medium;'>當前位置: 班表排班系統 > 今日-場地排班</p>
+
+<div style='display:table;'>
+  <div style='display:table-row;'>
+    <div style='display:table-cell;background:#333333;width:1280px;height:30px;color:#ffffff;font-size:18px;font-family:PingFang-SC-Medium;text-align:center;'>今日-場地排班</div>
+  </div>
+  <div style='display:table-row;'>
+    <div style='display:table-cell;background:#ffffff;'>
+      
+
+      <%= form_tag :action => 'editpage' do %>
+        <br><br>
+        <p style='display:inline-block;color:#333333;font-size:16px;font-family:PingFang-SC-Medium;margin-left:5%;width:300px;'>
+          <%= hidden_field_tag(:target_date, @target_date) %>
+          <%= submit_tag :prev, :value=>'前一天', :class=>"btn btn-large btn-primary" %>
+          <%= submit_tag :next, :value=>'下一天', :class=>"btn btn-large btn-primary" %>
+        </p>
+      <% end %>
+
+      <%= form_tag :action => 'updatepage' do %>
+        <br><br>
+        <!-- map all scopy data to array variant, and show it to options_for_select. @xieyinghua -->
+        <% user_array = User.all.map{|user| [user.uname,user.uid] if user.utitle=='護理師' && user.upower!='停用'}.uniq %>
+
+
+        <p style='display:inline-block;color:#333333;font-size:16px;font-family:PingFang-SC-Medium;margin-left:5%;width:300px;'>
+          <%= t(:workdate, :scope=>[:activerecord,:attributes,:schedule]) %>：<%= text_field_tag :p1workdate_text, @d_now, :disabled=>true %>
+        </p>
+        <p style='display:inline-block;color:#333333;font-size:16px;font-family:PingFang-SC-Medium;margin-left:5%;width:300px;'>
+          <%= t(:workpart, :scope=>[:activerecord,:attributes,:schedule]) %>：<%= text_field_tag :p1workpart_text, '上午', :disabled=>true %>
+        </p>
+        <br>
+
+
+        <% @works.each_with_index(){|work,i| %>
+          <p style='display:inline-block;color:#333333;font-size:16px;font-family:PingFang-SC-Medium;margin-left:5%;width:120px;'>
+          <%= "#{work.wsort}.#{work.wname}" %>：<%= select_tag :"p1_#{work.wname}", options_for_select(user_array, @results[:"p1_#{work.wname}"]) %>
+          </p>
+          <% if (i+1)%5==0 %>
+            <br><br>
+          <% end %>
+        <% } %>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <p style='display:inline-block;color:#333333;font-size:16px;font-family:PingFang-SC-Medium;margin-left:5%;width:300px;'>
+          <%= t(:workdate, :scope=>[:activerecord,:attributes,:schedule]) %>：<%= text_field_tag :p2workdate_text, @d_now, :disabled=>true %>
+        </p>
+        <p style='display:inline-block;color:#333333;font-size:16px;font-family:PingFang-SC-Medium;margin-left:5%;width:300px;'>
+          <%= t(:workpart, :scope=>[:activerecord,:attributes,:schedule]) %>：<%= text_field_tag :p2workpart_text, '下午', :disabled=>true %>
+        </p>
+        <br>
+
+        <% @works.each_with_index(){|work,i| %>
+          <p style='display:inline-block;color:#333333;font-size:16px;font-family:PingFang-SC-Medium;margin-left:5%;width:120px;'>
+          <%= "#{work.wsort}.#{work.wname}" %>：<%= select_tag :"p2_#{work.wname}", options_for_select(user_array, @results[:"p2_#{work.wname}"]) %>
+          </p>
+          <% if (i+1)%5==0 %>
+            <br><br>
+          <% end %>
+        <% } %>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <br>
+        <br>
+
+        <% if(current_user.uid=='9999' || current_user.upower=='管理員') %>
+          <center><%= submit_tag '更新', :class=>"btn btn-large btn-primary" %></center>
+        <% end %>
+        
+        <br>
+        <br>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+

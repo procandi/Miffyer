@@ -1,0 +1,223 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+zh-TW:
+  global:
+    download: "下載"
+  activerecord:
+    attributes:
+      user:
+        uid: "帳號"
+        upw: "密碼"
+        uname: "姓名"
+        utitle: "職稱"
+        upower: "權限"
+        usort: "排序"
+      scopy:
+        sortid: "序號"
+        rid: "Barcode"
+        pid: "財產編號"
+        cid: "製造號碼"
+        mid: "型號"
+        sid: "內視鏡編號"
+        slabel: "內視鏡廠牌"        
+        sname: "內視鏡名稱"
+        sclass: "內視鏡分類"
+        status: "使用狀態"
+        orid: "舊的Barcode"
+        nrid: "新的Barcode"
+        usagefrequency: "使用次數"
+        usage: "使用次數"
+        tag: "備註"
+        lasttime: "最後使用時間"
+      worksense:
+        sortid: "序號"
+        begindate: "開始日期"
+        begintime: "開始時間"
+        enddate: "結束日期"
+        endtime: "結束時間"
+        examrole: "跟檢技師"
+        washrole: "清洗技師"
+        disinfectionrole: "消毒技師"
+        siteid: "檢查室"
+        washid: "洗淨台號"
+        disinfectionid: "洗滌機號"
+        stagedate: "本次使用日期"
+        stage1time: "到檢查室"
+        stage1endtime: "出檢查室"
+        stage2time: "到清洗室"
+        stage3time: "到消毒室"
+        stage4time: "到儲存室"
+        paytime: "費時"
+        savetime: "存放時間"
+        wid: "工單"
+        studydr: "檢查醫師"
+        examtypeid: "檢查類別號"
+        storedatetime: "欲查詢的日期時間"
+      site:
+        sname: "地點名稱"
+      patient:
+        pid: "病歷號"
+        pname: "客戶姓名"
+        birthday: "生日"
+        sex: "性別"
+        telephone: "電話"
+        address: "地址"
+      examine:
+        seq: "單號"
+        eseq: "E單號"
+        typeid: "檢查代碼"
+        typename: "檢查名稱"
+        source: "客戶來源"
+        stat: "檢查狀態代碼"
+        statname: "檢查狀態"
+        chargdate: "收費日期"
+        chargtime: "收費時間"
+        logindate: "檢查日期"
+        logintime: "檢查時間"
+        orderdr: "開單醫師"
+        orderdrname: "開單醫師名稱"
+        studydr: "檢查醫師"
+        studydrname: "檢查醫師名稱"
+        enterdr: "報告醫師"
+        enterdrname: "報告醫師名稱"
+        orderdate: "開單日期"
+        ordertime: "開單時間"
+        completedate: "檢查完成日期"
+        completetime: "檢查完成時間"
+        enterdate: "報告完成日期"
+        entertime: "報告完成時間"
+        report: "報告內容"
+        pacsno: "PACS代碼"
+      barcode:
+        pid: "病歷號"
+        sname: "地點名稱"
+      carbinet:
+        number: "鏡櫃"
+        savedate: "記錄日期"
+        savetime: "記錄時間"
+        temperature: "溫度"
+        humidity: "濕度"
+        t1: "台一溫度"
+        h1: "台一濕度"
+        t2: "台二溫度"
+        h2: "台二濕度"
+        t3: "台三溫度"
+        h3: "台三濕度"
+        t4: "台四溫度"
+        h4: "台四濕度"
+        t5: "台五溫度"
+        h5: "台五濕度"
+        t6: "台六溫度"
+        h6: "台六濕度"
+        t7: "台七溫度"
+        h7: "台七濕度"
+        t8: "台八溫度"
+        h8: "台八濕度"
+      rf_barcode:
+        sortid: "序號"
+        rid: "內視鏡條碼號"
+        site: "掃碼位置"
+        scandate: "掃碼日期"
+        scantime: "掃碼時間"
+      wk_barcode:
+        sortid: "序號"
+        wid: "工作清單號"
+        site: "掃碼位置"
+        scandate: "掃碼日期"
+        scantime: "掃碼時間"
+      pt_barcode:
+        sortid: "序號"
+        pid: "病歷號"
+        site: "掃碼位置"
+        scandate: "掃碼日期"
+        scantime: "掃碼時間"
+      us_barcode:
+        sortid: "序號"
+        uid: "帳號"
+        site: "掃碼位置"
+        scandate: "掃碼日期"
+        scantime: "掃碼時間"
+      schedule:
+        workdate: "上班日期"
+        workpart: "上班時段"
+        uid: "員工代碼"
+        uname: "員工姓名"
+        site: "場所"
+      work:
+        wid: "工作場域代碼"
+        wname: "工作場域名稱"
+        wsort: "排序"
+      disinfection:
+        sid: "藥水批號"
+        pid: "試紙批號"
+        mid: "機號代碼"
+        mname: "機號名稱"
+        uid: "操作者"
+        problem: "異常"
+      syrup:
+        sid: "藥水批號"
+        deadlinedate: "最後有效期限"
+        begindate: "開始使用日期"
+        begintime: "開始使用時間"
+        lastdate: "最後使用日期"
+        lasttime: "最後使用時間"
+        times: "次數總計"
+        dayscount: "天數總計"
+        concentration: "藥水濃度"
+        piping: "管路"
+      syrupperuse:
+        sid: "藥水批號"
+        perusedate: "每次使用日期"
+        perusetime: "每次使用時間"
+      testpaper:
+        pid: "試紙批號"
+        paperscount: "桶數"
+        opendate: "開瓶日期"
+        deadlinedate: "有效日期"
+        qcdata: "品管資料"
+      testpaperperuse:
+        pid: "試紙批號"
+        perusedate: "每次使用日期"
+        perusetime: "每次使用時間"
+      sinkairkernel:
+        mid: "機號代碼"
+        mname: "機號名稱"
+        modifydate: "更換日期"
+        modifytime: "更換時間"
+        status: "狀態"
+      sinkwaterkernel:
+        mid: "機號代碼"
+        mname: "機號名稱"
+        modifydate: "更換日期"
+        modifytime: "更換時間"
+        status: "狀態"
+      holiday:
+        restdate: "休假日"
+        resttype: "休假模式"
+      adjust:
+        number: "鏡櫃"
+        temperature: "微調溫度"
+        humidity: "微調濕度"
+      arrival:
+        site: "位置"
+        count: "人數"
+        list: "名單"

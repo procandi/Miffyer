@@ -1,0 +1,70 @@
+<p id="notice"><%= notice %></p>
+
+<p style='color:#ffffff;font-size:16px;font-family:PingFang-SC-Medium;'>當前位置: 管理系統 > 帳號清單</p>
+
+<div style='display:table;'>
+  <div style='display:table-row;'>
+    <div style='display:table-cell;background:#333333;width:1280px;height:30px;color:#ffffff;font-size:18px;font-family:PingFang-SC-Medium;text-align:center;'>帳號清單</div>
+  </div>
+  <div style='display:table-row;'>
+    <div style='display:table-cell;background:#ffffff;padding-left:5%;'>
+
+
+
+<%= form_for(@user) do |f| %>
+  <% if @user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+      <% @user.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label t(:uid, :scope=>[:activerecord,:attributes,:user]) %>[*必填]<br>
+    <%= f.text_field :uid %>
+  </div><br>
+  <div class="field">
+    <%= f.label t(:upw, :scope=>[:activerecord,:attributes,:user]) %>[*必填]<br>
+    <%= f.password_field :upw %>
+  </div><br>
+  <div class="field">
+    <%= f.label t(:uname, :scope=>[:activerecord,:attributes,:user]) %>[*必填]<br>
+    <%= f.text_field :uname %>
+  </div><br>
+  <div class="field">
+    <%= f.label t(:utitle, :scope=>[:activerecord,:attributes,:user]) %><br>
+    <%= f.text_field :utitle %>
+  </div><br>
+  <div class="field">
+    <%= f.label t(:upower, :scope=>[:activerecord,:attributes,:user]) %><br>
+    <%= f.text_field :upower %>
+  </div><br>
+  <div class="field">
+    <%= f.label t(:usort, :scope=>[:activerecord,:attributes,:user]) %><br>
+    <%= f.text_field :usort %>
+  </div><br>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+
+
+
+
+
+      <% if current_user.uid=='9999' || current_user.upower=='管理員' %>
+        <%= link_to '返回', users_path %>
+      <% else %>
+        <%= link_to '返回', root_path %>
+      <% end %>
+
+    </div>
+  </div>
+</div>
+
+

@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p style='color:#ffffff;font-size:16px;font-family:PingFang-SC-Medium;'>當前位置: 管理系統 > 排隊記錄</p>
+
+<div style='background:#333333;width:1280px;height:30px;color:#ffffff;font-size:18px;font-family:PingFang-SC-Medium;text-align:center;'>排隊記錄</div>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>位置</th>
+      <th>人數</th>
+      <th>名單</th>
+      <th colspan="2"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @arrivals.each do |arrival| %>
+      <tr>
+        <td><%= arrival.site %></td>
+        <td><%= arrival.count %></td>
+        <td><%= arrival.list %></td>
+        <td><%= link_to '詳細', arrival %></td>
+        <td><%= link_to '修改', edit_arrival_path(arrival) %></td>
+        <!-- <td><%= link_to '刪除', arrival, method: :delete, data: { confirm: '確定嗎？' } %></td> -->
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<br>
+<br>

@@ -1,0 +1,42 @@
+<p id="notice"><%= notice %></p>
+
+<p style='color:#ffffff;font-size:16px;font-family:PingFang-SC-Medium;'>當前位置: 管理系統 > 帳號清單</p>
+
+<div style='background:#333333;width:1280px;height:30px;color:#ffffff;font-size:18px;font-family:PingFang-SC-Medium;text-align:center;'>帳號清單</div>
+
+<table class="table">
+  <thead>
+    <tr style='background:#f4f4f4;color:#333333;font-size:14px;font-family:MicrosoftJhengHeiRegular;'>
+      <th><%= t(:uid, :scope=>[:activerecord,:attributes,:user]) %></th>
+      <th><%= t(:upw, :scope=>[:activerecord,:attributes,:user]) %></th>
+      <th><%= t(:uname, :scope=>[:activerecord,:attributes,:user]) %></th>
+      <th><%= t(:utitle, :scope=>[:activerecord,:attributes,:user]) %></th>
+      <th><%= t(:upower, :scope=>[:activerecord,:attributes,:user]) %></th>
+      <th><%= t(:usort, :scope=>[:activerecord,:attributes,:user]) %></th>
+      <th colspan="2"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @users.each do |user| %>
+      <tr style='background:#f4f4f4;color:#333333;font-size:14px;font-family:MicrosoftJhengHeiRegular;'>
+        <td><%= user.uid %></td>
+        <td><%= user.upw %></td>
+        <td><%= user.uname %></td>
+        <td><%= user.utitle %></td>
+        <td><%= user.upower %></td>
+        <td><%= user.usort %></td>
+        <td><%= link_to '詳細', user %></td>
+        <td><%= link_to '修改', edit_user_path(user) %></td>
+        <!-- <td><%= link_to '刪除', user, method: :delete, data: { confirm: '確定嗎？' } %></td> -->
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to '新增帳號', new_user_path, :class=>"btn btn-large btn-primary" %>
+
+<br>
+<br>

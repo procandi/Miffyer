@@ -1,0 +1,276 @@
+<p style='color:#ffffff;font-size:16px;font-family:PingFang-SC-Medium;'>當前位置: 班表排班系統 > 本月-班表草稿</p>
+
+<div style='display:table;width:1600px;'>
+  <div style='display:table-row;'>
+    <div style='display:table-cell;background:#333333;height:30px;color:#ffffff;font-size:18px;font-family:PingFang-SC-Medium;text-align:center;'>本月-班表草稿</div>
+  </div>
+  <div style='display:table-row;'>
+    <div style='display:table-cell;background:#ffffff;'>
+      
+
+      <%= form_tag :action => 'editrole' do %>
+        <p style='font-size:48px;font-family:PingFang-SC-Medium;'><%= @ym_now %>班表</p>
+        <%= hidden_field_tag(:target_date, @target_date) %>
+        <%= submit_tag :prev, :value=>'上個月', :class=>"btn btn-large btn-primary" %>
+        <%= submit_tag :next, :value=>'下個月', :class=>"btn btn-large btn-primary" %>
+        <%= link_to '下載畫面結果',@rlink, :class=>"btn btn-large btn-primary", :style=>'background:#f8b551;width:140px;height:40px;margin-left:5%;' %>
+        <div id='fullpage' class='btn btn-large btn-primary' style='background:#f8b551;width:140px;height:40px;margin-left:5%;'>
+          開關全螢幕
+        </div>
+      <% end %>
+
+      <%= form_tag :action => 'updaterole' do %>
+        <br><br>
+         <%= hidden_field_tag(:target_date, @target_date) %>
+        <div id='re_schedule' class='btn btn-large btn-primary'>
+          套用上午班表
+        </div>
+        <% if(current_user.uid=='9999' || current_user.upower=='管理員') %>
+          <%= submit_tag '存檔', :class=>"btn btn-large btn-primary" %>
+        <% end %>
+      
+        <br><br>
+
+        <br><br>
+
+        <%= hidden_field_tag(:target_date, @target_date) %>
+        <!-- map all scopy data to array variant, and show it to options_for_select. @xieyinghua -->
+        <%# work_array = Work.all.each_with_index.map{|work,i| [i.to_s()+' '+work.wname, work.wname] }.uniq %>
+        <% work_array = Work.all.order('wsort asc').map{|work| [work.wsort.to_s(), work.wname] }.uniq %>
+        <% work_array.unshift('') %>
+
+
+        <table>
+
+
+          <tr style="height:38px;background:#0066CC">
+
+            <td style='width:12px;border:3px #cccccc solid;color:white;'>
+                <center>人員</center>
+            </td>
+
+            <% @dayscount.times(){|day| %>
+              <% if "#{@ym_now}/#{day+1}".to_date().wday!=0 and @holiday.where("restdate='#{@ym_now}/#{day+1}'").count==0 %>
+                <td style='border:3px #cccccc solid;color:white;'>
+                  <%= day+1 %>號(<%= number_to_chinesenumber("#{@ym_now}/#{day+1}".to_date().wday) %>)
+                </td>
+              <% end %>
+
+              <% if day==14 %>
+                <td style='width:12px;border:3px #cccccc solid;color:white;'>
+                  <center>人員</center>
+                </td>
+              <% end %>
+            <% } %>
+
+            <td style='border:3px #cccccc solid;color:white;'>
+                <center>總計</center>
+            </td>
+
+          </tr>
+
+
+          
+          <% @users.each_with_index(){|user,i| %>
+
+            <% if i%2==0 %>
+            <tr style="background:#ceebe9">
+            <% else %>
+            <tr style="background:#f3e4dd">
+            <% end %>  
+              <td style='border:3px #cccccc solid; background:#e7fbe0' rowspan=2>
+                <%= user.uname %>
+              </td>
+
+              <% @dayscount.times(){|day| %>
+                <% if "#{@ym_now}/#{day+1}".to_date().wday!=0 and @holiday.where("restdate='#{@ym_now}/#{day+1}'").count==0 %>
+                  <td style='height:38px; border:3px #cccccc solid;'>
+                    <%= select_tag :"p1_#{user.uid}_#{day}", options_for_select(work_array, @results[:"p1_#{user.uid}_#{day}"]) %>
+                  </td>
+                <% end %>
+
+                <% if day==14 %>
+                  <td style='border:3px #cccccc solid; background:#e7fbe0' rowspan=2>
+                    <%= user.uname %>
+                  </td>
+                <% end %>
+              <% } %>
+
+              <td style='width:300px; height:38px; border:3px #cccccc solid; background:#e7fbe0' rowspan=2>
+                <% @works.each(){|work| %>
+                  <% if @results[:"#{user.uid}_#{work.wname}"]==nil %>
+                    <%= work.wsort %>:0 
+                  <% else %>
+                    <%= work.wsort %>:<%= @results[:"#{user.uid}_#{work.wname}"] %> 
+                  <% end %>
+                <% } %>
+              </td>
+            </tr>
+
+            <% if i%2==0 %>
+            <tr style="background:#ceebe9">
+            <% else %>
+            <tr style="background:#f3e4dd">
+            <% end %> 
+              <% @dayscount.times(){|day| %>
+                <% if "#{@ym_now}/#{day+1}".to_date().wday!=0 and @holiday.where("restdate='#{@ym_now}/#{day+1}'").count==0 %>
+                  <td style='border:3px #cccccc solid;'>
+                    <% if "#{@ym_now}/#{day+1}".to_date().wday!=6 %>
+                      <%= select_tag :"p2_#{user.uid}_#{day}", options_for_select(work_array, @results[:"p2_#{user.uid}_#{day}"]) %>
+                    <% end %>
+                  </td>
+                <% end %>
+              <% } %>
+            </tr>
+
+
+            <% if (i+1)%6==0 %>
+              <tr style="height:38px;background:#0066CC">
+
+                <td style='width:12px;border:3px #cccccc solid;color:white;'>
+                    <center>人員</center>
+                </td>
+
+                <% @dayscount.times(){|day| %>
+                  <% if "#{@ym_now}/#{day+1}".to_date().wday!=0 and @holiday.where("restdate='#{@ym_now}/#{day+1}'").count==0 %>
+                    <td style='border:3px #cccccc solid;color:white;'>
+                      <%= day+1 %>號(<%= number_to_chinesenumber("#{@ym_now}/#{day+1}".to_date().wday) %>)
+                    </td>
+                  <% end %>
+
+                  <% if day==14 %>
+                    <td style='width:12px;border:3px #cccccc solid;color:white;'>
+                      <center>人員</center>
+                    </td>
+                  <% end %>
+                <% } %>
+
+                <td style='border:3px #cccccc solid;color:white;'>
+                    <center>人員總計</center>
+                </td>
+
+              </tr>
+            <% end %>
+
+          <% } %>
+
+
+
+          <tr style="height:38px;background:#0066CC">
+
+            <td style='width:12px;border:3px #cccccc solid;color:white;'>
+                <center>人員</center>
+            </td>
+
+            <% @dayscount.times(){|day| %>
+              <% if "#{@ym_now}/#{day+1}".to_date().wday!=0 and @holiday.where("restdate='#{@ym_now}/#{day+1}'").count==0 %>
+                <td style='border:3px #cccccc solid;color:white;'>
+                  <%= day+1 %>號(<%= number_to_chinesenumber("#{@ym_now}/#{day+1}".to_date().wday) %>)
+                </td>
+              <% end %>
+
+              <% if day==14 %>
+                <td style='width:12px;border:3px #cccccc solid;color:white;'>
+                  <center>人員</center>
+                </td>
+              <% end %>
+            <% } %>
+
+            <td style='border:3px #cccccc solid;color:white;'>
+                <center>人員總計</center>
+            </td>
+
+          </tr>
+
+
+
+          <tr style="height:80px; background:#e7fbe0">
+
+            <td style='border:3px #cccccc solid;'>
+              當日總計
+            </td>
+
+            <% @dayscount.times(){|day| %>
+              <% if "#{@ym_now}/#{day+1}".to_date().wday!=0 and @holiday.where("restdate='#{@ym_now}/#{day+1}'").count==0 %>
+                <td style='border:3px #cccccc solid;'>
+                  上午:<br>
+                  <% @works.each(){|work| %>
+                    <% if @results[:"p1_#{day}_#{work.wname}"]==nil %>
+                      <%= work.wsort %>:0 <br>
+                    <% else %>
+                      <%= work.wsort %>:<%= @results[:"p1_#{day}_#{work.wname}"] %> <br>
+                    <% end %>
+                  <% } %>
+                  下午:<br>
+                  <% @works.each(){|work| %>
+                      <% if @results[:"p2_#{day}_#{work.wname}"]==nil %>
+                        <%= work.wsort %>:0 <br>
+                      <% else %>
+                        <%= work.wsort %>:<%= @results[:"p2_#{day}_#{work.wname}"] %> <br>
+                      <% end %>
+                    <% } %>
+                </td>
+              <% end %>
+
+              <% if day==14 %>
+                <td style='border:3px #cccccc solid;'>
+                  當日總計
+                </td>
+              <% end %>
+            <% } %>
+          </tr>
+
+
+        </table>
+
+        <br>
+        <br>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- java script to support simplemodal. @xieyinghua -->
+<script>
+  var jusers = JSON.parse("<%=j @users.to_json.html_safe %>");
+  var jusers_count=jusers.length;
+  var jdayscount="<%=j @dayscount.to_s %>";
+  var i,j;
+
+  //下午的班表全部代換為上午的班表. @xieyinghua
+  $("#re_schedule").click(function(e) {
+    for(i=0;i<jusers_count;i++){
+      for(j=0;j<jdayscount;j++){
+        //alert(jusers[i].uid);
+        //alert(j);
+        value=$('#p1_'+jusers[i].uid+'_'+j).val();
+        //alert(value);
+        $('#p2_'+jusers[i].uid+'_'+j).val( value );
+      }
+    }
+  });
+
+
+  var flag=true;
+
+  //開關全螢幕. @xieyinghua
+  $("#fullpage").click(function(e) {
+    if(flag){
+      flag=false;
+      $("#panel-left").removeClass();
+      $("#panel-left").hide();
+      $("#page-wrapper").css("padding-left", "0");
+      $("#footer-wrapper").css("padding-left", "0");
+    }else{
+      flag=true;
+      $("#panel-left").addClass("collapse navbar-collapse navbar-ex1-collapse");
+      $("#panel-left").show();
+      $("#page-wrapper").css("padding-left", "225px");
+      $("#footer-wrapper").css("padding-left", "225px");
+    }
+  });
+</script>
+

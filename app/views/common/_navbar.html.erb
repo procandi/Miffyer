@@ -1,0 +1,995 @@
+<!-- load bottom image and table settinss. @xieyinghua -->
+<style type="text/css">
+.top-color {
+    background-color:#eee8df;
+}
+.top-color-opacity {
+    background-color:#eee8df;
+    opacity: 0.9;
+}
+
+
+
+/* use for RWD. @xieyinghua */
+@media screen and (max-device-width: 767px) { /* phone. @xieyinghua */
+  .topbg {
+    background-image: url(<%= asset_path 'top_bg.png' %>);
+    background-repeat:no-repeat;
+    display:block;
+    min-height:100px;
+    background-size: 100% 100%;
+  }
+  .logo {
+    width:120px; height:52px;
+    position:absolute;top:-2%;left:34%;
+  }
+  body {   
+      min-width:300px;
+      width:auto;
+  }
+  .headerbody{
+    min-width:300px;
+  }
+  .menubody {
+    float:left;display:inline-block;margin-top:6.5%;
+  }
+  .news {
+  }
+  .intro {
+  }
+  .order {
+  }
+  .fb {
+    margin-left:9%;margin-top:2%;
+  }
+  .account {
+    float:right;display:inline-block;margin-top:7%;
+  }
+
+  .divider{
+    padding-top:4%;
+    color:white;
+  }
+  .top-bar-menu-fb {
+    padding-left:4%;
+    padding-top:4%;
+    padding-right:4%;
+  }
+  .top-bar-menu-fb:hover {
+      background: url(<%= asset_path 'menu_BG.png' %>);
+      background-size: 100% 100%;
+  }
+
+  /* menu default settings. @xieyinghua*/
+  .top-bar-menu {
+    margin-top:40%;
+    padding-left:4%;
+    padding-top:-70%;
+    padding-right:4%;
+  }
+  /* menu mouse over and dynamic change background image. @xieyinghua */
+  .top-bar-menu:hover {
+      background: url(<%= asset_path 'menu_BG.png' %>);
+      background-size: 100% 100%;
+  }
+  /* menu default font. @xieyinghua */
+  .top-bar-menu-font {
+      color:#59300b;
+  }
+  /* menu mouse over and dynamic change font. @xieyinghua */
+  .top-bar-menu-font:hover {
+      color:white;
+  }
+
+  /* sub menu default settings, go close to menu and fill background image, disable sub menu border line. @xieyinghua */
+  .top-bar-menu-sub {
+      background: url(<%= asset_path 'menu_hoverBG.png' %>);
+      background-size: 120% 120%;
+      padding-left:26%;
+      margin-top:-10%;
+      margin-left:-10%;
+      border-width:0px;
+  }
+  /* sub menu default font. @xieyinghua */
+  .top-bar-menu-sub-font {
+    color:white;
+  }
+  /* sub menu mouse over and dynamic change font. @xieyinghua */
+  .top-bar-menu-sub-font:hover {
+    color:white;
+  }
+
+  /* sub menu the selected one mouse over and dynamic change background image. @xieyinghua */
+  .top-bar-menu-sub-selected:hover {
+      background: url(<%= asset_path 'menu_select.png' %>);
+      background-size: 100% 100%;
+  }
+}
+@media screen and (min-device-width: 768px) and (max-device-width: 1264px) { /* pad, old pc, old nb. @xieyinghua */
+  .topbg {
+    background-image: url(<%= asset_path 'top_bg.png' %>);
+    background-repeat:no-repeat;
+    display:block;
+    min-height:100px;
+    background-size: 100% 100%;
+  }
+  .logo {
+    width:150px; height:52px;
+    position:absolute;top:-0.5%;left:41%;
+  }
+  body {   
+      width:auto;
+  }
+  .headerbody{
+  }
+  .menubody {
+    float:left;display:inline-block;margin-top:3%;
+  }
+  .news {
+  }
+  .intro {
+  }
+  .order {
+  }
+  .fb {
+    margin-left:9%;margin-top:2%;
+  }
+  .account {
+    float:right;display:inline-block;margin-top:4.5%;
+  }
+
+  .divider{
+    padding-top:4%;
+    color:white;
+  }
+  .top-bar-menu-fb {
+    padding-left:4%;
+    padding-top:4%;
+    padding-right:4%;
+  }
+  .top-bar-menu-fb:hover {
+      background: url(<%= asset_path 'menu_BG.png' %>);
+      background-size: 100% 100%;
+  }
+
+  /* menu default settings. @xieyinghua*/
+  .top-bar-menu {
+    margin-top:-400px;
+    padding-left:4%;
+    padding-top:10px;
+    padding-bottom:10%;
+    padding-right:4%;
+  }
+  /* menu mouse over and dynamic change background image. @xieyinghua */
+  .top-bar-menu:hover {
+      background: url(<%= asset_path 'menu_BG.png' %>);
+      background-size: 100% 100%;
+  }
+  /* menu default font. @xieyinghua */
+  .top-bar-menu-font {
+      color:#59300b;
+  }
+  /* menu mouse over and dynamic change font. @xieyinghua */
+  .top-bar-menu-font:hover {
+      color:white;
+  }
+
+  /* sub menu default settings, go close to menu and fill background image, disable sub menu border line. @xieyinghua */
+  .top-bar-menu-sub {
+      background: url(<%= asset_path 'menu_hoverBG.png' %>);
+      background-size: 120% 120%;
+      padding-left:26%;
+      margin-top:-10%;
+      margin-left:-10%;
+      border-width:0px;
+  }
+  /* sub menu default font. @xieyinghua */
+  .top-bar-menu-sub-font {
+    color:white;
+  }
+  /* sub menu mouse over and dynamic change font. @xieyinghua */
+  .top-bar-menu-sub-font:hover {
+    color:white;
+  }
+
+  /* sub menu the selected one mouse over and dynamic change background image. @xieyinghua */
+  .top-bar-menu-sub-selected:hover {
+      background: url(<%= asset_path 'menu_select.png' %>);
+      background-size: 100% 100%;
+  }
+}
+@media screen and (min-device-width: 1265px) and (max-device-width: 1350px) { /* pc. @xieyinghua */
+  .topbg {
+    background-image: url(<%= asset_path 'top_bg.png' %>);
+    background-repeat:no-repeat;
+    display:block;
+    min-height:100px;
+    background-size: 100% 100%;
+  }
+  .logo {
+    width:186px; height:66px;
+  }
+  body {   
+      min-width:1280px;
+      width:auto;
+  }
+  .headerbody{
+    min-width:1280px;
+  }
+  .menubody {
+      min-width:1080px;
+  }
+  .news {
+    width:245px;
+  }
+  .intro {
+    width:220px;
+  }
+  .order {
+    width:220px;
+  }
+  .fb {
+    width:240px;
+  }
+  .account {
+    width:220px;
+  }
+
+  .divider{
+    padding-top:-40%;
+    color:white;
+  }
+  .top-bar-menu-fb {
+    padding-left:5%;
+    padding-top:47px;
+    padding-right:4%;
+  }
+  .top-bar-menu-fb:hover {
+      background: url(<%= asset_path 'menu_BG.png' %>);
+      background-size: 100% 100%;
+  }
+
+  /* menu default settings. @xieyinghua*/
+  .top-bar-menu {
+    padding-left:4%;
+    padding-top:40px;
+    padding-right:4%;
+  }
+  /* menu mouse over and dynamic change background image. @xieyinghua */
+  .top-bar-menu:hover {
+      background: url(<%= asset_path 'menu_BG.png' %>);
+      background-size: 100% 100%;
+  }
+  /* menu default font. @xieyinghua */
+  .top-bar-menu-font {
+      color:#59300b;
+      font-size:18px;
+      margin-top:-40px;
+  }
+  /* menu mouse over and dynamic change font. @xieyinghua */
+  .top-bar-menu-font:hover {
+      color:white;
+  }
+
+  /* sub menu default settings, go close to menu and fill background image, disable sub menu border line. @xieyinghua */
+  .top-bar-menu-sub {
+      background: url(<%= asset_path 'menu_hoverBG.png' %>);
+      background-size: 120% 120%;
+      padding-left:10%;
+      margin-top:0%;
+      margin-left:-5%;
+      border-width:0px;
+      width:220px;
+  }
+  /* sub menu default font. @xieyinghua */
+  .top-bar-menu-sub-font {
+    color:white;
+  }
+  /* sub menu mouse over and dynamic change font. @xieyinghua */
+  .top-bar-menu-sub-font:hover {
+    color:white;
+  }
+
+  /* sub menu the selected one mouse over and dynamic change background image. @xieyinghua */
+  .top-bar-menu-sub-selected:hover {
+      background: url(<%= asset_path 'menu_select.png' %>);
+      background-size: 100% 100%;
+  }
+}
+@media screen and (min-device-width: 1351px) and (max-device-width: 1424px) { /* big pc or big nb. @xieyinghua */
+  .topbg {
+    background-image: url(<%= asset_path 'top_bg.png' %>);
+    background-repeat:no-repeat;
+    display:block;
+    min-height:100px;
+    background-size: 100% 100%;
+  }
+  .logo {
+    width:186px; height:66px;
+  }
+  body {   
+      min-width:1366px;
+      width:auto;
+  }
+  .headerbody{
+    min-width:1366px;
+  }
+  .menubody {
+      min-width:1166px;
+  }
+  .news {
+    width:245px;
+  }
+  .intro {
+    width:220px;
+  }
+  .order {
+    width:220px;
+  }
+  .fb {
+    width:240px;
+  }
+  .account {
+    width:220px;
+  }
+
+  .divider{
+    padding-top:-40%;
+    color:white;
+  }
+  .top-bar-menu-fb {
+    padding-left:5%;
+    padding-top:47px;
+    padding-right:4%;
+  }
+  .top-bar-menu-fb:hover {
+      background: url(<%= asset_path 'menu_BG.png' %>);
+      background-size: 100% 100%;
+  }
+
+  /* menu default settings. @xieyinghua*/
+  .top-bar-menu {
+    padding-left:4%;
+    padding-top:40px;
+    padding-right:4%;
+  }
+  /* menu mouse over and dynamic change background image. @xieyinghua */
+  .top-bar-menu:hover {
+      background: url(<%= asset_path 'menu_BG.png' %>);
+      background-size: 100% 100%;
+  }
+  /* menu default font. @xieyinghua */
+  .top-bar-menu-font {
+      color:#59300b;
+      font-size:18px;
+      margin-top:-40px;
+  }
+  /* menu mouse over and dynamic change font. @xieyinghua */
+  .top-bar-menu-font:hover {
+      color:white;
+  }
+
+  /* sub menu default settings, go close to menu and fill background image, disable sub menu border line. @xieyinghua */
+  .top-bar-menu-sub {
+      background: url(<%= asset_path 'menu_hoverBG.png' %>);
+      background-size: 120% 120%;
+      padding-left:10%;
+      margin-top:0%;
+      margin-left:-5%;
+      border-width:0px;
+      width:220px;
+  }
+  /* sub menu default font. @xieyinghua */
+  .top-bar-menu-sub-font {
+    color:white;
+  }
+  /* sub menu mouse over and dynamic change font. @xieyinghua */
+  .top-bar-menu-sub-font:hover {
+    color:white;
+  }
+
+  /* sub menu the selected one mouse over and dynamic change background image. @xieyinghua */
+  .top-bar-menu-sub-selected:hover {
+      background: url(<%= asset_path 'menu_select.png' %>);
+      background-size: 100% 100%;
+  }
+}
+@media screen and (min-device-width: 1425px) and (max-device-width: 1520px) { /* big pc or big nb. @xieyinghua */
+  .topbg {
+    background-image: url(<%= asset_path 'top_bg.png' %>);
+    background-repeat:no-repeat;
+    display:block;
+    min-height:100px;
+    background-size: 100% 100%;
+  }
+  .logo {
+    width:186px; height:66px;
+    margin-top: -5px;
+  }
+  body {   
+      min-width:1366px;
+      width:auto;
+  }
+  .headerbody{
+    min-width:1366px;
+  }
+  .menubody {
+      min-width:1166px;
+  }
+  .news {
+    width:245px;
+  }
+  .intro {
+    width:220px;
+  }
+  .order {
+    width:220px;
+  }
+  .fb {
+    width:240px;
+  }
+  .account {
+    width:220px;
+  }
+
+  .divider{
+    padding-top:-40%;
+    color:white;
+  }
+  .top-bar-menu-fb {
+    padding-left:5%;
+    padding-top:47px;
+    padding-right:4%;
+  }
+  .top-bar-menu-fb:hover {
+      background: url(<%= asset_path 'menu_BG.png' %>);
+      background-size: 100% 100%;
+  }
+
+  /* menu default settings. @xieyinghua*/
+  .top-bar-menu {
+    padding-left:4%;
+    padding-top:40px;
+    padding-right:4%;
+  }
+  /* menu mouse over and dynamic change background image. @xieyinghua */
+  .top-bar-menu:hover {
+      background: url(<%= asset_path 'menu_BG.png' %>);
+      background-size: 100% 100%;
+  }
+  /* menu default font. @xieyinghua */
+  .top-bar-menu-font {
+      color:#59300b;
+      font-size:18px;
+      margin-top:-40px;
+  }
+  /* menu mouse over and dynamic change font. @xieyinghua */
+  .top-bar-menu-font:hover {
+      color:white;
+  }
+
+  /* sub menu default settings, go close to menu and fill background image, disable sub menu border line. @xieyinghua */
+  .top-bar-menu-sub {
+      background: url(<%= asset_path 'menu_hoverBG.png' %>);
+      background-size: 120% 120%;
+      padding-left:10%;
+      margin-top:0%;
+      margin-left:-5%;
+      border-width:0px;
+      width:220px;
+  }
+  /* sub menu default font. @xieyinghua */
+  .top-bar-menu-sub-font {
+    color:white;
+  }
+  /* sub menu mouse over and dynamic change font. @xieyinghua */
+  .top-bar-menu-sub-font:hover {
+    color:white;
+  }
+
+  /* sub menu the selected one mouse over and dynamic change background image. @xieyinghua */
+  .top-bar-menu-sub-selected:hover {
+      background: url(<%= asset_path 'menu_select.png' %>);
+      background-size: 100% 100%;
+  }
+}
+@media screen and (min-device-width: 1521px) and (max-device-width: 1584px) { /* big pc or big nb. @xieyinghua */
+  .topbg {
+    background-image: url(<%= asset_path 'top_bg.png' %>);
+    background-repeat:no-repeat;
+    display:block;
+    min-height:100px;
+    background-size: 100% 100%;
+  }
+  .logo {
+    width:186px; height:66px;
+  }
+  body {   
+      min-width:1536px;
+      width:auto;
+  }
+  .headerbody{
+    min-width:1536px;
+  }
+  .menubody {
+      min-width:1336px;
+  }
+  .news {
+    width:245px;
+  }
+  .intro {
+    width:220px;
+  }
+  .order {
+    width:220px;
+  }
+  .fb {
+    width:240px;
+  }
+  .account {
+    width:220px;
+  }
+
+  .divider{
+    padding-top:-40%;
+    color:white;
+  }
+  .top-bar-menu-fb {
+    padding-left:5%;
+    padding-top:47px;
+    padding-right:4%;
+  }
+  .top-bar-menu-fb:hover {
+      background: url(<%= asset_path 'menu_BG.png' %>);
+      background-size: 100% 100%;
+  }
+
+  /* menu default settings. @xieyinghua*/
+  .top-bar-menu {
+    padding-left:4%;
+    padding-top:40px;
+    padding-right:4%;
+  }
+  /* menu mouse over and dynamic change background image. @xieyinghua */
+  .top-bar-menu:hover {
+      background: url(<%= asset_path 'menu_BG.png' %>);
+      background-size: 100% 100%;
+  }
+  /* menu default font. @xieyinghua */
+  .top-bar-menu-font {
+      color:#59300b;
+      font-size:18px;
+      margin-top:-40px;
+  }
+  /* menu mouse over and dynamic change font. @xieyinghua */
+  .top-bar-menu-font:hover {
+      color:white;
+  }
+
+  /* sub menu default settings, go close to menu and fill background image, disable sub menu border line. @xieyinghua */
+  .top-bar-menu-sub {
+      background: url(<%= asset_path 'menu_hoverBG.png' %>);
+      background-size: 120% 120%;
+      padding-left:10%;
+      margin-top:0%;
+      margin-left:-5%;
+      border-width:0px;
+      width:220px;
+  }
+  /* sub menu default font. @xieyinghua */
+  .top-bar-menu-sub-font {
+    color:white;
+  }
+  /* sub menu mouse over and dynamic change font. @xieyinghua */
+  .top-bar-menu-sub-font:hover {
+    color:white;
+  }
+
+  /* sub menu the selected one mouse over and dynamic change background image. @xieyinghua */
+  .top-bar-menu-sub-selected:hover {
+      background: url(<%= asset_path 'menu_select.png' %>);
+      background-size: 100% 100%;
+  }
+}
+@media screen and (min-device-width: 1585px) and (max-device-width: 1904px) { /* big pc or big nb. @xieyinghua */
+  .topbg {
+    background-image: url(<%= asset_path 'top_bg.png' %>);
+    background-repeat:no-repeat;
+    display:block;
+    min-height:100px;
+    background-size: 100% 100%;
+  }
+  .logo {
+    width:186px; height:66px;
+  }
+  body {   
+      min-width:1536px;
+      width:auto;
+  }
+  .headerbody{
+    min-width:1536px;
+  }
+  .menubody {
+      min-width:1336px;
+  }
+  .news {
+    width:245px;
+  }
+  .intro {
+    width:220px;
+  }
+  .order {
+    width:220px;
+  }
+  .fb {
+    width:240px;
+  }
+  .account {
+    width:220px;
+  }
+
+  .divider{
+    padding-top:-40%;
+    color:white;
+  }
+  .top-bar-menu-fb {
+    padding-left:5%;
+    padding-top:47px;
+    padding-right:4%;
+  }
+  .top-bar-menu-fb:hover {
+      background: url(<%= asset_path 'menu_BG.png' %>);
+      background-size: 100% 100%;
+  }
+
+  /* menu default settings. @xieyinghua*/
+  .top-bar-menu {
+    padding-left:4%;
+    padding-top:40px;
+    padding-right:4%;
+  }
+  /* menu mouse over and dynamic change background image. @xieyinghua */
+  .top-bar-menu:hover {
+      background: url(<%= asset_path 'menu_BG.png' %>);
+      background-size: 100% 100%;
+  }
+  /* menu default font. @xieyinghua */
+  .top-bar-menu-font {
+      color:#59300b;
+      font-size:18px;
+      margin-top:-40px;
+  }
+  /* menu mouse over and dynamic change font. @xieyinghua */
+  .top-bar-menu-font:hover {
+      color:white;
+  }
+
+  /* sub menu default settings, go close to menu and fill background image, disable sub menu border line. @xieyinghua */
+  .top-bar-menu-sub {
+      background: url(<%= asset_path 'menu_hoverBG.png' %>);
+      background-size: 120% 120%;
+      padding-left:10%;
+      margin-top:0%;
+      margin-left:-5%;
+      border-width:0px;
+      width:220px;
+  }
+  /* sub menu default font. @xieyinghua */
+  .top-bar-menu-sub-font {
+    color:white;
+  }
+  /* sub menu mouse over and dynamic change font. @xieyinghua */
+  .top-bar-menu-sub-font:hover {
+    color:white;
+  }
+
+  /* sub menu the selected one mouse over and dynamic change background image. @xieyinghua */
+  .top-bar-menu-sub-selected:hover {
+      background: url(<%= asset_path 'menu_select.png' %>);
+      background-size: 100% 100%;
+  }
+}
+@media screen and (min-device-width: 1905px) { /* tv. @xieyinghua */
+  .topbg {
+    background-image: url(<%= asset_path 'top_bg.png' %>);
+    background-repeat:no-repeat;
+    display:block;
+    min-height:100px;
+    background-size: 100% 100%;
+  }
+  .logo {
+    width:186px; height:66px;
+  }
+  body {   
+      min-width:1920px;
+      width:auto;
+  }
+  .headerbody{
+    min-width:1920px;
+  }
+  .menubody {
+      min-width:1720px;
+  }
+  .news {
+    width:245px;
+  }
+  .intro {
+    width:220px;
+  }
+  .order {
+    width:220px;
+  }
+  .fb {
+    width:240px;
+  }
+  .account {
+    width:220px;
+  }
+
+  .divider{
+    padding-top:-40%;
+    color:white;
+  }
+  .top-bar-menu-fb {
+    padding-left:5%;
+    padding-top:47px;
+    padding-right:4%;
+  }
+  .top-bar-menu-fb:hover {
+      background: url(<%= asset_path 'menu_BG.png' %>);
+      background-size: 100% 100%;
+  }
+
+  /* menu default settings. @xieyinghua*/
+  .top-bar-menu {
+    padding-left:4%;
+    padding-top:40px;
+    padding-right:4%;
+  }
+  /* menu mouse over and dynamic change background image. @xieyinghua */
+  .top-bar-menu:hover {
+      background: url(<%= asset_path 'menu_BG.png' %>);
+      background-size: 100% 100%;
+  }
+  /* menu default font. @xieyinghua */
+  .top-bar-menu-font {
+      color:#59300b;
+      font-size:24px;
+      margin-top:-50px;
+  }
+  /* menu mouse over and dynamic change font. @xieyinghua */
+  .top-bar-menu-font:hover {
+      color:white;
+  }
+
+  /* sub menu default settings, go close to menu and fill background image, disable sub menu border line. @xieyinghua */
+  .top-bar-menu-sub {
+      background: url(<%= asset_path 'menu_hoverBG.png' %>);
+      background-size: 120% 120%;
+      padding-left:10%;
+      margin-top:0%;
+      margin-left:-5%;
+      border-width:0px;
+      width:220px;
+  }
+  /* sub menu default font. @xieyinghua */
+  .top-bar-menu-sub-font {
+    color:white;
+  }
+  /* sub menu mouse over and dynamic change font. @xieyinghua */
+  .top-bar-menu-sub-font:hover {
+    color:white;
+  }
+
+  /* sub menu the selected one mouse over and dynamic change background image. @xieyinghua */
+  .top-bar-menu-sub-selected:hover {
+      background: url(<%= asset_path 'menu_select.png' %>);
+      background-size: 100% 100%;
+  }
+}
+
+
+
+/* use for check pad and phone menu, or desktop menu. @xieyinghua */
+@media screen and (max-device-width: 1264px) {
+  .top-bar-left-desktop {
+    display:none;
+  }
+  .top-bar-right-desktop {
+    display:none;
+  }
+  .top-bar-left-desktop {
+    height:auto;
+  }
+  .top-bar-right-desktop {
+    height:auto;
+  }
+}
+@media screen and (min-device-width: 1265px) {  
+  .top-bar-left-mobile {
+    display:none;
+  }
+  .top-bar-right-mobile {
+    display:none;
+  }
+  .top-bar-left-mobile {
+    height:auto;
+  }
+  .top-bar-right-mobile {
+    height:auto;
+  }
+}
+
+
+</style>
+
+
+
+
+<div class="topbg">
+
+
+
+  <div class="headerbody" style='float:left;display:inline-block;'> <!-- there have a class top-bar-left before. @xieyinghua -->
+
+    <!-- use for desktop top-bar-left. @xieyinghua -->
+    <div class='top-bar-left-desktop'>
+      <ul class="dropdown menu menubody" data-dropdown-menu style='float:left;display:block;margin-left:2%;'>
+
+
+        <li class="menu-text logo">
+          <h1 class="menu-text logo">
+            <%= link_to(image_tag('logo.png', class: 'logo'), root_path) %>
+          </h1>
+        </li>
+        
+
+        <li class="top-bar-menu news">
+          <%= link_to '首頁', root_path, class: 'active top-bar-menu-font' %>
+        </li>
+
+
+        <li class="divider"></li>
+
+
+        <li class="top-bar-menu intro">
+          <%= link_to '排隊系統', root_path, class: 'active top-bar-menu-font' %>
+          <ul class="menu vertical top-bar-menu-sub">
+            <li class="top-bar-menu-sub-selected">
+              <%= link_to '排隊狀況', arrival_list_path, :class=>'top-bar-menu-sub-font' %>
+            </li>
+            <li class="top-bar-menu-sub-selected">
+              <%= link_to '各站人數', arrival_unitlist_path, :class=>'top-bar-menu-sub-font' %>
+            </li>
+            <li class="top-bar-menu-sub-selected">
+              <%= link_to '客戶位置', arrival_query_path, :class=>'top-bar-menu-sub-font' %>
+            </li>
+          </ul>
+        </li>
+
+
+        <li class="divider"></li>
+
+
+        <% if signed_in? %>
+          <li class="top-bar-menu intro">
+            <%= link_to '後台系統', root_path, class: 'active top-bar-menu-font' %>
+            <ul class="menu vertical top-bar-menu-sub">
+              <li class="top-bar-menu-sub-selected">
+                <%= link_to '帳號權限編輯', users_path, :class=>'top-bar-menu-sub-font' %>
+              </li>
+              <li class="top-bar-menu-sub-selected">
+                <%= link_to '手動調整排隊狀況', arrivals_path, :class=>'top-bar-menu-sub-font' %>
+              </li>
+            </ul>
+          </li>
+
+
+          <li class="divider"></li>
+        <% end %>
+
+        
+        <li class="top-bar-menu account">
+          <%= link_to root_path, class: 'top-bar-menu-font' do %>
+            <%= current_user ? '帳號' : 'LOGIN' %>
+          <% end %>
+          <ul class="menu vertical">
+            <% unless current_user %>
+              <li class="">
+                <%= link_to "登入", new_session_path, :style=>'color:#59300b;' %>
+              </li>
+            <% else %>
+              <li class="">
+                <%= link_to "登出#{current_user.uname} ", session_path, {:method => "delete", :class => "fa fa-power-off", :style=>'color:#59300b;'} %>
+              </li>
+            <% end %>
+          </ul>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+
+
+
+  <!-- use for mobile top-bar-left. @xieyinghua -->
+  <div class='top-bar-left-mobile'>
+    <ul class="dropdown menu menubody" data-dropdown-menu>
+
+
+        <li class="top-bar-menu">
+          <%= link_to '=', '#', class: 'active top-bar-menu-font', :style=>'font-size:21px;' %>
+          
+          <ul class="menu vertical top-bar-menu-sub">
+
+            <li class="top-bar-menu-sub-selected">
+              <%= link_to '首頁', root_path, :class=>'top-bar-menu-sub-font' %>
+            </li>
+
+            <li class="top-bar-menu-sub-selected">
+              <%= link_to '【排隊】排隊狀況', arrival_list_path, :class=>'top-bar-menu-sub-font' %>
+            </li>
+            <li class="top-bar-menu-sub-selected">
+              <%= link_to '【排隊】各站人數', arrival_unitlist_path, :class=>'top-bar-menu-sub-font' %>
+            </li>
+            <li class="top-bar-menu-sub-selected">
+              <%= link_to '【排隊】客戶位置', arrival_query_path, :class=>'top-bar-menu-sub-font' %>
+            </li>
+            <% if signed_in? %>
+              <li class="top-bar-menu-sub-selected">
+                <%= link_to '【後台】帳號權限編輯', users_path, :class=>'top-bar-menu-sub-font' %>
+              </li>
+              <li class="top-bar-menu-sub-selected">
+                <%= link_to '【後台】手動調整排隊狀況', arrivals_path, :class=>'top-bar-menu-sub-font' %>
+              </li>
+            <% end %>
+          </ul>
+        </li>
+
+
+    </ul>
+
+    <ul class="dropdown menu" data-dropdown-menu>
+      <li class="logo">
+        <%= link_to(image_tag('logo.png'), root_path) %>
+      </li>
+    </ul>
+
+    <ul class="dropdown menu account" data-dropdown-menu>
+      <li class="">
+        <%= link_to root_path, :style=>'color:#59300b;' do %>
+          <%= current_user ? '帳號' : 'LOGIN' %>
+        <% end %>
+        <ul class="menu vertical">
+          <% unless current_user %>
+            <li class="">
+              <%= link_to "登入", new_session_path, :style=>'color:#59300b;' %>
+            </li>
+          <% else %>
+            <li class="">
+              <%= link_to "登出#{current_user.uname} ", session_path, {:method => "delete", :class => "fa fa-power-off", :style=>'color:#59300b;'} %>
+            </li>
+          <% end %>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+
+  <div class="" style='float:left;display:inline-block;'> <!-- there have a class top-bar-right before. @xieyinghua -->
+
+      <!-- use for desktop top-bar-right. @xieyinghua -->
+      <div class='top-bar-right-desktop'>
+      </div>
+
+
+
+      <!-- use for desktop top-bar-right. @xieyinghua -->
+      <div class='top-bar-right-mobile'>
+      </div>
+  </div>
+
+
+
+</div>
+

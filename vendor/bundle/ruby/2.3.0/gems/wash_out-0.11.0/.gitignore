@@ -1,0 +1,17 @@
+.rbx/
+.bundle/
+*.gem
+.idea/
+.ruby-gemset
+.ruby-version
+.rvmrc
+*.swp
+log/*.log
+pkg/
+spec/dummy/db/*.sqlite3
+spec/dummy/log/*.log
+spec/dummy/tmp/
+gemfiles/*.lock
+coverage
+tags
+Gemfile.lock

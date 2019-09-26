@@ -1,0 +1,79 @@
+<%= favicon_link_tag 'favicon.ico' %>
+
+<header class="navbar navbar-fixed-top navbar-inverse">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <% if signed_in? %>
+        <%= link_to "QC Endo Cloud System", users_path, id: "logo" %>
+      <% else %>
+        <%= link_to "QC Endo Cloud System", root_path, id: "logo" %>
+      <% end %>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <% if signed_in? %>
+          <% if current_user.uid=='9999' || current_user.upower=='管理員' %>
+            <li><%= link_to "RFID", rfid_wsdl_path %></li>
+            <li><%= link_to "USER", users_path %></li>
+            <li><%= link_to "SCOPY", scopies_path %></li>
+            <li><%= link_to "WORKBOOK", worksenses_path %></li>
+          <% end %>
+          <li id="fat-menu" class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              鏡管系統 <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+              <li><%= link_to "管理內視鏡的RFID Tag", manage_endo_rfidtag_path %></li>
+              <li><%= link_to "更改內視鏡的狀態", manage_endo_status_path %></li>
+              <li><%= link_to "新增、修改、刪除內視鏡", manage_endo_scopy_path %></li>
+            </ul>
+          </li>
+          <li id="fat-menu" class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              統計系統 <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+              <li><%= link_to "內視鏡使用次數統計", statistic_endo_usagefrequency_path %></li>
+              <li><%= link_to "內視鏡報修次數統計", statistic_endo_damagefrequency_path %></li>
+            </ul>
+          </li>
+          <li id="fat-menu" class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              查詢系統 <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+              <li><%= link_to "以單號查詢歷史資料", query_endo_by_accessionno_path %></li>
+              <li><%= link_to "以病歷號查詢歷史資料", query_endo_by_patientid_path %></li>
+              <li><%= link_to "以鏡號查詢歷史資料", query_endo_by_scopyid_path %></li>
+              <li><%= link_to "以操作人員查詢歷史資料", query_endo_by_userid_path %></li>
+              <li><%= link_to "以日期時間查詢歷史資料", query_endo_by_datetime_path %></li>
+              <li><%= link_to "刷RFID Tag查詢歷史資料", query_endo_by_rfidtag_path %></li>
+              <li class="divider"></li>
+              <li><%= link_to "查詢內視鏡現在所在位置", query_endo_site_path %></li>
+            </ul>
+          </li>
+          <li><%= link_to "內視鏡先進先出", fif_oendo_query_path %></li>
+          <li id="fat-menu" class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <%= current_user.uname %> <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+              <li><%= link_to "Profile", current_user %></li>
+              <li><%= link_to "Settings", edit_user_path(current_user) %></li>
+              <li class="divider"></li>
+              <li>
+                <%= link_to "Sign out", session_path, :method => "delete" %>
+              </li>
+            </ul>
+          </li>
+        <% else %>
+          <li><%= link_to "Register", new_user_path %></li>
+          <li><%= link_to "Sign in", new_session_path %></li>
+        <% end %>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</header>

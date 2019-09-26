@@ -1,0 +1,995 @@
+FATAL:  lock file "postmaster.pid" already exists
+HINT:  Is another postmaster (PID 445) running in data directory "/usr/local/var/postgres"?
+2017-11-21 17:57:21.536 CST [21339] LOG:  listening on IPv6 address "::1", port 5432
+2017-11-21 17:57:21.536 CST [21339] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2017-11-21 17:57:21.537 CST [21339] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2017-11-21 17:57:21.547 CST [21340] LOG:  database system was shut down at 2017-11-21 17:56:40 CST
+2017-11-21 17:57:21.550 CST [21339] LOG:  database system is ready to accept connections
+2017-11-21 18:00:39.892 CST [21339] LOG:  worker process: logical replication launcher (PID 21346) exited with exit code 1
+2017-11-21 18:00:39.892 CST [21339] LOG:  received smart shutdown request
+2017-11-21 18:00:39.894 CST [21341] LOG:  shutting down
+2017-11-21 18:00:39.899 CST [21339] LOG:  database system is shut down
+2017-11-28 13:33:28.820 CST [2675] LOG:  listening on IPv6 address "::1", port 5432
+2017-11-28 13:33:28.820 CST [2675] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2017-11-28 13:33:28.821 CST [2675] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2017-11-28 13:33:28.874 CST [2676] LOG:  database system was shut down at 2017-11-21 20:24:06 CST
+2017-11-28 13:33:28.891 CST [2675] LOG:  database system is ready to accept connections
+2017-11-28 14:19:02.156 CST [2675] LOG:  worker process: logical replication launcher (PID 2682) exited with exit code 1
+2017-11-28 14:19:02.156 CST [2675] LOG:  received smart shutdown request
+2017-11-28 14:19:02.157 CST [2677] LOG:  shutting down
+2017-11-28 14:19:02.163 CST [2675] LOG:  database system is shut down
+2017-12-20 02:43:18.992 CST [2717] LOG:  listening on IPv6 address "::1", port 5432
+2017-12-20 02:43:18.992 CST [2717] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2017-12-20 02:43:18.993 CST [2717] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2017-12-20 02:43:19.023 CST [2718] LOG:  database system was shut down at 2017-11-28 14:19:02 CST
+2017-12-20 02:43:19.028 CST [2717] LOG:  database system is ready to accept connections
+2017-12-22 03:49:17.427 CST [2717] LOG:  received smart shutdown request
+2017-12-22 03:49:17.430 CST [2717] LOG:  worker process: logical replication launcher (PID 2724) exited with exit code 1
+2017-12-22 03:49:17.430 CST [2719] LOG:  shutting down
+2017-12-22 03:49:17.441 CST [2717] LOG:  database system is shut down
+2017-12-22 15:13:58.445 CST [1977] LOG:  listening on IPv6 address "::1", port 5432
+2017-12-22 15:13:58.445 CST [1977] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2017-12-22 15:13:58.446 CST [1977] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2017-12-22 15:13:58.512 CST [1978] LOG:  database system was shut down at 2017-12-22 03:49:17 CST
+2017-12-22 15:13:58.550 CST [1977] LOG:  database system is ready to accept connections
+2018-01-16 14:48:40.861 CST [1613] LOG:  listening on IPv6 address "::1", port 5432
+2018-01-16 14:48:40.861 CST [1613] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2018-01-16 14:48:40.862 CST [1613] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2018-01-16 14:48:40.907 CST [1614] LOG:  database system was shut down at 2017-12-22 15:22:27 CST
+2018-01-16 14:48:40.931 CST [1613] LOG:  database system is ready to accept connections
+2018-01-16 16:15:30.444 CST [2171] ERROR:  column "begindate" does not exist at character 85
+2018-01-16 16:15:30.444 CST [2171] STATEMENT:  SELECT "rf_barcodes".* FROM "rf_barcodes" WHERE "rf_barcodes"."site" = 'Room1' AND (begindate>='2017-11-21')  ORDER BY scandate desc, scantime desc
+2018-01-16 16:16:10.710 CST [2171] ERROR:  column "scandte" does not exist at character 50
+2018-01-16 16:16:10.710 CST [2171] HINT:  Perhaps you meant to reference the column "rf_barcodes.scandate".
+2018-01-16 16:16:10.710 CST [2171] STATEMENT:  SELECT "rf_barcodes".* FROM "rf_barcodes" WHERE (scandte>='2017-11-21')  ORDER BY scandate desc, scantime desc
+2018-01-16 17:30:55.424 CST [3029] ERROR:  relation "worksense" does not exist at character 15
+2018-01-16 17:30:55.424 CST [3029] STATEMENT:  select * from worksense;
+2018-04-09 15:49:24.908 CST [2191] LOG:  listening on IPv6 address "::1", port 5432
+2018-04-09 15:49:24.909 CST [2191] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2018-04-09 15:49:24.910 CST [2191] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2018-04-09 15:49:24.983 CST [2192] LOG:  database system was shut down at 2018-04-07 21:36:12 CST
+2018-04-09 15:49:25.030 CST [2191] LOG:  database system is ready to accept connections
+2018-04-09 16:03:08.986 CST [2394] ERROR:  syntax error at or near "form" at character 10
+2018-04-09 16:03:08.986 CST [2394] STATEMENT:  select * form scopies;
+2018-04-09 17:24:42.304 CST [2191] LOG:  received fast shutdown request
+2018-04-09 17:24:42.305 CST [2191] LOG:  aborting any active transactions
+2018-04-09 17:24:42.307 CST [2191] LOG:  worker process: logical replication launcher (PID 2198) exited with exit code 1
+2018-04-09 17:24:42.307 CST [2193] LOG:  shutting down
+2018-04-09 17:24:42.330 CST [2191] LOG:  database system is shut down
+2018-05-18 13:56:02.900 CST [18434] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2018-05-18 13:56:02.900 CST [18434] LOG:  listening on IPv6 address "::1", port 5432
+2018-05-18 13:56:02.901 CST [18434] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2018-05-18 13:56:03.019 CST [18435] LOG:  database system was shut down at 2018-05-11 15:36:00 CST
+2018-05-18 13:56:03.055 CST [18434] LOG:  database system is ready to accept connections
+2018-05-18 14:06:30.665 CST [18436] LOG:  checkpoints are occurring too frequently (27 seconds apart)
+2018-05-18 14:06:30.665 CST [18436] HINT:  Consider increasing the configuration parameter "max_wal_size".
+2018-05-18 20:15:40.338 CST [18434] LOG:  received smart shutdown request
+2018-05-18 20:15:40.339 CST [18434] LOG:  worker process: logical replication launcher (PID 18441) exited with exit code 1
+2018-05-18 20:15:40.339 CST [18436] LOG:  shutting down
+2018-05-18 20:15:40.373 CST [18434] LOG:  database system is shut down
+2018-06-01 11:48:47.133 CST [1744] LOG:  listening on IPv6 address "::1", port 5432
+2018-06-01 11:48:47.133 CST [1744] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2018-06-01 11:48:47.135 CST [1744] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2018-06-01 11:48:47.207 CST [1745] LOG:  database system was shut down at 2018-06-01 03:58:37 CST
+2018-06-01 11:48:47.241 CST [1744] LOG:  database system is ready to accept connections
+2018-06-01 12:55:45.829 CST [2249] LOG:  could not receive data from client: Connection reset by peer
+2018-06-01 12:57:52.579 CST [2262] ERROR:  syntax error at or near "desc" at character 71
+2018-06-01 12:57:52.579 CST [2262] STATEMENT:  select * from worksenses where begindate='2018-05-26' and wid is null desc limit 1;
+2018-06-01 22:35:30.377 CST [1744] LOG:  received smart shutdown request
+2018-06-01 22:35:30.385 CST [1744] LOG:  worker process: logical replication launcher (PID 1751) exited with exit code 1
+2018-06-01 22:35:30.386 CST [1746] LOG:  shutting down
+2018-06-01 22:35:30.415 CST [1744] LOG:  database system is shut down
+2018-06-05 07:01:12.171 CST [7936] LOG:  listening on IPv6 address "::1", port 5432
+2018-06-05 07:01:12.172 CST [7936] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2018-06-05 07:01:12.173 CST [7936] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2018-06-05 07:01:12.245 CST [7937] LOG:  database system was shut down at 2018-06-01 22:35:30 CST
+2018-06-05 07:01:12.282 CST [7936] LOG:  database system is ready to accept connections
+2018-06-05 07:50:32.976 CST [8936] ERROR:  syntax error at or near ":" at character 43
+2018-06-05 07:50:32.976 CST [8936] STATEMENT:  select * from worksenses where 20180605+07:50:32 - scandate+scantime > interval '2 minut;
+2018-06-05 07:51:06.180 CST [8947] ERROR:  syntax error at or near ":" at character 43
+2018-06-05 07:51:06.180 CST [8947] STATEMENT:  select * from worksenses where 20180605+07:51:06 - scandate+scantime > interval '2 minut;
+2018-06-05 07:51:37.270 CST [8955] ERROR:  syntax error at or near ":" at character 43
+2018-06-05 07:51:37.270 CST [8955] STATEMENT:  select * from worksenses where 20180605+07:51:37 - scandate+scantime > interval '2 minut;
+2018-06-05 07:51:50.286 CST [8962] ERROR:  syntax error at or near ":" at character 43
+2018-06-05 07:51:50.286 CST [8962] STATEMENT:  select * from worksenses where 20180605+07:51:50 - scandate+scantime > interval '2 minut;
+2018-06-05 07:52:20.899 CST [8971] ERROR:  unterminated quoted string at or near "'2 minut;" at character 83
+2018-06-05 07:52:20.899 CST [8971] STATEMENT:  select * from worksenses where '20180605 07:52:20' - scandate+scantime > interval '2 minut;
+2018-06-05 07:52:43.790 CST [8980] ERROR:  unterminated quoted string at or near "'2 minut;" at character 83
+2018-06-05 07:52:43.790 CST [8980] STATEMENT:  select * from worksenses where '20180605 07:52:20' - scandate+scantime > interval '2 minut;
+2018-06-05 07:52:51.953 CST [8980] ERROR:  column "scandate" does not exist at character 54
+2018-06-05 07:52:51.953 CST [8980] STATEMENT:  select * from worksenses where '20180605 07:52:20' - scandate+scantime > interval '2 minute';
+2018-06-05 07:53:00.287 CST [8980] ERROR:  operator does not exist: integer + time without time zone at character 63
+2018-06-05 07:53:00.287 CST [8980] HINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts.
+2018-06-05 07:53:00.287 CST [8980] STATEMENT:  select * from worksenses where '20180605 07:52:20' - begindate+begintime > interval '2 minute';
+2018-06-05 07:54:10.680 CST [8980] ERROR:  function abs(interval) does not exist at character 32
+2018-06-05 07:54:10.680 CST [8980] HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2018-06-05 07:54:10.680 CST [8980] STATEMENT:  select * from worksenses where abs('07:52:20' - begintime) > interval '2 minute';
+2018-06-05 07:55:15.440 CST [8980] ERROR:  function abs(interval) does not exist at character 32
+2018-06-05 07:55:15.440 CST [8980] HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2018-06-05 07:55:15.440 CST [8980] STATEMENT:  select * from worksenses where abs('07:52:20' - begintime) > interval '2 minutes';
+2018-06-05 07:55:36.341 CST [8980] ERROR:  invalid input syntax for type time: "20180604 07:52:20" at character 32
+2018-06-05 07:55:36.341 CST [8980] STATEMENT:  select * from worksenses where '20180604 07:52:20' - begintime > interval '2 minutes';
+2018-06-05 07:55:49.993 CST [8980] ERROR:  operator does not exist: integer + time without time zone at character 65
+2018-06-05 07:55:49.993 CST [8980] HINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts.
+2018-06-05 07:55:49.993 CST [8980] STATEMENT:  select * from worksenses where '2018/06/04 07:52:20' - begindate+begintime > interval '2 minutes';
+2018-06-05 07:56:08.028 CST [8980] ERROR:  operator does not exist: integer + time without time zone at character 65
+2018-06-05 07:56:08.028 CST [8980] HINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts.
+2018-06-05 07:56:08.028 CST [8980] STATEMENT:  select * from rf_barcodes where '2018/06/04 07:52:20' - scandate+scantime > interval '2 minutes';
+2018-06-05 08:12:42.076 CST [9215] ERROR:  column "scopies" does not exist at character 32
+2018-06-05 08:12:42.076 CST [9215] STATEMENT:  select * from worksenses where scopies
+2018-06-05 15:56:23.940 CST [17583] ERROR:  column "exdate" of relation "worksenses" does not exist at character 25
+2018-06-05 15:56:23.940 CST [17583] STATEMENT:  insert into worksenses (exdate) values ('2018-05-28');
+	commit;
+2018-06-05 15:56:54.418 CST [17583] ERROR:  syntax error at or near "use" at character 1
+2018-06-05 15:56:54.418 CST [17583] STATEMENT:  use einvoice;
+	insert into worksenses (exdate) values ('2018-05-28');
+	commit;
+2018-06-05 15:57:07.683 CST [17586] ERROR:  relation "worksenses" does not exist at character 13
+2018-06-05 15:57:07.683 CST [17586] STATEMENT:  insert into worksenses (exdate) values ('2018-05-28');
+	commit;
+2018-06-05 15:57:46.278 CST [17586] WARNING:  there is no transaction in progress
+2018-06-05 19:08:01.499 CST [7936] LOG:  received smart shutdown request
+2018-06-05 19:08:01.501 CST [7936] LOG:  worker process: logical replication launcher (PID 7943) exited with exit code 1
+2018-06-05 19:08:01.501 CST [7938] LOG:  shutting down
+2018-06-05 19:08:01.513 CST [7936] LOG:  database system is shut down
+2018-06-08 09:07:49.865 CST [8192] LOG:  listening on IPv6 address "::1", port 5432
+2018-06-08 09:07:49.866 CST [8192] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2018-06-08 09:07:49.867 CST [8192] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2018-06-08 09:07:49.944 CST [8193] LOG:  database system was shut down at 2018-06-05 19:08:01 CST
+2018-06-08 09:07:49.982 CST [8192] LOG:  database system is ready to accept connections
+2018-07-27 02:36:33.675 CST [11529] LOG:  listening on IPv6 address "::1", port 5432
+2018-07-27 02:36:33.676 CST [11529] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2018-07-27 02:36:33.677 CST [11529] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2018-07-27 02:36:33.782 CST [11530] LOG:  database system was shut down at 2018-07-18 03:28:26 CST
+2018-07-27 02:36:33.805 CST [11529] LOG:  database system is ready to accept connections
+2018-07-27 04:55:14.975 CST [11529] LOG:  received smart shutdown request
+2018-07-27 04:55:14.977 CST [11529] LOG:  worker process: logical replication launcher (PID 11536) exited with exit code 1
+2018-07-27 04:55:14.977 CST [11531] LOG:  shutting down
+2018-07-27 04:55:15.497 CST [11529] LOG:  database system is shut down
+2018-08-01 13:59:48.498 CST [1477] LOG:  listening on IPv6 address "::1", port 5432
+2018-08-01 13:59:48.499 CST [1477] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2018-08-01 13:59:48.500 CST [1477] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2018-08-01 13:59:48.571 CST [1478] LOG:  database system was shut down at 2018-07-29 09:40:37 CST
+2018-08-01 13:59:48.603 CST [1477] LOG:  database system is ready to accept connections
+2018-08-01 14:02:47.812 CST [1635] LOG:  could not receive data from client: Connection reset by peer
+2018-08-01 14:03:23.046 CST [1645] ERROR:  syntax error at or near "worksenses" at character 10
+2018-08-01 14:03:23.046 CST [1645] STATEMENT:  select * worksenses where begindate='2018-05-01';
+2018-08-01 15:52:10.578 CST [1585] ERROR:  missing FROM-clause entry for table "patients" at character 91
+2018-08-01 15:52:10.578 CST [1585] STATEMENT:  SELECT DISTINCT ON (begindate,patient_id,site_id,scopy_id,wid) worksenses.*,scopies.sname,patients.pid,patients.pname,sites.sname FROM "worksenses" INNER JOIN "scopies" ON "scopies"."id" = "worksenses"."scopy_id" INNER JOIN "sites" ON "sites"."id" = "worksenses"."site_id" WHERE (sites.sname in ('Room1','Room2','Room3','Room4','Room5','ERCP','外做')) AND (wid is not null) AND (begindate>='2018-03-01') AND (begindate<='2018-03-01')  ORDER BY begindate asc
+2018-08-01 15:55:48.757 CST [1645] ERROR:  column "scopi_id" does not exist at character 77
+2018-08-01 15:55:48.757 CST [1645] HINT:  Perhaps you meant to reference the column "worksenses.scopy_id".
+2018-08-01 15:55:48.757 CST [1645] STATEMENT:  select * from worksenses where begindate='2018-03-01' and wid='NO' order by scopi_id , begintime;
+2018-08-01 15:59:08.997 CST [1585] ERROR:  syntax error at or near "ON" at character 23
+2018-08-01 15:59:08.997 CST [1585] STATEMENT:  SELECT COUNT(DISTINCT ON (begindate,site_id,scopy_id,wid) worksenses.*,scopies.sname,sites.sname) FROM "worksenses" INNER JOIN "scopies" ON "scopies"."id" = "worksenses"."scopy_id" INNER JOIN "sites" ON "sites"."id" = "worksenses"."site_id" WHERE (sites.sname in ('Room1','Room2','Room3','Room4','Room5','ERCP','外做')) AND (wid is not null) AND (begindate>='2018-03-01') AND (begindate<='2018-03-01')
+2018-08-01 15:59:28.116 CST [1645] ERROR:  syntax error at or near "ON" at character 23
+2018-08-01 15:59:28.116 CST [1645] STATEMENT:  SELECT COUNT(DISTINCT ON (begindate,site_id,scopy_id,wid) worksenses.*,scopies.sname,sites.sname) FROM "worksenses" INNER JOIN "scopies" ON "scopies"."id" = "worksenses"."scopy_id" INNER JOIN "sites" ON "sites"."id" = "worksenses"."site_id" WHERE (sites.sname in ('Room1','Room2','Room3','Room4','Room5','ERCP','外做')) AND (wid is not null) AND (begindate>='2018-03-01') AND (begindate<='2018-03-01')
+2018-08-01 16:04:43.911 CST [1585] ERROR:  function count(worksenses, character varying, character varying) does not exist at character 8
+2018-08-01 16:04:43.911 CST [1585] HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2018-08-01 16:04:43.911 CST [1585] STATEMENT:  SELECT COUNT(worksenses.*,scopies.sname,sites.sname) FROM "worksenses" INNER JOIN "scopies" ON "scopies"."id" = "worksenses"."scopy_id" INNER JOIN "sites" ON "sites"."id" = "worksenses"."site_id" WHERE (sites.sname in ('Room1','Room2','Room3','Room4','Room5','ERCP','外做')) AND (wid is not null) AND (begindate>='2018-03-01') AND (begindate<='2018-03-01')
+2018-08-01 16:04:59.066 CST [1585] ERROR:  function count(worksenses, character varying, character varying) does not exist at character 8
+2018-08-01 16:04:59.066 CST [1585] HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2018-08-01 16:04:59.066 CST [1585] STATEMENT:  SELECT COUNT(worksenses.*,scopies.sname,sites.sname) FROM "worksenses" INNER JOIN "scopies" ON "scopies"."id" = "worksenses"."scopy_id" INNER JOIN "sites" ON "sites"."id" = "worksenses"."site_id" WHERE (sites.sname in ('Room1','Room2','Room3','Room4','Room5','ERCP','外做')) AND (wid is not null) AND (begindate>='2018-03-01') AND (begindate<='2018-03-01')
+2018-08-02 02:49:23.428 CST [13203] ERROR:  syntax error at or near "sites" at character 199
+2018-08-02 02:49:23.428 CST [13203] STATEMENT:  SELECT worksenses.*,scopies.sname,sites.sname FROM "worksenses" INNER JOIN "scopies" ON "scopies"."id" = "worksenses"."scopy_id" INNER JOIN "sites" ON "sites"."id" = "worksenses"."site_id" WHERE (a sites.sname in ('Room1','Room2','Room3','Room4','Room5','ERCP','外做')) AND (wid is not null) AND (begindate>='2018-05-01') AND (begindate<='2018-05-01')  ORDER BY begindate asc
+2018-08-02 02:50:06.395 CST [13265] ERROR:  syntax error at or near "sites" at character 199
+2018-08-02 02:50:06.395 CST [13265] STATEMENT:  SELECT worksenses.*,scopies.sname,sites.sname FROM "worksenses" INNER JOIN "scopies" ON "scopies"."id" = "worksenses"."scopy_id" INNER JOIN "sites" ON "sites"."id" = "worksenses"."site_id" WHERE (a sites.sname in ('Room1','Room2','Room3','Room4','Room5','ERCP','外做')) AND (wid is not null) AND (begindate>='2018-03-01') AND (begindate<='2018-05-01') ORDER BY begindate asc
+2018-08-02 23:29:10.918 CST [1477] LOG:  received smart shutdown request
+2018-08-02 23:29:10.921 CST [1477] LOG:  worker process: logical replication launcher (PID 1484) exited with exit code 1
+2018-08-02 23:29:10.921 CST [1479] LOG:  shutting down
+2018-08-02 23:29:10.942 CST [1477] LOG:  database system is shut down
+2018-08-31 08:36:21.429 CST [73683] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2018-08-31 08:36:21.429 CST [73683] LOG:  listening on IPv6 address "::1", port 5432
+2018-08-31 08:36:21.430 CST [73683] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2018-08-31 08:36:21.496 CST [73684] LOG:  database system was interrupted; last known up at 2018-08-13 16:09:24 CST
+2018-08-31 08:36:21.852 CST [73684] LOG:  database system was not properly shut down; automatic recovery in progress
+2018-08-31 08:36:21.863 CST [73684] LOG:  redo starts at 0/B2CCFDF8
+2018-08-31 08:36:21.863 CST [73684] LOG:  invalid record length at 0/B2CCFED8: wanted 24, got 0
+2018-08-31 08:36:21.863 CST [73684] LOG:  redo done at 0/B2CCFEA0
+2018-08-31 08:36:21.885 CST [73683] LOG:  database system is ready to accept connections
+2018-08-31 08:38:08.848 CST [73683] LOG:  received fast shutdown request
+2018-08-31 08:38:08.849 CST [73683] LOG:  aborting any active transactions
+2018-08-31 08:38:08.850 CST [73691] FATAL:  terminating connection due to administrator command
+2018-08-31 08:38:08.852 CST [73683] LOG:  worker process: logical replication launcher (PID 73690) exited with exit code 1
+2018-08-31 08:38:08.852 CST [73685] LOG:  shutting down
+2018-08-31 08:38:08.868 CST [73683] LOG:  database system is shut down
+2018-09-01 11:30:40.010 CST [77655] LOG:  listening on IPv6 address "::1", port 5432
+2018-09-01 11:30:40.010 CST [77655] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2018-09-01 11:30:40.011 CST [77655] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2018-09-01 11:30:40.070 CST [77656] LOG:  database system was shut down at 2018-08-31 08:38:08 CST
+2018-09-01 11:30:40.095 CST [77655] LOG:  database system is ready to accept connections
+2018-11-06 09:49:27.415 CST [20047] LOG:  listening on IPv6 address "::1", port 5432
+2018-11-06 09:49:27.416 CST [20047] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2018-11-06 09:49:27.417 CST [20047] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2018-11-06 09:49:27.521 CST [20048] LOG:  database system was shut down at 2018-09-28 08:10:15 CST
+2018-11-06 09:49:27.549 CST [20047] LOG:  database system is ready to accept connections
+2018-11-06 10:12:15.518 CST [20336] ERROR:  null value in column "created_at" violates not-null constraint
+2018-11-06 10:12:15.518 CST [20336] DETAIL:  Failing row contains (5644466, 2018-05-26, 10:58:19, null, null, null, null, 1, 1, null, 23, 000).
+2018-11-06 10:12:15.518 CST [20336] STATEMENT:  insert into worksenses (begindate,begintime,scopy_id,patient_id,site_id,wid) values ('2018-05-26','10:58:19',1,1,23,'000');
+2018-11-06 20:43:43.401 CST [20047] LOG:  received smart shutdown request
+2018-11-06 20:43:43.404 CST [20047] LOG:  worker process: logical replication launcher (PID 20054) exited with exit code 1
+2018-11-06 20:43:43.404 CST [20049] LOG:  shutting down
+2018-11-06 20:43:43.428 CST [20047] LOG:  database system is shut down
+2018-11-07 00:47:47.888 CST [9060] LOG:  listening on IPv6 address "::1", port 5432
+2018-11-07 00:47:47.888 CST [9060] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2018-11-07 00:47:47.890 CST [9060] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2018-11-07 00:47:47.924 CST [9061] LOG:  database system was shut down at 2018-11-06 20:43:43 CST
+2018-11-07 00:47:47.939 CST [9060] LOG:  database system is ready to accept connections
+2018-11-07 05:33:44.693 CST [9060] LOG:  received smart shutdown request
+2018-11-07 05:33:44.695 CST [9060] LOG:  worker process: logical replication launcher (PID 9067) exited with exit code 1
+2018-11-07 05:33:44.695 CST [9062] LOG:  shutting down
+2018-11-07 05:33:44.706 CST [9060] LOG:  database system is shut down
+2018-12-07 14:06:16.250 CST [1491] LOG:  listening on IPv6 address "::1", port 5432
+2018-12-07 14:06:16.251 CST [1491] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2018-12-07 14:06:16.252 CST [1491] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2018-12-07 14:06:16.330 CST [1492] LOG:  database system was shut down at 2018-11-09 08:23:00 CST
+2018-12-07 14:06:16.365 CST [1491] LOG:  database system is ready to accept connections
+2018-12-08 03:00:28.219 CST [10308] ERROR:  syntax error at or near "2018" at character 42
+2018-12-08 03:00:28.219 CST [10308] STATEMENT:  select * from carbinets where savedate=''2018-12-8;
+2018-12-08 03:07:44.582 CST [1491] LOG:  received fast shutdown request
+2018-12-08 03:07:44.582 CST [1491] LOG:  aborting any active transactions
+2018-12-08 03:07:44.584 CST [1491] LOG:  worker process: logical replication launcher (PID 1498) exited with exit code 1
+2018-12-08 03:07:44.591 CST [1493] LOG:  shutting down
+2018-12-08 03:07:44.613 CST [1491] LOG:  database system is shut down
+2018-12-27 11:07:05.924 CST [34804] FATAL:  lock file "postmaster.pid" already exists
+2018-12-27 11:07:05.924 CST [34804] HINT:  Is another postmaster (PID 23571) running in data directory "/usr/local/var/postgres"?
+2019-03-12 21:27:43.922 CST [36039] LOG:  listening on IPv6 address "::1", port 5432
+2019-03-12 21:27:43.922 CST [36039] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2019-03-12 21:27:43.924 CST [36039] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2019-03-12 21:27:44.021 CST [36040] LOG:  database system was shut down at 2019-03-08 01:11:39 CST
+2019-03-12 21:27:44.056 CST [36039] LOG:  database system is ready to accept connections
+2019-04-23 16:47:51.483 CST [5262] LOG:  listening on IPv6 address "::1", port 5432
+2019-04-23 16:47:51.484 CST [5262] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2019-04-23 16:47:51.484 CST [5262] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2019-04-23 16:47:51.531 CST [5263] LOG:  database system was shut down at 2019-04-22 20:53:03 CST
+2019-04-23 16:47:51.540 CST [5262] LOG:  database system is ready to accept connections
+2019-04-23 17:55:23.439 CST [5270] ERROR:  syntax error at or near ")" at character 117
+2019-04-23 17:55:23.439 CST [5270] STATEMENT:  SELECT "worksenses".* FROM "worksenses" INNER JOIN "sites" ON "sites"."id" = "worksenses"."site_id" WHERE (scopy_id=) AND (sites.sname like '洗滌機%') AND (wid='1114' and begindate='2019-04-23' and begintime>'17:53:54')  ORDER BY begintime desc
+2019-04-23 17:56:43.160 CST [5270] ERROR:  syntax error at or near ")" at character 117
+2019-04-23 17:56:43.160 CST [5270] STATEMENT:  SELECT "worksenses".* FROM "worksenses" INNER JOIN "sites" ON "sites"."id" = "worksenses"."site_id" WHERE (scopy_id=) AND (sites.sname like '洗滌機%') AND (wid='1114' and begindate='2019-04-23' and begintime>'17:53:54')  ORDER BY begintime desc
+2019-04-23 17:57:16.027 CST [5270] ERROR:  syntax error at or near ")" at character 117
+2019-04-23 17:57:16.027 CST [5270] STATEMENT:  SELECT "worksenses".* FROM "worksenses" INNER JOIN "sites" ON "sites"."id" = "worksenses"."site_id" WHERE (scopy_id=) AND (sites.sname like '洗滌機%') AND (wid='1114' and begindate='2019-04-23' and begintime>'17:53:54')  ORDER BY begintime desc
+2019-04-23 17:57:35.679 CST [5270] ERROR:  syntax error at or near ")" at character 117
+2019-04-23 17:57:35.679 CST [5270] STATEMENT:  SELECT "worksenses".* FROM "worksenses" INNER JOIN "sites" ON "sites"."id" = "worksenses"."site_id" WHERE (scopy_id=) AND (sites.sname like '洗滌機%') AND (wid='1114' and begindate='2019-04-23' and begintime>'17:53:54')  ORDER BY begintime desc
+2019-04-23 17:58:34.311 CST [5270] ERROR:  syntax error at or near ")" at character 117
+2019-04-23 17:58:34.311 CST [5270] STATEMENT:  SELECT "worksenses".* FROM "worksenses" INNER JOIN "sites" ON "sites"."id" = "worksenses"."site_id" WHERE (scopy_id=) AND (sites.sname like '洗滌機%') AND (wid='1114' and begindate='2019-04-23' and begintime>'17:53:54')  ORDER BY begintime desc
+2019-04-23 20:27:29.187 CST [10302] ERROR:  relation "barcodes" already exists
+2019-04-23 20:27:29.187 CST [10302] STATEMENT:  CREATE TABLE barcodes (
+	    id integer NOT NULL,
+	    created_at timestamp without time zone NOT NULL,
+	    updated_at timestamp without time zone NOT NULL,
+	    patient_id integer,
+	    site_id integer
+	);
+2019-04-23 20:27:29.195 CST [10302] ERROR:  relation "barcodes_id_seq" already exists
+2019-04-23 20:27:29.195 CST [10302] STATEMENT:  CREATE SEQUENCE barcodes_id_seq
+	    START WITH 1
+	    INCREMENT BY 1
+	    NO MINVALUE
+	    NO MAXVALUE
+	    CACHE 1;
+2019-04-23 20:27:29.207 CST [10302] ERROR:  relation "carbinets" already exists
+2019-04-23 20:27:29.207 CST [10302] STATEMENT:  CREATE TABLE carbinets (
+	    id integer NOT NULL,
+	    number integer,
+	    savedate date,
+	    savetime time without time zone,
+	    temperature double precision,
+	    humidity double precision,
+	    created_at timestamp without time zone NOT NULL,
+	    updated_at timestamp without time zone NOT NULL
+	);
+2019-04-23 20:27:29.207 CST [10302] ERROR:  relation "carbinets_id_seq" already exists
+2019-04-23 20:27:29.207 CST [10302] STATEMENT:  CREATE SEQUENCE carbinets_id_seq
+	    START WITH 1
+	    INCREMENT BY 1
+	    NO MINVALUE
+	    NO MAXVALUE
+	    CACHE 1;
+2019-04-23 20:27:29.209 CST [10302] ERROR:  relation "disinfections" already exists
+2019-04-23 20:27:29.209 CST [10302] STATEMENT:  CREATE TABLE disinfections (
+	    id integer NOT NULL,
+	    sid character varying,
+	    pid character varying,
+	    mid integer,
+	    mname character varying,
+	    uid character varying,
+	    problem character varying,
+	    created_at timestamp without time zone NOT NULL,
+	    updated_at timestamp without time zone NOT NULL
+	);
+2019-04-23 20:27:29.209 CST [10302] ERROR:  relation "disinfections_id_seq" already exists
+2019-04-23 20:27:29.209 CST [10302] STATEMENT:  CREATE SEQUENCE disinfections_id_seq
+	    START WITH 1
+	    INCREMENT BY 1
+	    NO MINVALUE
+	    NO MAXVALUE
+	    CACHE 1;
+2019-04-23 20:27:29.211 CST [10302] ERROR:  relation "examines" already exists
+2019-04-23 20:27:29.211 CST [10302] STATEMENT:  CREATE TABLE examines (
+	    id integer NOT NULL,
+	    seq character varying,
+	    eseq character varying,
+	    typeid character varying,
+	    typename character varying,
+	    source character varying,
+	    stat integer,
+	    statname character varying,
+	    chargdate date,
+	    chargtime time without time zone,
+	    logindate date,
+	    logintime time without time zone,
+	    orderdr character varying,
+	    orderdrname character varying,
+	    studydr character varying,
+	    studydrname character varying,
+	    enterdr character varying,
+	    enterdrname character varying,
+	    orderdate date,
+	    ordertime time without time zone,
+	    completedate date,
+	    completetime time without time zone,
+	    enterdate date,
+	    entertime time without time zone,
+	    report character varying,
+	    pacsno character varying,
+	    created_at timestamp without time zone NOT NULL,
+	    updated_at timestamp without time zone NOT NULL,
+	    worksense_id integer,
+	    scopy_id integer,
+	    patient_id integer
+	);
+2019-04-23 20:27:29.212 CST [10302] ERROR:  relation "examines_id_seq" already exists
+2019-04-23 20:27:29.212 CST [10302] STATEMENT:  CREATE SEQUENCE examines_id_seq
+	    START WITH 1
+	    INCREMENT BY 1
+	    NO MINVALUE
+	    NO MAXVALUE
+	    CACHE 1;
+2019-04-23 20:27:29.213 CST [10302] ERROR:  relation "holidays" already exists
+2019-04-23 20:27:29.213 CST [10302] STATEMENT:  CREATE TABLE holidays (
+	    id integer NOT NULL,
+	    restdate date,
+	    resttype character varying,
+	    created_at timestamp without time zone NOT NULL,
+	    updated_at timestamp without time zone NOT NULL
+	);
+2019-04-23 20:27:29.214 CST [10302] ERROR:  relation "holidays_id_seq" already exists
+2019-04-23 20:27:29.214 CST [10302] STATEMENT:  CREATE SEQUENCE holidays_id_seq
+	    START WITH 1
+	    INCREMENT BY 1
+	    NO MINVALUE
+	    NO MAXVALUE
+	    CACHE 1;
+2019-04-23 20:27:29.215 CST [10302] ERROR:  relation "patients" already exists
+2019-04-23 20:27:29.215 CST [10302] STATEMENT:  CREATE TABLE patients (
+	    id integer NOT NULL,
+	    pid character varying,
+	    pname character varying,
+	    birthday date,
+	    sex character varying,
+	    telephone character varying,
+	    address character varying,
+	    created_at timestamp without time zone NOT NULL,
+	    updated_at timestamp without time zone NOT NULL
+	);
+2019-04-23 20:27:29.215 CST [10302] ERROR:  relation "patients_id_seq" already exists
+2019-04-23 20:27:29.215 CST [10302] STATEMENT:  CREATE SEQUENCE patients_id_seq
+	    START WITH 1
+	    INCREMENT BY 1
+	    NO MINVALUE
+	    NO MAXVALUE
+	    CACHE 1;
+2019-04-23 20:27:29.217 CST [10302] ERROR:  relation "rf_barcodes" already exists
+2019-04-23 20:27:29.217 CST [10302] STATEMENT:  CREATE TABLE rf_barcodes (
+	    id integer NOT NULL,
+	    rid character varying,
+	    site character varying,
+	    scandate date,
+	    scantime time without time zone,
+	    created_at timestamp without time zone NOT NULL,
+	    updated_at timestamp without time zone NOT NULL
+	);
+2019-04-23 20:27:29.218 CST [10302] ERROR:  relation "rf_barcodes_id_seq" already exists
+2019-04-23 20:27:29.218 CST [10302] STATEMENT:  CREATE SEQUENCE rf_barcodes_id_seq
+	    START WITH 1
+	    INCREMENT BY 1
+	    NO MINVALUE
+	    NO MAXVALUE
+	    CACHE 1;
+2019-04-23 20:27:29.219 CST [10302] ERROR:  relation "schedules" already exists
+2019-04-23 20:27:29.219 CST [10302] STATEMENT:  CREATE TABLE schedules (
+	    id integer NOT NULL,
+	    workdate date,
+	    workpart character varying,
+	    uid character varying,
+	    uname character varying,
+	    site character varying,
+	    created_at timestamp without time zone NOT NULL,
+	    updated_at timestamp without time zone NOT NULL,
+	    wid character varying,
+	    priority integer
+	);
+2019-04-23 20:27:29.219 CST [10302] ERROR:  relation "schedules_id_seq" already exists
+2019-04-23 20:27:29.219 CST [10302] STATEMENT:  CREATE SEQUENCE schedules_id_seq
+	    START WITH 1
+	    INCREMENT BY 1
+	    NO MINVALUE
+	    NO MAXVALUE
+	    CACHE 1;
+2019-04-23 20:27:29.220 CST [10302] ERROR:  relation "schema_migrations" already exists
+2019-04-23 20:27:29.220 CST [10302] STATEMENT:  CREATE TABLE schema_migrations (
+	    version character varying NOT NULL
+	);
+2019-04-23 20:27:29.221 CST [10302] ERROR:  relation "scopies" already exists
+2019-04-23 20:27:29.221 CST [10302] STATEMENT:  CREATE TABLE scopies (
+	    id integer NOT NULL,
+	    rid character varying,
+	    pid character varying,
+	    cid character varying,
+	    mid character varying,
+	    sid character varying,
+	    sname character varying,
+	    slabel character varying,
+	    sclass character varying,
+	    status character varying,
+	    created_at timestamp without time zone NOT NULL,
+	    updated_at timestamp without time zone NOT NULL,
+	    usage integer
+	);
+2019-04-23 20:27:29.222 CST [10302] ERROR:  relation "scopies_id_seq" already exists
+2019-04-23 20:27:29.222 CST [10302] STATEMENT:  CREATE SEQUENCE scopies_id_seq
+	    START WITH 1
+	    INCREMENT BY 1
+	    NO MINVALUE
+	    NO MAXVALUE
+	    CACHE 1;
+2019-04-23 20:27:29.224 CST [10302] ERROR:  relation "sinkairkernels" already exists
+2019-04-23 20:27:29.224 CST [10302] STATEMENT:  CREATE TABLE sinkairkernels (
+	    id integer NOT NULL,
+	    mid integer,
+	    mname character varying,
+	    modifydate date,
+	    modifytime time without time zone,
+	    status character varying,
+	    created_at timestamp without time zone NOT NULL,
+	    updated_at timestamp without time zone NOT NULL
+	);
+2019-04-23 20:27:29.224 CST [10302] ERROR:  relation "sinkairkernels_id_seq" already exists
+2019-04-23 20:27:29.224 CST [10302] STATEMENT:  CREATE SEQUENCE sinkairkernels_id_seq
+	    START WITH 1
+	    INCREMENT BY 1
+	    NO MINVALUE
+	    NO MAXVALUE
+	    CACHE 1;
+2019-04-23 20:27:29.226 CST [10302] ERROR:  relation "sinkwaterkernels" already exists
+2019-04-23 20:27:29.226 CST [10302] STATEMENT:  CREATE TABLE sinkwaterkernels (
+	    id integer NOT NULL,
+	    mid integer,
+	    mname character varying,
+	    modifydate date,
+	    modifytime time without time zone,
+	    status character varying,
+	    created_at timestamp without time zone NOT NULL,
+	    updated_at timestamp without time zone NOT NULL
+	);
+2019-04-23 20:27:29.226 CST [10302] ERROR:  relation "sinkwaterkernels_id_seq" already exists
+2019-04-23 20:27:29.226 CST [10302] STATEMENT:  CREATE SEQUENCE sinkwaterkernels_id_seq
+	    START WITH 1
+	    INCREMENT BY 1
+	    NO MINVALUE
+	    NO MAXVALUE
+	    CACHE 1;
+2019-04-23 20:27:29.227 CST [10302] ERROR:  relation "sites" already exists
+2019-04-23 20:27:29.227 CST [10302] STATEMENT:  CREATE TABLE sites (
+	    id integer NOT NULL,
+	    sname character varying,
+	    created_at timestamp without time zone NOT NULL,
+	    updated_at timestamp without time zone NOT NULL
+	);
+2019-04-23 20:27:29.228 CST [10302] ERROR:  relation "sites_id_seq" already exists
+2019-04-23 20:27:29.228 CST [10302] STATEMENT:  CREATE SEQUENCE sites_id_seq
+	    START WITH 1
+	    INCREMENT BY 1
+	    NO MINVALUE
+	    NO MAXVALUE
+	    CACHE 1;
+2019-04-23 20:27:29.229 CST [10302] ERROR:  relation "syrupperuses" already exists
+2019-04-23 20:27:29.229 CST [10302] STATEMENT:  CREATE TABLE syrupperuses (
+	    id integer NOT NULL,
+	    sid character varying,
+	    perusedate date,
+	    perusetime time without time zone,
+	    created_at timestamp without time zone NOT NULL,
+	    updated_at timestamp without time zone NOT NULL
+	);
+2019-04-23 20:27:29.230 CST [10302] ERROR:  relation "syrupperuses_id_seq" already exists
+2019-04-23 20:27:29.230 CST [10302] STATEMENT:  CREATE SEQUENCE syrupperuses_id_seq
+	    START WITH 1
+	    INCREMENT BY 1
+	    NO MINVALUE
+	    NO MAXVALUE
+	    CACHE 1;
+2019-04-23 20:27:29.231 CST [10302] ERROR:  relation "syrups" already exists
+2019-04-23 20:27:29.231 CST [10302] STATEMENT:  CREATE TABLE syrups (
+	    id integer NOT NULL,
+	    sid character varying,
+	    deadlinedate date,
+	    begindate date,
+	    begintime time without time zone,
+	    lastdate date,
+	    lasttime time without time zone,
+	    concentration character varying,
+	    piping character varying,
+	    created_at timestamp without time zone NOT NULL,
+	    updated_at timestamp without time zone NOT NULL
+	);
+2019-04-23 20:27:29.232 CST [10302] ERROR:  relation "syrups_id_seq" already exists
+2019-04-23 20:27:29.232 CST [10302] STATEMENT:  CREATE SEQUENCE syrups_id_seq
+	    START WITH 1
+	    INCREMENT BY 1
+	    NO MINVALUE
+	    NO MAXVALUE
+	    CACHE 1;
+2019-04-23 20:27:29.233 CST [10302] ERROR:  relation "testpaperperuses" already exists
+2019-04-23 20:27:29.233 CST [10302] STATEMENT:  CREATE TABLE testpaperperuses (
+	    id integer NOT NULL,
+	    pid character varying,
+	    perusedate date,
+	    perusetime time without time zone,
+	    created_at timestamp without time zone NOT NULL,
+	    updated_at timestamp without time zone NOT NULL
+	);
+2019-04-23 20:27:29.234 CST [10302] ERROR:  relation "testpaperperuses_id_seq" already exists
+2019-04-23 20:27:29.234 CST [10302] STATEMENT:  CREATE SEQUENCE testpaperperuses_id_seq
+	    START WITH 1
+	    INCREMENT BY 1
+	    NO MINVALUE
+	    NO MAXVALUE
+	    CACHE 1;
+2019-04-23 20:27:29.237 CST [10302] ERROR:  relation "testpapers" already exists
+2019-04-23 20:27:29.237 CST [10302] STATEMENT:  CREATE TABLE testpapers (
+	    id integer NOT NULL,
+	    pid character varying,
+	    paperscount integer,
+	    opendate date,
+	    deadlinedate date,
+	    qcdata character varying,
+	    created_at timestamp without time zone NOT NULL,
+	    updated_at timestamp without time zone NOT NULL
+	);
+2019-04-23 20:27:29.238 CST [10302] ERROR:  relation "testpapers_id_seq" already exists
+2019-04-23 20:27:29.238 CST [10302] STATEMENT:  CREATE SEQUENCE testpapers_id_seq
+	    START WITH 1
+	    INCREMENT BY 1
+	    NO MINVALUE
+	    NO MAXVALUE
+	    CACHE 1;
+2019-04-23 20:27:29.239 CST [10302] ERROR:  relation "users" already exists
+2019-04-23 20:27:29.239 CST [10302] STATEMENT:  CREATE TABLE users (
+	    id integer NOT NULL,
+	    uid character varying,
+	    upw character varying,
+	    uname character varying,
+	    utitle character varying,
+	    created_at timestamp without time zone NOT NULL,
+	    updated_at timestamp without time zone NOT NULL,
+	    session_token character varying,
+	    upower character varying,
+	    usort integer
+	);
+2019-04-23 20:27:29.240 CST [10302] ERROR:  relation "users_id_seq" already exists
+2019-04-23 20:27:29.240 CST [10302] STATEMENT:  CREATE SEQUENCE users_id_seq
+	    START WITH 1
+	    INCREMENT BY 1
+	    NO MINVALUE
+	    NO MAXVALUE
+	    CACHE 1;
+2019-04-23 20:27:29.241 CST [10302] ERROR:  relation "wk_barcodes" already exists
+2019-04-23 20:27:29.241 CST [10302] STATEMENT:  CREATE TABLE wk_barcodes (
+	    id integer NOT NULL,
+	    wid character varying,
+	    site character varying,
+	    scandate date,
+	    scantime time without time zone,
+	    created_at timestamp without time zone NOT NULL,
+	    updated_at timestamp without time zone NOT NULL
+	);
+2019-04-23 20:27:29.242 CST [10302] ERROR:  relation "wk_barcodes_id_seq" already exists
+2019-04-23 20:27:29.242 CST [10302] STATEMENT:  CREATE SEQUENCE wk_barcodes_id_seq
+	    START WITH 1
+	    INCREMENT BY 1
+	    NO MINVALUE
+	    NO MAXVALUE
+	    CACHE 1;
+2019-04-23 20:27:29.243 CST [10302] ERROR:  relation "worksenses" already exists
+2019-04-23 20:27:29.243 CST [10302] STATEMENT:  CREATE TABLE worksenses (
+	    id integer NOT NULL,
+	    begindate date,
+	    begintime time without time zone,
+	    enddate date,
+	    endtime time without time zone,
+	    created_at timestamp without time zone NOT NULL,
+	    updated_at timestamp without time zone NOT NULL,
+	    scopy_id integer,
+	    patient_id integer,
+	    examine_id integer,
+	    site_id integer,
+	    wid character varying
+	);
+2019-04-23 20:27:29.243 CST [10302] ERROR:  relation "workbooks_id_seq" already exists
+2019-04-23 20:27:29.243 CST [10302] STATEMENT:  CREATE SEQUENCE workbooks_id_seq
+	    START WITH 1
+	    INCREMENT BY 1
+	    NO MINVALUE
+	    NO MAXVALUE
+	    CACHE 1;
+2019-04-23 20:27:29.244 CST [10302] ERROR:  relation "works" already exists
+2019-04-23 20:27:29.244 CST [10302] STATEMENT:  CREATE TABLE works (
+	    id integer NOT NULL,
+	    wid character varying,
+	    wname character varying,
+	    wsort integer,
+	    created_at timestamp without time zone NOT NULL,
+	    updated_at timestamp without time zone NOT NULL
+	);
+2019-04-23 20:27:29.245 CST [10302] ERROR:  relation "works_id_seq" already exists
+2019-04-23 20:27:29.245 CST [10302] STATEMENT:  CREATE SEQUENCE works_id_seq
+	    START WITH 1
+	    INCREMENT BY 1
+	    NO MINVALUE
+	    NO MAXVALUE
+	    CACHE 1;
+2019-04-23 20:27:29.278 CST [10302] ERROR:  duplicate key value violates unique constraint "carbinets_pkey"
+2019-04-23 20:27:29.278 CST [10302] DETAIL:  Key (id)=(530) already exists.
+2019-04-23 20:27:29.278 CST [10302] CONTEXT:  COPY carbinets, line 1
+2019-04-23 20:27:29.278 CST [10302] STATEMENT:  COPY carbinets (id, number, savedate, savetime, temperature, humidity, created_at, updated_at) FROM stdin;
+2019-04-23 20:27:29.310 CST [10302] ERROR:  duplicate key value violates unique constraint "examines_pkey"
+2019-04-23 20:27:29.310 CST [10302] DETAIL:  Key (id)=(3242) already exists.
+2019-04-23 20:27:29.310 CST [10302] CONTEXT:  COPY examines, line 1
+2019-04-23 20:27:29.310 CST [10302] STATEMENT:  COPY examines (id, seq, eseq, typeid, typename, source, stat, statname, chargdate, chargtime, logindate, logintime, orderdr, orderdrname, studydr, studydrname, enterdr, enterdrname, orderdate, ordertime, completedate, completetime, enterdate, entertime, report, pacsno, created_at, updated_at, worksense_id, scopy_id, patient_id) FROM stdin;
+2019-04-23 20:27:29.389 CST [10302] ERROR:  duplicate key value violates unique constraint "holidays_pkey"
+2019-04-23 20:27:29.389 CST [10302] DETAIL:  Key (id)=(1) already exists.
+2019-04-23 20:27:29.389 CST [10302] CONTEXT:  COPY holidays, line 1
+2019-04-23 20:27:29.389 CST [10302] STATEMENT:  COPY holidays (id, restdate, resttype, created_at, updated_at) FROM stdin;
+2019-04-23 20:27:29.392 CST [10302] ERROR:  duplicate key value violates unique constraint "patients_pkey"
+2019-04-23 20:27:29.392 CST [10302] DETAIL:  Key (id)=(1) already exists.
+2019-04-23 20:27:29.392 CST [10302] CONTEXT:  COPY patients, line 1
+2019-04-23 20:27:29.392 CST [10302] STATEMENT:  COPY patients (id, pid, pname, birthday, sex, telephone, address, created_at, updated_at) FROM stdin;
+2019-04-23 20:27:29.405 CST [10302] ERROR:  duplicate key value violates unique constraint "rf_barcodes_pkey"
+2019-04-23 20:27:29.405 CST [10302] DETAIL:  Key (id)=(10622) already exists.
+2019-04-23 20:27:29.405 CST [10302] CONTEXT:  COPY rf_barcodes, line 1
+2019-04-23 20:27:29.405 CST [10302] STATEMENT:  COPY rf_barcodes (id, rid, site, scandate, scantime, created_at, updated_at) FROM stdin;
+2019-04-23 20:27:29.433 CST [10302] ERROR:  duplicate key value violates unique constraint "schedules_pkey"
+2019-04-23 20:27:29.433 CST [10302] DETAIL:  Key (id)=(1) already exists.
+2019-04-23 20:27:29.433 CST [10302] CONTEXT:  COPY schedules, line 1
+2019-04-23 20:27:29.433 CST [10302] STATEMENT:  COPY schedules (id, workdate, workpart, uid, uname, site, created_at, updated_at, wid, priority) FROM stdin;
+2019-04-23 20:27:29.440 CST [10302] ERROR:  duplicate key value violates unique constraint "unique_schema_migrations"
+2019-04-23 20:27:29.440 CST [10302] DETAIL:  Key (version)=(20160521175938) already exists.
+2019-04-23 20:27:29.440 CST [10302] CONTEXT:  COPY schema_migrations, line 1
+2019-04-23 20:27:29.440 CST [10302] STATEMENT:  COPY schema_migrations (version) FROM stdin;
+2019-04-23 20:27:29.441 CST [10302] ERROR:  duplicate key value violates unique constraint "scopies_pkey"
+2019-04-23 20:27:29.441 CST [10302] DETAIL:  Key (id)=(26) already exists.
+2019-04-23 20:27:29.441 CST [10302] CONTEXT:  COPY scopies, line 1
+2019-04-23 20:27:29.441 CST [10302] STATEMENT:  COPY scopies (id, rid, pid, cid, mid, sid, sname, slabel, sclass, status, created_at, updated_at, usage) FROM stdin;
+2019-04-23 20:27:29.443 CST [10302] ERROR:  duplicate key value violates unique constraint "sites_pkey"
+2019-04-23 20:27:29.443 CST [10302] DETAIL:  Key (id)=(1) already exists.
+2019-04-23 20:27:29.443 CST [10302] CONTEXT:  COPY sites, line 1
+2019-04-23 20:27:29.443 CST [10302] STATEMENT:  COPY sites (id, sname, created_at, updated_at) FROM stdin;
+2019-04-23 20:27:29.447 CST [10302] ERROR:  duplicate key value violates unique constraint "users_pkey"
+2019-04-23 20:27:29.447 CST [10302] DETAIL:  Key (id)=(2) already exists.
+2019-04-23 20:27:29.447 CST [10302] CONTEXT:  COPY users, line 1
+2019-04-23 20:27:29.447 CST [10302] STATEMENT:  COPY users (id, uid, upw, uname, utitle, created_at, updated_at, session_token, upower, usort) FROM stdin;
+2019-04-23 20:27:29.451 CST [10302] ERROR:  duplicate key value violates unique constraint "wk_barcodes_pkey"
+2019-04-23 20:27:29.451 CST [10302] DETAIL:  Key (id)=(2879) already exists.
+2019-04-23 20:27:29.451 CST [10302] CONTEXT:  COPY wk_barcodes, line 1
+2019-04-23 20:27:29.451 CST [10302] STATEMENT:  COPY wk_barcodes (id, wid, site, scandate, scantime, created_at, updated_at) FROM stdin;
+2019-04-23 20:27:29.458 CST [10302] ERROR:  duplicate key value violates unique constraint "works_pkey"
+2019-04-23 20:27:29.458 CST [10302] DETAIL:  Key (id)=(1) already exists.
+2019-04-23 20:27:29.458 CST [10302] CONTEXT:  COPY works, line 1
+2019-04-23 20:27:29.458 CST [10302] STATEMENT:  COPY works (id, wid, wname, wsort, created_at, updated_at) FROM stdin;
+2019-04-23 20:27:29.462 CST [10302] ERROR:  duplicate key value violates unique constraint "workbooks_pkey"
+2019-04-23 20:27:29.462 CST [10302] DETAIL:  Key (id)=(2948719) already exists.
+2019-04-23 20:27:29.462 CST [10302] CONTEXT:  COPY worksenses, line 1
+2019-04-23 20:27:29.462 CST [10302] STATEMENT:  COPY worksenses (id, begindate, begintime, enddate, endtime, created_at, updated_at, scopy_id, patient_id, examine_id, site_id, wid) FROM stdin;
+2019-04-23 20:27:29.992 CST [10302] ERROR:  multiple primary keys for table "barcodes" are not allowed
+2019-04-23 20:27:29.992 CST [10302] STATEMENT:  ALTER TABLE ONLY barcodes
+	    ADD CONSTRAINT barcodes_pkey PRIMARY KEY (id);
+2019-04-23 20:27:29.992 CST [10302] ERROR:  multiple primary keys for table "carbinets" are not allowed
+2019-04-23 20:27:29.992 CST [10302] STATEMENT:  ALTER TABLE ONLY carbinets
+	    ADD CONSTRAINT carbinets_pkey PRIMARY KEY (id);
+2019-04-23 20:27:29.993 CST [10302] ERROR:  multiple primary keys for table "disinfections" are not allowed
+2019-04-23 20:27:29.993 CST [10302] STATEMENT:  ALTER TABLE ONLY disinfections
+	    ADD CONSTRAINT disinfections_pkey PRIMARY KEY (id);
+2019-04-23 20:27:29.993 CST [10302] ERROR:  multiple primary keys for table "examines" are not allowed
+2019-04-23 20:27:29.993 CST [10302] STATEMENT:  ALTER TABLE ONLY examines
+	    ADD CONSTRAINT examines_pkey PRIMARY KEY (id);
+2019-04-23 20:27:29.993 CST [10302] ERROR:  multiple primary keys for table "holidays" are not allowed
+2019-04-23 20:27:29.993 CST [10302] STATEMENT:  ALTER TABLE ONLY holidays
+	    ADD CONSTRAINT holidays_pkey PRIMARY KEY (id);
+2019-04-23 20:27:29.993 CST [10302] ERROR:  multiple primary keys for table "patients" are not allowed
+2019-04-23 20:27:29.993 CST [10302] STATEMENT:  ALTER TABLE ONLY patients
+	    ADD CONSTRAINT patients_pkey PRIMARY KEY (id);
+2019-04-23 20:27:29.994 CST [10302] ERROR:  multiple primary keys for table "rf_barcodes" are not allowed
+2019-04-23 20:27:29.994 CST [10302] STATEMENT:  ALTER TABLE ONLY rf_barcodes
+	    ADD CONSTRAINT rf_barcodes_pkey PRIMARY KEY (id);
+2019-04-23 20:27:29.994 CST [10302] ERROR:  multiple primary keys for table "schedules" are not allowed
+2019-04-23 20:27:29.994 CST [10302] STATEMENT:  ALTER TABLE ONLY schedules
+	    ADD CONSTRAINT schedules_pkey PRIMARY KEY (id);
+2019-04-23 20:27:29.994 CST [10302] ERROR:  multiple primary keys for table "scopies" are not allowed
+2019-04-23 20:27:29.994 CST [10302] STATEMENT:  ALTER TABLE ONLY scopies
+	    ADD CONSTRAINT scopies_pkey PRIMARY KEY (id);
+2019-04-23 20:27:29.994 CST [10302] ERROR:  multiple primary keys for table "sinkairkernels" are not allowed
+2019-04-23 20:27:29.994 CST [10302] STATEMENT:  ALTER TABLE ONLY sinkairkernels
+	    ADD CONSTRAINT sinkairkernels_pkey PRIMARY KEY (id);
+2019-04-23 20:27:29.994 CST [10302] ERROR:  multiple primary keys for table "sinkwaterkernels" are not allowed
+2019-04-23 20:27:29.994 CST [10302] STATEMENT:  ALTER TABLE ONLY sinkwaterkernels
+	    ADD CONSTRAINT sinkwaterkernels_pkey PRIMARY KEY (id);
+2019-04-23 20:27:29.994 CST [10302] ERROR:  multiple primary keys for table "sites" are not allowed
+2019-04-23 20:27:29.994 CST [10302] STATEMENT:  ALTER TABLE ONLY sites
+	    ADD CONSTRAINT sites_pkey PRIMARY KEY (id);
+2019-04-23 20:27:29.995 CST [10302] ERROR:  multiple primary keys for table "syrupperuses" are not allowed
+2019-04-23 20:27:29.995 CST [10302] STATEMENT:  ALTER TABLE ONLY syrupperuses
+	    ADD CONSTRAINT syrupperuses_pkey PRIMARY KEY (id);
+2019-04-23 20:27:29.995 CST [10302] ERROR:  multiple primary keys for table "syrups" are not allowed
+2019-04-23 20:27:29.995 CST [10302] STATEMENT:  ALTER TABLE ONLY syrups
+	    ADD CONSTRAINT syrups_pkey PRIMARY KEY (id);
+2019-04-23 20:27:29.995 CST [10302] ERROR:  multiple primary keys for table "testpaperperuses" are not allowed
+2019-04-23 20:27:29.995 CST [10302] STATEMENT:  ALTER TABLE ONLY testpaperperuses
+	    ADD CONSTRAINT testpaperperuses_pkey PRIMARY KEY (id);
+2019-04-23 20:27:29.995 CST [10302] ERROR:  multiple primary keys for table "testpapers" are not allowed
+2019-04-23 20:27:29.995 CST [10302] STATEMENT:  ALTER TABLE ONLY testpapers
+	    ADD CONSTRAINT testpapers_pkey PRIMARY KEY (id);
+2019-04-23 20:27:29.995 CST [10302] ERROR:  multiple primary keys for table "users" are not allowed
+2019-04-23 20:27:29.995 CST [10302] STATEMENT:  ALTER TABLE ONLY users
+	    ADD CONSTRAINT users_pkey PRIMARY KEY (id);
+2019-04-23 20:27:29.995 CST [10302] ERROR:  multiple primary keys for table "wk_barcodes" are not allowed
+2019-04-23 20:27:29.995 CST [10302] STATEMENT:  ALTER TABLE ONLY wk_barcodes
+	    ADD CONSTRAINT wk_barcodes_pkey PRIMARY KEY (id);
+2019-04-23 20:27:29.995 CST [10302] ERROR:  multiple primary keys for table "worksenses" are not allowed
+2019-04-23 20:27:29.995 CST [10302] STATEMENT:  ALTER TABLE ONLY worksenses
+	    ADD CONSTRAINT workbooks_pkey PRIMARY KEY (id);
+2019-04-23 20:27:29.996 CST [10302] ERROR:  multiple primary keys for table "works" are not allowed
+2019-04-23 20:27:29.996 CST [10302] STATEMENT:  ALTER TABLE ONLY works
+	    ADD CONSTRAINT works_pkey PRIMARY KEY (id);
+2019-04-23 20:27:29.996 CST [10302] ERROR:  relation "index_barcodes_on_patient_id" already exists
+2019-04-23 20:27:29.996 CST [10302] STATEMENT:  CREATE INDEX index_barcodes_on_patient_id ON barcodes USING btree (patient_id);
+2019-04-23 20:27:29.996 CST [10302] ERROR:  relation "index_barcodes_on_site_id" already exists
+2019-04-23 20:27:29.996 CST [10302] STATEMENT:  CREATE INDEX index_barcodes_on_site_id ON barcodes USING btree (site_id);
+2019-04-23 20:27:29.996 CST [10302] ERROR:  relation "index_examines_on_workbook_id" already exists
+2019-04-23 20:27:29.996 CST [10302] STATEMENT:  CREATE INDEX index_examines_on_workbook_id ON examines USING btree (worksense_id);
+2019-04-23 20:27:29.997 CST [10302] ERROR:  relation "index_users_on_session_token" already exists
+2019-04-23 20:27:29.997 CST [10302] STATEMENT:  CREATE UNIQUE INDEX index_users_on_session_token ON users USING btree (session_token);
+2019-04-23 20:27:29.997 CST [10302] ERROR:  relation "index_workbooks_on_examine_id" already exists
+2019-04-23 20:27:29.997 CST [10302] STATEMENT:  CREATE INDEX index_workbooks_on_examine_id ON worksenses USING btree (examine_id);
+2019-04-23 20:27:29.997 CST [10302] ERROR:  relation "index_workbooks_on_patient_id" already exists
+2019-04-23 20:27:29.997 CST [10302] STATEMENT:  CREATE INDEX index_workbooks_on_patient_id ON worksenses USING btree (patient_id);
+2019-04-23 20:27:29.997 CST [10302] ERROR:  relation "index_workbooks_on_scopy_id" already exists
+2019-04-23 20:27:29.997 CST [10302] STATEMENT:  CREATE INDEX index_workbooks_on_scopy_id ON worksenses USING btree (scopy_id);
+2019-04-23 20:27:29.997 CST [10302] ERROR:  relation "index_workbooks_on_site_id" already exists
+2019-04-23 20:27:29.997 CST [10302] STATEMENT:  CREATE INDEX index_workbooks_on_site_id ON worksenses USING btree (site_id);
+2019-04-23 20:27:29.998 CST [10302] ERROR:  relation "unique_schema_migrations" already exists
+2019-04-23 20:27:29.998 CST [10302] STATEMENT:  CREATE UNIQUE INDEX unique_schema_migrations ON schema_migrations USING btree (version);
+2019-04-23 20:27:29.999 CST [10302] ERROR:  constraint "fk_rails_09f72fe33c" for relation "barcodes" already exists
+2019-04-23 20:27:29.999 CST [10302] STATEMENT:  ALTER TABLE ONLY barcodes
+	    ADD CONSTRAINT fk_rails_09f72fe33c FOREIGN KEY (patient_id) REFERENCES patients(id);
+2019-04-23 20:27:29.999 CST [10302] ERROR:  constraint "fk_rails_404a6ccb6c" for relation "examines" already exists
+2019-04-23 20:27:29.999 CST [10302] STATEMENT:  ALTER TABLE ONLY examines
+	    ADD CONSTRAINT fk_rails_404a6ccb6c FOREIGN KEY (worksense_id) REFERENCES worksenses(id);
+2019-04-23 20:27:29.999 CST [10302] ERROR:  constraint "fk_rails_8c060fc86d" for relation "barcodes" already exists
+2019-04-23 20:27:29.999 CST [10302] STATEMENT:  ALTER TABLE ONLY barcodes
+	    ADD CONSTRAINT fk_rails_8c060fc86d FOREIGN KEY (site_id) REFERENCES sites(id);
+2019-04-23 20:27:29.999 CST [10302] ERROR:  constraint "fk_rails_9ddc25f0e4" for relation "worksenses" already exists
+2019-04-23 20:27:29.999 CST [10302] STATEMENT:  ALTER TABLE ONLY worksenses
+	    ADD CONSTRAINT fk_rails_9ddc25f0e4 FOREIGN KEY (examine_id) REFERENCES examines(id);
+2019-04-23 20:27:29.999 CST [10302] ERROR:  constraint "fk_rails_a733a302e1" for relation "worksenses" already exists
+2019-04-23 20:27:29.999 CST [10302] STATEMENT:  ALTER TABLE ONLY worksenses
+	    ADD CONSTRAINT fk_rails_a733a302e1 FOREIGN KEY (site_id) REFERENCES sites(id);
+2019-04-23 20:27:29.999 CST [10302] ERROR:  constraint "fk_rails_ceee8d2be0" for relation "worksenses" already exists
+2019-04-23 20:27:29.999 CST [10302] STATEMENT:  ALTER TABLE ONLY worksenses
+	    ADD CONSTRAINT fk_rails_ceee8d2be0 FOREIGN KEY (patient_id) REFERENCES patients(id);
+2019-04-23 20:27:30.000 CST [10302] ERROR:  constraint "fk_rails_f1333960bf" for relation "worksenses" already exists
+2019-04-23 20:27:30.000 CST [10302] STATEMENT:  ALTER TABLE ONLY worksenses
+	    ADD CONSTRAINT fk_rails_f1333960bf FOREIGN KEY (scopy_id) REFERENCES scopies(id);
+2019-04-23 20:28:57.537 CST [10337] ERROR:  canceling autovacuum task
+2019-04-23 20:28:57.537 CST [10337] CONTEXT:  automatic analyze of table "qcendo.public.examines"
+2019-04-25 15:46:36.524 CST [5262] LOG:  received smart shutdown request
+2019-04-25 15:46:36.529 CST [5262] LOG:  worker process: logical replication launcher (PID 5269) exited with exit code 1
+2019-04-25 15:46:36.530 CST [5264] LOG:  shutting down
+2019-04-25 15:46:36.586 CST [5262] LOG:  database system is shut down
+2019-04-29 15:23:51.896 CST [4760] LOG:  listening on IPv6 address "::1", port 5432
+2019-04-29 15:23:51.897 CST [4760] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2019-04-29 15:23:51.897 CST [4760] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2019-04-29 15:23:51.933 CST [4761] LOG:  database system was shut down at 2019-04-28 22:35:01 CST
+2019-04-29 15:23:51.940 CST [4760] LOG:  database system is ready to accept connections
+2019-04-29 15:26:39.375 CST [4971] FATAL:  database "news" does not exist
+2019-04-29 15:27:00.728 CST [5010] ERROR:  database "news" already exists
+2019-04-29 15:27:00.728 CST [5010] STATEMENT:  CREATE DATABASE "news" ENCODING = 'unicode'
+2019-04-30 10:02:32.148 CST [1448] LOG:  listening on IPv6 address "::1", port 5432
+2019-04-30 10:02:32.148 CST [1448] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2019-04-30 10:02:32.149 CST [1448] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2019-04-30 10:02:32.192 CST [1449] LOG:  database system was interrupted; last known up at 2019-04-29 22:28:40 CST
+2019-04-30 10:02:32.486 CST [1449] LOG:  database system was not properly shut down; automatic recovery in progress
+2019-04-30 10:02:32.493 CST [1449] LOG:  redo starts at 1/537A5E90
+2019-04-30 10:02:32.493 CST [1449] LOG:  invalid record length at 1/537A5F70: wanted 24, got 0
+2019-04-30 10:02:32.493 CST [1449] LOG:  redo done at 1/537A5F38
+2019-04-30 10:02:32.516 CST [1448] LOG:  database system is ready to accept connections
+2019-04-30 16:05:46.791 CST [1448] LOG:  received smart shutdown request
+2019-04-30 16:05:46.796 CST [1448] LOG:  worker process: logical replication launcher (PID 1455) exited with exit code 1
+2019-04-30 16:05:46.796 CST [1450] LOG:  shutting down
+2019-04-30 16:05:46.817 CST [1448] LOG:  database system is shut down
+2019-05-02 15:23:08.280 CST [2127] LOG:  listening on IPv6 address "::1", port 5432
+2019-05-02 15:23:08.280 CST [2127] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2019-05-02 15:23:08.282 CST [2127] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2019-05-02 15:23:08.389 CST [2128] LOG:  database system was shut down at 2019-04-30 16:05:46 CST
+2019-05-02 15:23:08.420 CST [2127] LOG:  database system is ready to accept connections
+2019-05-02 15:23:20.914 CST [2137] ERROR:  relation "schedules" does not exist at character 15
+2019-05-02 15:23:20.914 CST [2137] STATEMENT:  select * from schedules where workdate='2018-05-02';
+2019-05-02 17:10:44.574 CST [2527] ERROR:  syntax error at or near "where" at character 18
+2019-05-02 17:10:44.574 CST [2527] STATEMENT:  update schedules where worksdate='2019-05-02';
+2019-05-04 00:05:04.831 CST [24612] ERROR:  database "news" is being accessed by other users
+2019-05-04 00:05:04.831 CST [24612] DETAIL:  There is 1 other session using the database.
+2019-05-04 00:05:04.831 CST [24612] STATEMENT:  DROP DATABASE IF EXISTS "news"
+2019-05-04 00:05:09.946 CST [24613] ERROR:  database "news" is being accessed by other users
+2019-05-04 00:05:09.946 CST [24613] DETAIL:  There is 1 other session using the database.
+2019-05-04 00:05:09.946 CST [24613] STATEMENT:  DROP DATABASE IF EXISTS "news"
+2019-05-04 00:05:26.915 CST [24650] ERROR:  database "news" is being accessed by other users
+2019-05-04 00:05:26.915 CST [24650] DETAIL:  There is 1 other session using the database.
+2019-05-04 00:05:26.915 CST [24650] STATEMENT:  DROP DATABASE IF EXISTS "news"
+2019-05-04 00:05:32.010 CST [24652] ERROR:  database "news" is being accessed by other users
+2019-05-04 00:05:32.010 CST [24652] DETAIL:  There is 1 other session using the database.
+2019-05-04 00:05:32.010 CST [24652] STATEMENT:  DROP DATABASE IF EXISTS "news"
+2019-05-04 00:06:25.083 CST [24730] ERROR:  database "news" already exists
+2019-05-04 00:06:25.083 CST [24730] STATEMENT:  CREATE DATABASE "news" ENCODING = 'unicode'
+2019-05-04 02:48:37.497 CST [2127] LOG:  received fast shutdown request
+2019-05-04 02:48:37.499 CST [2127] LOG:  aborting any active transactions
+2019-05-04 02:48:37.503 CST [2127] LOG:  worker process: logical replication launcher (PID 2134) exited with exit code 1
+2019-05-04 02:48:37.504 CST [2129] LOG:  shutting down
+2019-05-04 02:48:37.527 CST [2127] LOG:  database system is shut down
+2019-05-07 14:44:40.035 CST [3851] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2019-05-07 14:44:40.036 CST [3851] LOG:  listening on IPv6 address "::1", port 5432
+2019-05-07 14:44:40.038 CST [3851] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2019-05-07 14:44:40.114 CST [3852] LOG:  database system was shut down at 2019-05-07 02:17:37 CST
+2019-05-07 14:44:40.158 CST [3851] LOG:  database system is ready to accept connections
+2019-05-07 23:21:11.722 CST [15228] ERROR:  syntax error at or near "or" at character 40
+2019-05-07 23:21:11.722 CST [15228] STATEMENT:  SELECT "news".* FROM "news" WHERE (id= or id=9 )
+2019-05-08 00:51:35.874 CST [3851] LOG:  received smart shutdown request
+2019-05-08 00:51:35.876 CST [3851] LOG:  worker process: logical replication launcher (PID 3858) exited with exit code 1
+2019-05-08 00:51:35.876 CST [3853] LOG:  shutting down
+2019-05-08 00:51:35.889 CST [3851] LOG:  database system is shut down
+2019-05-08 21:29:26.511 CST [1815] LOG:  listening on IPv6 address "::1", port 5432
+2019-05-08 21:29:26.512 CST [1815] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2019-05-08 21:29:26.513 CST [1815] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2019-05-08 21:29:26.583 CST [1816] LOG:  database system was interrupted; last known up at 2019-05-08 19:20:39 CST
+2019-05-08 21:29:26.880 CST [1816] LOG:  database system was not properly shut down; automatic recovery in progress
+2019-05-08 21:29:26.889 CST [1816] LOG:  redo starts at 1/538F7298
+2019-05-08 21:29:26.889 CST [1816] LOG:  invalid record length at 1/538F7378: wanted 24, got 0
+2019-05-08 21:29:26.889 CST [1816] LOG:  redo done at 1/538F7340
+2019-05-08 21:29:26.921 CST [1815] LOG:  database system is ready to accept connections
+2019-05-08 22:20:32.264 CST [1825] ERROR:  column "title" does not exist at character 38
+2019-05-08 22:20:32.264 CST [1825] HINT:  Perhaps you meant to reference the column "users.utitle".
+2019-05-08 22:20:32.264 CST [1825] STATEMENT:  SELECT "users".* FROM "users" WHERE (title='醫師')
+2019-05-09 00:58:03.238 CST [5704] ERROR:  column "stocks.id" must appear in the GROUP BY clause or be used in an aggregate function at character 8
+2019-05-09 00:58:03.238 CST [5704] STATEMENT:  SELECT "stocks".* FROM "stocks" GROUP BY "stocks"."oname"
+2019-05-09 00:58:30.790 CST [3237] ERROR:  column "stocks.id" must appear in the GROUP BY clause or be used in an aggregate function at character 8
+2019-05-09 00:58:30.790 CST [3237] STATEMENT:  SELECT "stocks".* FROM "stocks" GROUP BY "stocks"."oname"
+2019-05-09 00:59:30.631 CST [3237] ERROR:  column "stocks.oprice" must appear in the GROUP BY clause or be used in an aggregate function at character 23
+2019-05-09 00:59:30.631 CST [3237] STATEMENT:  SELECT "stocks".oname,oprice,ocount FROM "stocks" GROUP BY "stocks"."oname"
+2019-05-09 00:59:37.845 CST [3237] ERROR:  column "stocks.ocount" must appear in the GROUP BY clause or be used in an aggregate function at character 23
+2019-05-09 00:59:37.845 CST [3237] STATEMENT:  SELECT "stocks".oname,ocount FROM "stocks" GROUP BY "stocks"."oname"
+2019-05-09 01:00:24.345 CST [3237] ERROR:  column "stocks.okind" must appear in the GROUP BY clause or be used in an aggregate function at character 8
+2019-05-09 01:00:24.345 CST [3237] STATEMENT:  SELECT okind,osubkind,oname,sum(ocount) FROM "stocks" GROUP BY "stocks"."oname"
+2019-05-09 01:02:03.483 CST [3237] ERROR:  column reference "okind" is ambiguous at character 8
+2019-05-09 01:02:03.483 CST [3237] STATEMENT:  SELECT okind,osubkind,oname,sum(ocount) as ocount,osafecount FROM "stocks" INNER JOIN materials ON materials.oname = stocks.oname WHERE (okeyindate>='2019-05-09') AND (okeyindate<='2019-05-09') AND (oexpirydate>='2019-05-09') AND (oexpirydate<='2019-05-09') AND (ocount<osafecount)
+	
+2019-05-09 01:02:18.904 CST [3237] ERROR:  column reference "okind" is ambiguous at character 8
+2019-05-09 01:02:18.904 CST [3237] STATEMENT:  SELECT okind,osubkind,oname,sum(ocount) as ocount,osafecount FROM "stocks" INNER JOIN materials ON materials.oname = stocks.oname WHERE (okeyindate>='2019-05-09') AND (okeyindate<='2019-05-09') AND (oexpirydate>='2019-05-09') AND (oexpirydate<='2019-05-09') AND (ocount<osafecount) GROUP BY okind,osubkind,"stocks"."oname"
+	
+2019-05-09 01:02:47.279 CST [3237] ERROR:  column reference "oname" is ambiguous at character 8
+2019-05-09 01:02:47.279 CST [3237] STATEMENT:  SELECT oname,sum(ocount) as ocount,osafecount FROM "stocks" INNER JOIN materials ON materials.oname = stocks.oname WHERE (okeyindate>='2019-05-09') AND (okeyindate<='2019-05-09') AND (oexpirydate>='2019-05-09') AND (oexpirydate<='2019-05-09') AND (ocount<osafecount) GROUP BY "stocks"."oname"
+	
+2019-05-09 01:02:56.088 CST [3237] ERROR:  column "materials.osafecount" must appear in the GROUP BY clause or be used in an aggregate function at character 47
+2019-05-09 01:02:56.088 CST [3237] STATEMENT:  SELECT "stocks"."oname",sum(ocount) as ocount,osafecount FROM "stocks" INNER JOIN materials ON materials.oname = stocks.oname WHERE (okeyindate>='2019-05-09') AND (okeyindate<='2019-05-09') AND (oexpirydate>='2019-05-09') AND (oexpirydate<='2019-05-09') AND (ocount<osafecount) GROUP BY "stocks"."oname"
+	
+2019-05-09 01:07:53.880 CST [5704] ERROR:  column "osafecount" does not exist at character 72
+2019-05-09 01:07:53.880 CST [5704] STATEMENT:  SELECT stocks.okind,stocks.osubkind,stocks.oname,sum(ocount) as ocount,osafecount FROM "stocks" GROUP BY okind,osubkind,oname,osafecount
+2019-05-09 01:09:09.746 CST [5704] ERROR:  column reference "okind" is ambiguous at character 8
+2019-05-09 01:09:09.746 CST [5704] STATEMENT:  SELECT okind,osubkind,oname,sum(ocount) as ocount,osafecount FROM "stocks" INNER JOIN materials ON materials.oname = stocks.oname WHERE (ocount<osafecount) GROUP BY okind,osubkind,oname,osafecount
+2019-05-09 01:09:22.695 CST [5704] ERROR:  column reference "okind" is ambiguous at character 187
+2019-05-09 01:09:22.695 CST [5704] STATEMENT:  SELECT stocks.okind,stocks.osubkind,stocks.oname,sum(ocount) as ocount,osafecount FROM "stocks" INNER JOIN materials ON materials.oname = stocks.oname WHERE (ocount<osafecount) GROUP BY okind,osubkind,oname,osafecount
+2019-05-09 01:09:46.400 CST [3237] ERROR:  column reference "okind" is ambiguous at character 187
+2019-05-09 01:09:46.400 CST [3237] STATEMENT:  SELECT stocks.okind,stocks.osubkind,stocks.oname,sum(ocount) as ocount,osafecount FROM "stocks" INNER JOIN materials ON materials.oname = stocks.oname WHERE (ocount<osafecount) GROUP BY okind,osubkind,oname,osafecount
+2019-05-09 01:09:57.533 CST [3237] ERROR:  column reference "okind" is ambiguous at character 187
+2019-05-09 01:09:57.533 CST [3237] STATEMENT:  SELECT stocks.okind,stocks.osubkind,stocks.oname,sum(ocount) as ocount,osafecount FROM "stocks" INNER JOIN materials ON materials.oname = stocks.oname WHERE (ocount<osafecount) GROUP BY okind,osubkind,oname,osafecount
+2019-05-09 01:10:16.103 CST [3237] ERROR:  column reference "oname" is ambiguous at character 158
+2019-05-09 01:10:16.103 CST [3237] STATEMENT:  SELECT stocks.oname,sum(ocount) as ocount,osafecount FROM "stocks" INNER JOIN materials ON materials.oname = stocks.oname WHERE (ocount<osafecount) GROUP BY oname,osafecount
+2019-05-09 01:34:23.630 CST [1815] LOG:  received smart shutdown request
+2019-05-09 01:34:23.632 CST [1815] LOG:  worker process: logical replication launcher (PID 1822) exited with exit code 1
+2019-05-09 01:34:23.633 CST [1817] LOG:  shutting down
+2019-05-09 01:34:23.640 CST [1815] LOG:  database system is shut down
+2019-05-30 11:14:43.046 CST [34837] FATAL:  lock file "postmaster.pid" already exists
+2019-05-30 11:14:43.046 CST [34837] HINT:  Is another postmaster (PID 16750) running in data directory "/usr/local/var/postgres"?
+2019-05-30 11:15:14.017 CST [34851] FATAL:  lock file "postmaster.pid" already exists
+2019-05-30 11:15:14.017 CST [34851] HINT:  Is another postmaster (PID 16750) running in data directory "/usr/local/var/postgres"?
+2019-05-30 11:15:16.748 CST [34854] LOG:  listening on IPv6 address "::1", port 5432
+2019-05-30 11:15:16.748 CST [34854] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2019-05-30 11:15:16.749 CST [34854] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2019-05-30 11:15:16.799 CST [34855] LOG:  database system was shut down at 2019-05-30 11:15:16 CST
+2019-05-30 11:15:16.815 CST [34854] LOG:  database system is ready to accept connections
+2019-05-31 02:28:09.875 CST [34854] LOG:  received smart shutdown request
+2019-05-31 02:28:09.877 CST [35150] FATAL:  terminating connection due to administrator command
+2019-05-31 02:28:09.877 CST [35062] FATAL:  terminating connection due to administrator command
+2019-05-31 02:28:09.878 CST [34854] LOG:  worker process: logical replication launcher (PID 34861) exited with exit code 1
+2019-05-31 02:28:09.881 CST [34856] LOG:  shutting down
+2019-05-31 02:28:09.909 CST [34854] LOG:  database system is shut down
+2019-07-08 00:16:28.693 CST [27644] LOG:  listening on IPv6 address "::1", port 5432
+2019-07-08 00:16:28.693 CST [27644] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2019-07-08 00:16:28.694 CST [27644] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2019-07-08 00:16:28.758 CST [27645] LOG:  database system was shut down at 2019-07-05 02:43:02 CST
+2019-07-08 00:16:28.780 CST [27644] LOG:  database system is ready to accept connections
+2019-07-08 04:40:56.725 CST [27644] LOG:  received smart shutdown request
+2019-07-08 04:40:56.730 CST [27644] LOG:  background worker "logical replication launcher" (PID 27651) exited with exit code 1
+2019-07-08 04:40:56.730 CST [27646] LOG:  shutting down
+2019-07-08 04:40:56.763 CST [27644] LOG:  database system is shut down
+2019-07-23 15:24:11.708 CST [1868] LOG:  listening on IPv6 address "::1", port 5432
+2019-07-23 15:24:11.708 CST [1868] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2019-07-23 15:24:11.709 CST [1868] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2019-07-23 15:24:11.734 CST [1869] LOG:  database system was shut down at 2019-07-23 05:52:59 CST
+2019-07-23 15:24:11.739 CST [1868] LOG:  database system is ready to accept connections
+2019-07-23 15:43:36.066 CST [2407] ERROR:  relation "examine_id_seq" already exists
+2019-07-23 15:43:36.066 CST [2407] STATEMENT:  CREATE SEQUENCE public.examine_id_seq
+	    START WITH 0
+	    INCREMENT BY 1
+	    MINVALUE 0
+	    MAXVALUE 99999999
+	    CACHE 1;
+2019-07-23 15:43:36.080 CST [2407] ERROR:  relation "patient_id_seq" already exists
+2019-07-23 15:43:36.080 CST [2407] STATEMENT:  CREATE SEQUENCE public.patient_id_seq
+	    START WITH 0
+	    INCREMENT BY 1
+	    MINVALUE 0
+	    MAXVALUE 99999999
+	    CACHE 1;
+2019-07-23 16:27:07.606 CST [1877] ERROR:  column "p375" does not exist at character 53
+2019-07-23 16:27:07.606 CST [1877] STATEMENT:  SELECT  "worksenses".* FROM "worksenses" WHERE (rid=P375 and (maindate+maintime)<'2019-07-09 19:57:27')  ORDER BY maindate desc, maintime desc LIMIT 1
+2019-07-23 17:06:13.916 CST [1868] LOG:  received smart shutdown request
+2019-07-23 17:06:13.917 CST [1868] LOG:  background worker "logical replication launcher" (PID 1875) exited with exit code 1
+2019-07-23 17:06:13.917 CST [1870] LOG:  shutting down
+2019-07-23 17:06:13.930 CST [1868] LOG:  database system is shut down
+2019-09-01 16:04:52.903 CST [5928] LOG:  listening on IPv6 address "::1", port 5432
+2019-09-01 16:04:52.903 CST [5928] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2019-09-01 16:04:52.905 CST [5928] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2019-09-01 16:04:53.003 CST [5929] LOG:  database system was shut down at 2019-09-01 03:00:04 CST
+2019-09-01 16:04:53.017 CST [5928] LOG:  database system is ready to accept connections
+2019-09-01 19:40:05.180 CST [5928] LOG:  received smart shutdown request
+2019-09-01 19:40:05.181 CST [5928] LOG:  background worker "logical replication launcher" (PID 5935) exited with exit code 1
+2019-09-01 19:40:05.181 CST [5930] LOG:  shutting down
+2019-09-01 19:40:05.197 CST [5928] LOG:  database system is shut down
+2019-09-02 13:59:10.534 CST [8877] LOG:  listening on IPv6 address "::1", port 5432
+2019-09-02 13:59:10.534 CST [8877] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2019-09-02 13:59:10.536 CST [8877] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2019-09-02 13:59:10.592 CST [8878] LOG:  database system was shut down at 2019-09-01 19:40:05 CST
+2019-09-02 13:59:10.604 CST [8877] LOG:  database system is ready to accept connections
+2019-09-02 20:16:26.925 CST [8877] LOG:  received smart shutdown request
+2019-09-02 20:16:26.927 CST [8877] LOG:  background worker "logical replication launcher" (PID 8884) exited with exit code 1
+2019-09-02 20:16:26.927 CST [8879] LOG:  shutting down
+2019-09-02 20:16:26.939 CST [8877] LOG:  database system is shut down
+2019-09-04 16:14:59.897 CST [21963] FATAL:  lock file "postmaster.pid" already exists
+2019-09-04 16:14:59.897 CST [21963] HINT:  Is another postmaster (PID 862) running in data directory "/usr/local/var/postgres"?
+2019-09-09 15:07:57.213 CST [1682] LOG:  listening on IPv6 address "::1", port 5432
+2019-09-09 15:07:57.216 CST [1682] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2019-09-09 15:07:57.216 CST [1682] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2019-09-09 15:07:57.258 CST [1683] LOG:  database system was shut down at 2019-09-09 14:22:22 CST
+2019-09-09 15:07:57.301 CST [1682] LOG:  database system is ready to accept connections
+2019-09-10 21:17:01.335 CST [1682] LOG:  received smart shutdown request
+2019-09-10 21:17:01.338 CST [1682] LOG:  background worker "logical replication launcher" (PID 1690) exited with exit code 1
+2019-09-10 21:17:01.338 CST [1684] LOG:  shutting down
+2019-09-10 21:17:01.353 CST [1682] LOG:  database system is shut down
+2019-09-25 17:27:23.570 CST [3933] LOG:  listening on IPv6 address "::1", port 5432
+2019-09-25 17:27:23.571 CST [3933] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2019-09-25 17:27:23.574 CST [3933] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2019-09-25 17:27:23.657 CST [3934] LOG:  database system was shut down at 2019-09-25 08:35:25 CST
+2019-09-25 17:27:23.718 CST [3933] LOG:  database system is ready to accept connections
+2019-09-25 19:26:29.974 CST [3933] LOG:  received smart shutdown request
+2019-09-25 19:26:29.975 CST [3933] LOG:  background worker "logical replication launcher" (PID 3940) exited with exit code 1
+2019-09-25 19:26:29.975 CST [3935] LOG:  shutting down
+2019-09-25 19:26:29.986 CST [3933] LOG:  database system is shut down

@@ -1,0 +1,26 @@
+<style>
+	.bg {
+		background-image: url(<%= asset_path 'BG.png' %>);
+		background-repeat:no-repeat;
+		background-size: 100% 100%;
+	}
+</style>
+
+<div class='bg'>
+	<center>
+		<br><br>
+
+		<% if @customer=='CCH' %>
+			<h1>彰化基督教醫院南郭總院<br>
+			內視鏡感控雲端系統<br></h1>
+			<%= image_tag("cch_login_LOGO.png", :style=>'weight:320px;height:240px') %>
+		<% elsif @customer=='SC' %>
+			<h1>秀傳紀念醫院彰化總院<br>
+			內視鏡感控雲端系統<br></h1>
+			<%= image_tag("sc_login_LOGO.png", :style=>'weight:320px;height:240px') %>
+		<% end %>
+		<br><br><br>
+		已是內視鏡感控的用戶？<br><%= link_to "登入", new_session_path, class:"btn btn-large btn-primary" %> <br><br><br>
+		<!--還未擁有內視鏡感控的帳號？<br><%= link_to "註冊!", new_user_path %>--><br><br><br>
+	</center>
+</div>
