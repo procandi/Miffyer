@@ -852,25 +852,6 @@
         <li class="divider"></li>
 
 
-        <li class="top-bar-menu intro">
-          <%= link_to '排隊系統', root_path, class: 'active top-bar-menu-font' %>
-          <ul class="menu vertical top-bar-menu-sub">
-            <li class="top-bar-menu-sub-selected">
-              <%= link_to '排隊狀況', arrival_list_path, :class=>'top-bar-menu-sub-font' %>
-            </li>
-            <li class="top-bar-menu-sub-selected">
-              <%= link_to '各站人數', arrival_unitlist_path, :class=>'top-bar-menu-sub-font' %>
-            </li>
-            <li class="top-bar-menu-sub-selected">
-              <%= link_to '客戶位置', arrival_query_path, :class=>'top-bar-menu-sub-font' %>
-            </li>
-          </ul>
-        </li>
-
-
-        <li class="divider"></li>
-
-
         <% if signed_in? %>
           <li class="top-bar-menu intro">
             <%= link_to '後台系統', root_path, class: 'active top-bar-menu-font' %>
@@ -879,7 +860,7 @@
                 <%= link_to '帳號權限編輯', users_path, :class=>'top-bar-menu-sub-font' %>
               </li>
               <li class="top-bar-menu-sub-selected">
-                <%= link_to '手動調整排隊狀況', arrivals_path, :class=>'top-bar-menu-sub-font' %>
+                <%= link_to '公司假期表', holidays_path, :class=>'top-bar-menu-sub-font' %>
               </li>
             </ul>
           </li>
@@ -926,21 +907,12 @@
               <%= link_to '首頁', root_path, :class=>'top-bar-menu-sub-font' %>
             </li>
 
-            <li class="top-bar-menu-sub-selected">
-              <%= link_to '【排隊】排隊狀況', arrival_list_path, :class=>'top-bar-menu-sub-font' %>
-            </li>
-            <li class="top-bar-menu-sub-selected">
-              <%= link_to '【排隊】各站人數', arrival_unitlist_path, :class=>'top-bar-menu-sub-font' %>
-            </li>
-            <li class="top-bar-menu-sub-selected">
-              <%= link_to '【排隊】客戶位置', arrival_query_path, :class=>'top-bar-menu-sub-font' %>
-            </li>
             <% if signed_in? %>
               <li class="top-bar-menu-sub-selected">
                 <%= link_to '【後台】帳號權限編輯', users_path, :class=>'top-bar-menu-sub-font' %>
               </li>
               <li class="top-bar-menu-sub-selected">
-                <%= link_to '【後台】手動調整排隊狀況', arrivals_path, :class=>'top-bar-menu-sub-font' %>
+                <%= link_to '【後台】公司假期表', holidays_path, :class=>'top-bar-menu-sub-font' %>
               </li>
             <% end %>
           </ul>
