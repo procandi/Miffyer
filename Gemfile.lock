@@ -226,5 +226,8 @@ DEPENDENCIES
   uglifier (= 3.2.0)
   writeexcel (= 1.0.5)
 
+RUBY VERSION
+   ruby 2.4.7p357
+
 BUNDLED WITH
    1.17.3
