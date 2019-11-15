@@ -31,7 +31,7 @@ gem 'rails-i18n', '4.0.9'
 gem 'font-awesome-rails', '4.7.0.2'
 
 # handle cors problem. @xieyinghua
-gem 'rack-cors', '1.0.2', require: 'rack/cors'
+gem 'rack-cors', '1.0.5', require: 'rack/cors'
 
 # support for image upload. @xieyinghua
 gem 'carrierwave', '0.10.0'
