@@ -43,7 +43,7 @@ gem 'carrierwave-video', '0.6.0'
 gem 'simple_form', '4.0.0'
 
 # parse HTML and XML. @xieyinghua
-gem "nokogiri", '1.8.0'
+gem "nokogiri", '1.10.10'
 
 #support some style for rails. @xieyinghua
 gem 'foundation-rails', '6.2.3.0'
