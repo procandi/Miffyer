@@ -34,7 +34,7 @@ gem 'font-awesome-rails', '4.7.0.2'
 gem 'rack-cors', '1.0.2', require: 'rack/cors'
 
 # support for image upload. @xieyinghua
-gem 'carrierwave', '0.10.0'
+gem 'carrierwave', '1.3.2'
 
 # support for video upload. @xieyinghua
 gem 'carrierwave-video', '0.6.0'
