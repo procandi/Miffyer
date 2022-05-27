@@ -109,7 +109,7 @@ GEM
       rake (>= 0.8.1)
     pg (0.20.0)
     pg (0.20.0-x64-mingw32)
-    rack (1.6.11)
+    rack (1.6.13)
     rack-cors (1.0.2)
     rack-test (0.6.3)
       rack (>= 1.0)
